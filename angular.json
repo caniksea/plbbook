@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/webfont.js",
+              "src/assets/js/jquery-3.3.1.min.js",
+              "src/assets/js/webflow.896600e86.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -72,9 +76,11 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/assets/css/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/webfont.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
