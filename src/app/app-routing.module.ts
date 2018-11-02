@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import {ExtraOptions, RouterModule, Routes} from '@angular/router';
 import {ChaptersComponent} from './chapters/chapters.component';
-import {CustomerComponent} from './customer/customer.component';
 
 const routes: Routes = [
   {
