@@ -6,6 +6,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {APP_BASE_HREF} from '@angular/common';
+import {PlbbookModule} from './plbbook/plbbook.module';
+import {EmergenciesModule} from './emergencies/emergencies.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import {APP_BASE_HREF} from '@angular/common';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    PlbbookModule,
+    EmergenciesModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/'},

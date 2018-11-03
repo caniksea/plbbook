@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import {ExtraOptions, RouterModule, Routes} from '@angular/router';
 import {PlbbookComponent} from './plbbook/plbbook.component';
+import {EmergenciesComponent} from './emergencies/emergencies.component';
 
 const routes: Routes = [
   {
     path: 'plbbook',
-    component: PlbbookComponent,
+    component: PlbbookComponent
   },
+  { path: 'plbbook/emergencies', component: EmergenciesComponent},
   { path: '', redirectTo: 'plbbook', pathMatch: 'full'},
   { path: '**', redirectTo: 'plbbook'},
 ];
