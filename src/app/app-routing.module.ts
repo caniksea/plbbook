@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import {ExtraOptions, RouterModule, Routes} from '@angular/router';
-import {ChaptersComponent} from './chapters/chapters.component';
+import {PlbbookComponent} from './plbbook/plbbook.component';
 
 const routes: Routes = [
   {
     path: 'plbbook',
-    component: ChaptersComponent
+    component: PlbbookComponent,
   },
   { path: '', redirectTo: 'plbbook', pathMatch: 'full'},
   { path: '**', redirectTo: 'plbbook'},
