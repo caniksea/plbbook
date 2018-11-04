@@ -11,11 +11,13 @@
       </div>
       <div class="leftnavigation bottom">
         <div class="w-row">
-          <div class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+          <div
+            class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
           <div class="buttoncol w-col w-col-4 w-col-stack">
-            <a href="#" data-ix="view-chapters" class="allchapters">View Chapters</a>
+            <a href="#" (click)="showMenu()" data-ix="view-chapters" class="allchapters">View Chapters</a>
           </div>
-          <div class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+          <div
+            class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
         </div>
       </div>
       <div class="titleblock">
@@ -30,26 +32,74 @@
         <div class="previous-next">Previous Chapter</div>
         <div class="bottomnav-chapter">Always choose prototypes over mockups</div>
       </a>
-      <a href="http://ebooks.webflow.com/chapter/essential-visual-design-principles-for-web-designers" class="bottomnav-links cc-center w-inline-block">
-        <div class="previous-next">First Chapter</div>
-        <div class="bottomnav-chapter">Emergencies</div>
+      <a href="#/plbbook/health" class="bottomnav-links cc-center w-inline-block">
+        <div class="previous-next">Next Chapter</div>
+        <div class="bottomnav-chapter">Health</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
-        <div class="chapterpage-header">The Precious Little Black Book</div>
-        <div class="chapterpage-header chaptertext">Introduction</div>
-        <!-- <a href="http://www.webflow.com/?utm_source=ebooks&amp;utm_medium=web%20design%20101&amp;utm_campaign=Ebooks" target="_blank" class="chapterpage-header trywebflow-link">Try Webflow</a> -->
+        <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
+        <!--<div class="chapterpage-header">The Precious Little Black Book</div>-->
+        <div class="chapterpage-header chaptertext">Emergencies</div>
       </div>
-      <div class="lede">Congratulations. The future of the web  is in your hands.</div>
+      <div class="lede lede-emergencies">Medical emergency situations pose an immediate risk to a person's
+        life and can happen anytime: at home, in the middle of the road, or
+        in the workplace.</div>
       <div class="chaptercontent w-richtext">
+        <p>Many fatalities could be prevented if attended to in good time.
+          Ordinary people, and especially women, are often the first respondents
+          in medical emergencies. Unfortunately, people can be hesitant to get
+          involved because they are not sure of what to do. It is important that we
+          all have some knowledge of how to manage emergency situations.
+        </p>
 
+        <p>The most important thing to remember in an emergency is that every
+          second counts. Try to stay calm and act as quickly as you can.</p>
+
+        <div class="section-header">What to do in an emergency</div>
+        <ul>
+          <li>Stay calm.</li>
+          <li>Quickly assess the situation - do you need the police or an ambulance?</li>
+          <li>Phone the emergency number and tell them:
+            <ul>
+              <li>Where you are</li>
+              <li>What has happened</li>
+              <li>Why you need emergency help</li>
+            </ul>
+          </li>
+          <li> Follow the instructions given by the emergency officer. They may ask you to do CPR (see opposite).</li>
+        </ul>
+        <div class="section-header">How to do CPR</div>
+        <p>Cardio Pulmonary Resuscitation (CPR) is performed to keep a person alive by breathing
+          into their lungs and massaging their heart. It is lifesaving.</p>
+
+        <div><strong>ABC</strong></div>
+        <p>Before performing CPR, you must check that the conditions are correct. You can do the ABC check:</p>
+
+        <div>A - Airway</div>
+        <ul>
+          <li>Clear the mouth of any particles or obstructions.</li>
+        </ul>
+
+        <div>B - Breathing</div>
+        <ul>
+          <li>Listen for breathing</li>
+          <li>Look for chest movement</li>
+        </ul>
+
+        <div>C - Circulation</div>
+        <ul>
+          <li>Feel pulse</li>
+        </ul>
+
+        <div><h4><strong>If the person is not breathing, perform CPR:</strong></h4></div>
       </div>
     </div>
 
-    <a href="http://ebooks.webflow.com/chapter/essential-visual-design-principles-for-web-designers" class="bottomnav-links cc-bottom w-inline-block">
-      <div class="previous-next">First Chapter</div>
-      <div class="bottomnav-chapter">Emergencies</div>
+    <a href="#/plbbook/health" class="bottomnav-links cc-bottom w-inline-block">
+      <div class="previous-next">Next Chapter</div>
+      <div class="bottomnav-chapter">Health</div>
     </a>
   </div>
 </div>

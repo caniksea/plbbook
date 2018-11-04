@@ -1892,6 +1892,20 @@ figcaption {
   padding-bottom: 0px;
 }
 
+.chaptercontent.w-richtext p {
+  text-align: justify;
+}
+
+.section-header {
+  color: #ff0000;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Graphik web', sans-serif;
+  padding-right: 0px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 991px) {
   .navlink.internal {
     padding-right: 0px;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MenuService} from '../../shared/services/menu.service';
 
 @Component({
   selector: 'app-emergencies',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmergenciesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private menuService: MenuService) { }
 
   ngOnInit() {
+  }
+
+  showMenu() {
+    this.menuService.toggleMenu(true);
   }
 
 }

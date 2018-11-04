@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MenuService} from '../../shared/services/menu.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  showMenu: boolean;
+
+  constructor(private menuService: MenuService) { }
 
   ngOnInit() {
+    this.menuService.showMenu.subscribe(showMenu => this.showMenu = showMenu);
+  }
+
+  closeMenu() {
+    this.menuService.toggleMenu(false);
+    return true;
   }
 
 }

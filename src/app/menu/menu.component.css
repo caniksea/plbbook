@@ -1,0 +1,11 @@
+.visible-menu {
+  transform-style: preserve-3d;
+  transition: transform 600ms ease 0s;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+}
+
+.invisible-menu {
+  transform-style: preserve-3d;
+  transition: transform 600ms ease 0s;
+  transform: translateX(-100%) translateY(0px) translateZ(0px);
+}
