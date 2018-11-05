@@ -6,8 +6,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {APP_BASE_HREF} from '@angular/common';
-import {ChaptersModule} from './chapters/chapters.module';
-import {MenuModule} from './menu/menu.module';
+import {PlbbookModule} from './plbbook/plbbook.module';
+import {EmergenciesModule} from './emergencies/emergencies.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import {MenuModule} from './menu/menu.module';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    ChaptersModule
+    PlbbookModule,
+    EmergenciesModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/'},

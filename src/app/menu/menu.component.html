@@ -1,11 +1,11 @@
-<div class="chapterslider">
-  <a href="#" data-ix="close-view-chapters" class="close-x">X</a>
+<div class="chapterslider" [ngClass]="showMenu ? 'visible-menu': 'invisible-menu'">
+  <a href="#" (click)="closeMenu()" data-ix="close-view-chapters" class="close-x">X</a>
   <div class="sidecontent-wrap">
     <h3>Chapters</h3>
     <div class="w-dyn-list">
       <div class="w-clearfix w-dyn-items">
         <div class="sidechapter-wrap w-dyn-item">
-          <a data-ix="side-chapter-link" href="/chapter/essential-visual-design-principles-for-web-designers"
+          <a data-ix="side-chapter-link" href="#/plbbook/emergencies" (click)="closeMenu()"
              class="sidechapter-link w-inline-block">
             <!--<div-->
               <!--style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/56c620b120f9e0ef31f54905/56c64d71e7d76f195f0e1f5e_Visual%20Design%20Principles.jpg&quot;)"-->
