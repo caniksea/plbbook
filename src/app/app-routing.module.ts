@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import {ExtraOptions, RouterModule, Routes} from '@angular/router';
 import {PlbbookComponent} from './plbbook/plbbook.component';
 import {EmergenciesComponent} from './emergencies/emergencies.component';
+import {HealthComponent} from './health/health.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,7 @@ const routes: Routes = [
     component: PlbbookComponent
   },
   { path: 'plbbook/emergencies', component: EmergenciesComponent},
+  { path: 'plbbook/health', component: HealthComponent},
   { path: '', redirectTo: 'plbbook', pathMatch: 'full'},
   { path: '**', redirectTo: 'plbbook'},
 ];
