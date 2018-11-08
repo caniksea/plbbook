@@ -14,6 +14,7 @@ import {HigherEducationAndTrainingModule} from './higher-education-and-training/
 import {WomenInTheWorkplaceModule} from './women-in-the-workplace/women-in-the-workplace.module';
 import {FinanceAndBankingModule} from './finance-and-banking/finance-and-banking.module';
 import {KnowYourRightsModule} from './know-your-rights/know-your-rights.module';
+import {UsefulContactsModule} from './useful-contacts/useful-contacts.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {KnowYourRightsModule} from './know-your-rights/know-your-rights.module';
     HigherEducationAndTrainingModule,
     WomenInTheWorkplaceModule,
     FinanceAndBankingModule,
-    KnowYourRightsModule
+    KnowYourRightsModule,
+    UsefulContactsModule
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'},
