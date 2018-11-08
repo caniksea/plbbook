@@ -17,4 +17,9 @@ export class KnowYourRightsComponent implements OnInit {
   showMenu() {
     this.menuService.toggleMenu(true);
   }
+
+  closeMenu() {
+    this.menuService.toggleMenu(false);
+    return true;
+  }
 }

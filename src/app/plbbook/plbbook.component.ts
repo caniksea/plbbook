@@ -18,4 +18,9 @@ export class PlbbookComponent implements OnInit {
     return false;
   }
 
+  closeMenu() {
+    this.menuService.toggleMenu(false);
+    return true;
+  }
+
 }
