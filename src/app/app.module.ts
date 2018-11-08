@@ -9,6 +9,7 @@ import {APP_BASE_HREF} from '@angular/common';
 import {PlbbookModule} from './plbbook/plbbook.module';
 import {EmergenciesModule} from './emergencies/emergencies.module';
 import {HealthModule} from './health/health.module';
+import {FamilyModule} from './family/family.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {HealthModule} from './health/health.module';
     AppRoutingModule,
     PlbbookModule,
     EmergenciesModule,
-    HealthModule
+    HealthModule,
+    FamilyModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/'},

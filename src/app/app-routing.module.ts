@@ -3,6 +3,7 @@ import {ExtraOptions, RouterModule, Routes} from '@angular/router';
 import {PlbbookComponent} from './plbbook/plbbook.component';
 import {EmergenciesComponent} from './emergencies/emergencies.component';
 import {HealthComponent} from './health/health.component';
+import {FamilyComponent} from './family/family.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,7 @@ const routes: Routes = [
   },
   { path: 'plbbook/emergencies', component: EmergenciesComponent},
   { path: 'plbbook/health', component: HealthComponent},
+  { path: 'plbbook/family', component: FamilyComponent},
   { path: '', redirectTo: 'plbbook', pathMatch: 'full'},
   { path: '**', redirectTo: 'plbbook'},
 ];
