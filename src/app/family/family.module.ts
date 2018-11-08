@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {EmergenciesComponent} from './emergencies.component';
+import {FamilyComponent} from './family.component';
 import {MenuModule} from '../menu/menu.module';
 
 const components = [
-  EmergenciesComponent
+  FamilyComponent
 ];
 
 @NgModule({
@@ -14,5 +14,5 @@ const components = [
   ],
   declarations: [...components]
 })
-export class EmergenciesModule {
+export class FamilyModule {
 }

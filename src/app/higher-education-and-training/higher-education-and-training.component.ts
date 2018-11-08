@@ -2,11 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {MenuService} from '../../shared/services/menu.service';
 
 @Component({
-  selector: 'app-health',
-  templateUrl: './health.component.html',
-  styleUrls: ['./health.component.css']
+  selector: 'app-higher-education-and-training',
+  templateUrl: './higher-education-and-training.component.html',
+  styleUrls: ['./higher-education-and-training.component.css']
 })
-export class HealthComponent implements OnInit {
+export class HigherEducationAndTrainingComponent implements OnInit {
 
   constructor(private menuService: MenuService) {
   }
@@ -22,5 +22,4 @@ export class HealthComponent implements OnInit {
     this.menuService.toggleMenu(false);
     return true;
   }
-
 }

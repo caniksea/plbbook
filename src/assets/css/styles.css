@@ -3674,7 +3674,8 @@ hr {
 
 .bottomnav-links {
   display: block;
-  width: 40%;
+  /*width: 40%;*/
+  width: 50%;
   float: none;
   color: #323b40;
   text-align: left;

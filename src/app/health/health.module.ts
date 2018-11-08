@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HealthComponent } from './health.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {HealthComponent} from './health.component';
 import {MenuModule} from '../menu/menu.module';
 
 const components = [
@@ -14,4 +14,5 @@ const components = [
   ],
   declarations: [...components]
 })
-export class HealthModule { }
+export class HealthModule {
+}
