@@ -3,3 +3,7 @@
   text-transform: uppercase;
   font-size: 18px;
 }
+
+.previous-link {
+  width: 100% !important;
+}
