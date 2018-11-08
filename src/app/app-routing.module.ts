@@ -4,6 +4,7 @@ import {PlbbookComponent} from './plbbook/plbbook.component';
 import {EmergenciesComponent} from './emergencies/emergencies.component';
 import {HealthComponent} from './health/health.component';
 import {FamilyComponent} from './family/family.component';
+import {HigherEducationAndTrainingComponent} from './higher-education-and-training/higher-education-and-training.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'plbbook/emergencies', component: EmergenciesComponent},
   { path: 'plbbook/health', component: HealthComponent},
   { path: 'plbbook/family', component: FamilyComponent},
+  { path: 'plbbook/higher-education-and-training', component: HigherEducationAndTrainingComponent},
   { path: '', redirectTo: 'plbbook', pathMatch: 'full'},
   { path: '**', redirectTo: 'plbbook'},
 ];

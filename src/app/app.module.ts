@@ -10,6 +10,7 @@ import {PlbbookModule} from './plbbook/plbbook.module';
 import {EmergenciesModule} from './emergencies/emergencies.module';
 import {HealthModule} from './health/health.module';
 import {FamilyModule} from './family/family.module';
+import {HigherEducationAndTrainingModule} from './higher-education-and-training/higher-education-and-training.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {FamilyModule} from './family/family.module';
     PlbbookModule,
     EmergenciesModule,
     HealthModule,
-    FamilyModule
+    FamilyModule,
+    HigherEducationAndTrainingModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/'},
