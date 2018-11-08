@@ -6,6 +6,7 @@ import {HealthComponent} from './health/health.component';
 import {FamilyComponent} from './family/family.component';
 import {HigherEducationAndTrainingComponent} from './higher-education-and-training/higher-education-and-training.component';
 import {WomenInTheWorkplaceComponent} from './women-in-the-workplace/women-in-the-workplace.component';
+import {FinanceAndBankingComponent} from './finance-and-banking/finance-and-banking.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'plbbook/family', component: FamilyComponent},
   {path: 'plbbook/higher-education-and-training', component: HigherEducationAndTrainingComponent},
   {path: 'plbbook/women-in-the-workplace', component: WomenInTheWorkplaceComponent},
+  {path: 'plbbook/finance-and-banking', component: FinanceAndBankingComponent},
   {path: '', redirectTo: 'plbbook', pathMatch: 'full'},
   {path: '**', redirectTo: 'plbbook'},
 ];
