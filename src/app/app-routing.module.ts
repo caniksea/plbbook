@@ -7,6 +7,7 @@ import {FamilyComponent} from './family/family.component';
 import {HigherEducationAndTrainingComponent} from './higher-education-and-training/higher-education-and-training.component';
 import {WomenInTheWorkplaceComponent} from './women-in-the-workplace/women-in-the-workplace.component';
 import {FinanceAndBankingComponent} from './finance-and-banking/finance-and-banking.component';
+import {KnowYourRightsComponent} from './know-your-rights/know-your-rights.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'plbbook/higher-education-and-training', component: HigherEducationAndTrainingComponent},
   {path: 'plbbook/women-in-the-workplace', component: WomenInTheWorkplaceComponent},
   {path: 'plbbook/finance-and-banking', component: FinanceAndBankingComponent},
+  {path: 'plbbook/know-your-rights', component: KnowYourRightsComponent},
   {path: '', redirectTo: 'plbbook', pathMatch: 'full'},
   {path: '**', redirectTo: 'plbbook'},
 ];

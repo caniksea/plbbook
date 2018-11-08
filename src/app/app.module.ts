@@ -13,6 +13,7 @@ import {FamilyModule} from './family/family.module';
 import {HigherEducationAndTrainingModule} from './higher-education-and-training/higher-education-and-training.module';
 import {WomenInTheWorkplaceModule} from './women-in-the-workplace/women-in-the-workplace.module';
 import {FinanceAndBankingModule} from './finance-and-banking/finance-and-banking.module';
+import {KnowYourRightsModule} from './know-your-rights/know-your-rights.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {FinanceAndBankingModule} from './finance-and-banking/finance-and-banking
     FamilyModule,
     HigherEducationAndTrainingModule,
     WomenInTheWorkplaceModule,
-    FinanceAndBankingModule
+    FinanceAndBankingModule,
+    KnowYourRightsModule
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'},
