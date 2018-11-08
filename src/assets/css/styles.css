@@ -17,6 +17,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block
 }
 
+
+
 audio, canvas, progress, video {
   display: inline-block;
   vertical-align: baseline
@@ -3388,6 +3390,10 @@ figcaption {
 .buttoncol {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+#pink-text-colour{
+  color: #B00342;
 }
 
 #pink-table th {
