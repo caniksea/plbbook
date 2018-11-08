@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FamilyComponent } from './family.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FamilyComponent} from './family.component';
 import {MenuModule} from '../menu/menu.module';
 
 const components = [
@@ -14,4 +14,5 @@ const components = [
   ],
   declarations: [...components]
 })
-export class FamilyModule { }
+export class FamilyModule {
+}

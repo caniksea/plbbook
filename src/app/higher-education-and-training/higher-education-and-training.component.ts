@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MenuService} from '../../shared/services/menu.service';
 
 @Component({
@@ -8,10 +8,12 @@ import {MenuService} from '../../shared/services/menu.service';
 })
 export class HigherEducationAndTrainingComponent implements OnInit {
 
-  constructor(private menuService: MenuService) { }
+  constructor(private menuService: MenuService) {
+  }
 
   ngOnInit() {
   }
+
   showMenu() {
     this.menuService.toggleMenu(true);
   }

@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
@@ -11,6 +11,7 @@ import {EmergenciesModule} from './emergencies/emergencies.module';
 import {HealthModule} from './health/health.module';
 import {FamilyModule} from './family/family.module';
 import {HigherEducationAndTrainingModule} from './higher-education-and-training/higher-education-and-training.module';
+import {WomenInTheWorkplaceModule} from './women-in-the-workplace/women-in-the-workplace.module';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,13 @@ import {HigherEducationAndTrainingModule} from './higher-education-and-training/
     EmergenciesModule,
     HealthModule,
     FamilyModule,
-    HigherEducationAndTrainingModule
+    HigherEducationAndTrainingModule,
+    WomenInTheWorkplaceModule
   ],
   providers: [
-    { provide: APP_BASE_HREF, useValue: '/'},
+    {provide: APP_BASE_HREF, useValue: '/'},
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}
