@@ -3389,6 +3389,16 @@ figcaption {
   padding-right: 0px;
   padding-left: 0px;
 }
+.info-box{
+  background-color: #B00342;
+  display: block;
+  border: 1px solid #B00342;
+  padding: 30px;
+}
+.info-box-text{
+  color: white;
+  text-align: center;
+}
 
 #normal-table {
   width: 100%;
