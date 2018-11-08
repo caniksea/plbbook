@@ -3389,6 +3389,33 @@ figcaption {
   padding-right: 0px;
   padding-left: 0px;
 }
+.info-box{
+  background-color: #B00342;
+  display: block;
+  border: 1px solid #B00342;
+  padding: 30px;
+}
+.info-box-text{
+  color: white;
+  text-align: center;
+}
+
+#normal-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#normal-table td, #normal-table th {
+  border: 1px solid ;
+  padding: 10px;
+}
+
+#normal-table th {
+  text-align: left;
+  background-color: #B00342;
+  border-color: #ddd;
+  color: white;
+}
 
 #pink-table th {
   text-align: left;
