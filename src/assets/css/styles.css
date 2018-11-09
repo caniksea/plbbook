@@ -17,6 +17,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block
 }
 
+
+
 audio, canvas, progress, video {
   display: inline-block;
   vertical-align: baseline
@@ -3415,6 +3417,10 @@ figcaption {
   background-color: #B00342;
   border-color: #ddd;
   color: white;
+}
+
+#pink-text-colour{
+  color: #B00342;
 }
 
 #pink-table th {
