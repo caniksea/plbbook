@@ -32,9 +32,9 @@
         <div class="previous-next">Previous Chapter</div>
         <div class="bottomnav-chapter">Always choose prototypes over mockups</div>
       </a>
-      <a href="#/plbbook/health" class="bottomnav-links cc-center w-inline-block" (click)="closeMenu()">
+      <a *ngIf="chapters" href="#{{getNextChapterLink(chapters)}}" class="bottomnav-links cc-center w-inline-block" (click)="closeMenu()">
         <div class="previous-next">Next Chapter</div>
-        <div class="bottomnav-chapter">Health</div>
+        <div class="bottomnav-chapter">{{getNextChapter(chapters)}}</div>
       </a>
     </div>
     <div class="maincontent-wrap">
@@ -280,9 +280,9 @@
       </div>
     </div>
 
-    <a href="#/plbbook/health" class="bottomnav-links cc-bottom w-inline-block">
+    <a *ngIf="chapters" href="#{{getNextChapterLink(chapters)}}" class="bottomnav-links cc-bottom w-inline-block">
       <div class="previous-next">Next Chapter</div>
-      <div class="bottomnav-chapter">Health</div>
+      <div class="bottomnav-chapter">{{getNextChapter(chapters)}}</div>
     </a>
   </div>
 </div>

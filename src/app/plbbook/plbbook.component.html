@@ -32,7 +32,7 @@
       </a>
       <a href="#/plbbook/emergencies" class="bottomnav-links cc-center w-inline-block" (click)="closeMenu()">
         <div class="previous-next">First Chapter</div>
-        <div class="bottomnav-chapter">Emergencies</div>
+        <div *ngIf="chapters" class="bottomnav-chapter">{{getFirstChapter(chapters)}}</div>
       </a>
     </div>
     <div class="maincontent-wrap">
@@ -57,7 +57,7 @@
 
     <a href="#/plbbook/emergencies" class="bottomnav-links cc-bottom w-inline-block">
       <div class="previous-next">First Chapter</div>
-      <div class="bottomnav-chapter">Emergencies</div>
+      <div *ngIf="chapters" class="bottomnav-chapter">{{getFirstChapter(chapters)}}</div>
     </a>
   </div>
 </div>

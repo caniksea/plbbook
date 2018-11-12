@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {MenuService} from '../../shared/services/menu.service';
+import {DataTransferService} from '../../shared/services/data-transfer.service';
+import {Chapter} from '../../shared/domains/chapter';
 
 @Component({
   selector: 'app-emergencies',
@@ -8,19 +9,31 @@ import {MenuService} from '../../shared/services/menu.service';
 })
 export class EmergenciesComponent implements OnInit {
 
-  constructor(private menuService: MenuService) {
+  private CURRENT_CHAPTER = 1;
+
+  chapters: Chapter[];
+
+  constructor(private dataTransferService: DataTransferService) {
   }
 
   ngOnInit() {
+    this.dataTransferService.bookChapters.subscribe(chapters => this.chapters = chapters);
   }
 
   showMenu() {
-    this.menuService.toggleMenu(true);
+    this.dataTransferService.toggleMenu(true);
   }
 
   closeMenu() {
-    this.menuService.toggleMenu(false);
+    this.dataTransferService.toggleMenu(false);
     return true;
   }
 
+  getNextChapter(chapters: Chapter[]) {
+    return chapters.find(chapter => chapter.chapterNumber === (this.CURRENT_CHAPTER + 1)).chapterTitle;
+  }
+
+  getNextChapterLink(chapters: Chapter[]) {
+    return chapters.find(chapter => chapter.chapterNumber === (this.CURRENT_CHAPTER + 1)).chapterLink;
+  }
 }
