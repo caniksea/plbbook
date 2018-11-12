@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {MenuService} from '../../shared/services/menu.service';
+import {DataTransferService} from '../../shared/services/data-transfer.service';
 
 @Component({
   selector: 'app-finance-and-banking',
@@ -8,18 +8,18 @@ import {MenuService} from '../../shared/services/menu.service';
 })
 export class FinanceAndBankingComponent implements OnInit {
 
-  constructor(private menuService: MenuService) {
+  constructor(private dataTransferService: DataTransferService) {
   }
 
   ngOnInit() {
   }
 
   showMenu() {
-    this.menuService.toggleMenu(true);
+    this.dataTransferService.toggleMenu(true);
   }
 
   closeMenu() {
-    this.menuService.toggleMenu(false);
+    this.dataTransferService.toggleMenu(false);
     return true;
   }
 }

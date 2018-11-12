@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {MenuService} from '../../shared/services/menu.service';
+import {DataTransferService} from '../../shared/services/data-transfer.service';
+import {Chapter} from '../../shared/domains/chapter';
+import {checkPort} from '@angular-devkit/build-angular/src/angular-cli-files/utilities/check-port';
 
 @Component({
   selector: 'app-plbbook',
@@ -8,19 +10,28 @@ import {MenuService} from '../../shared/services/menu.service';
 })
 export class PlbbookComponent implements OnInit {
 
-  constructor(private menuService: MenuService) { }
+  chapters: Chapter[];
+
+  constructor(private dataTransferService: DataTransferService) { }
 
   ngOnInit() {
+    this.dataTransferService.bookChapters.subscribe(chapters => {
+      this.chapters = chapters;
+      console.log(this.chapters);
+    });
   }
 
   showMenu() {
-    this.menuService.toggleMenu(true);
+    this.dataTransferService.toggleMenu(true);
     return false;
   }
 
   closeMenu() {
-    this.menuService.toggleMenu(false);
+    this.dataTransferService.toggleMenu(false);
     return true;
   }
 
+  getFirstChapter(chapters: Chapter[]) {
+    return chapters.find(chapter => chapter.chapterNumber === 1).chapterTitle;
+  }
 }
