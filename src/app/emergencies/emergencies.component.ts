@@ -12,12 +12,19 @@ export class EmergenciesComponent implements OnInit {
   private CURRENT_CHAPTER = 1;
 
   chapters: Chapter[];
+  chapter: Chapter;
 
   constructor(private dataTransferService: DataTransferService) {
   }
 
   ngOnInit() {
-    this.dataTransferService.bookChapters.subscribe(chapters => this.chapters = chapters);
+    this.dataTransferService.bookChapters.subscribe(chapters => {
+      if (chapters) {
+        this.chapters = chapters;
+        this.chapter = chapters.find(c => c.chapterNumber === this.CURRENT_CHAPTER);
+        console.log(this.chapter);
+      }
+    });
   }
 
   showMenu() {

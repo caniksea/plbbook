@@ -3308,8 +3308,10 @@ figcaption {
   padding-right: 0px;
   font-family: 'Graphik web', sans-serif;
   font-size: 25px;
-  line-height: 1.4em;
+  /*line-height: 1.4em;*/
+  line-height: 1.6em;
   font-weight: 400;
+  text-align: justify;
 }
 
 .lede.chapterlede {
@@ -4663,6 +4665,14 @@ hr {
   .heading-2 {
     font-size: 25px;
   }
+
+  /* Custom addition starts here*/
+  div.lede > p > strong > em {
+    text-transform: uppercase !important;
+    font-size: 18px;
+  }
+
+  /* Custom addition ends here*/
 }
 
 @font-face {
