@@ -19,7 +19,7 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
     this.chapters = [];
     this.dataTransferService.showMenu.subscribe(showMenu => this.showMenu = showMenu);
-    this.getChapters('8a0456ae8c9080b720ef99ebabf7669c');
+    this.getChapters('5dd6ad2b89b794b917294ba420c83474');
   }
 
   closeMenu() {

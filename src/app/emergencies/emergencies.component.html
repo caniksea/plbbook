@@ -41,23 +41,25 @@
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
         <!--<div class="chapterpage-header">The Precious Little Black Book</div>-->
-        <div class="chapterpage-header chaptertext">Emergencies</div>
+        <div class="chapterpage-header chaptertext">{{chapter?.chapterTitle}}</div>
+        <!--<div class="chapterpage-header chaptertext">Emergencies</div>-->
       </div>
-      <div class="lede lede-emergencies">Medical emergency situations pose an immediate risk to a person's
-        life and can happen anytime: at home, in the middle of the road, or
-        in the workplace.
+      <div class="lede w-richtext" [innerHTML]="chapter?.story">
+        <!--Medical emergency situations pose an immediate risk to a person's-->
+        <!--life and can happen anytime: at home, in the middle of the road, or-->
+        <!--in the workplace.-->
       </div>
       <div class="chaptercontent w-richtext">
-        <p>Many fatalities could be prevented if attended to in good time.
-          Ordinary people, and especially women, are often the first respondents
-          in medical emergencies. Unfortunately, people can be hesitant to get
-          involved because they are not sure of what to do. It is important that we
-          all have some knowledge of how to manage emergency situations.
-        </p>
+        <!--<p>Many fatalities could be prevented if attended to in good time.-->
+          <!--Ordinary people, and especially women, are often the first respondents-->
+          <!--in medical emergencies. Unfortunately, people can be hesitant to get-->
+          <!--involved because they are not sure of what to do. It is important that we-->
+          <!--all have some knowledge of how to manage emergency situations.-->
+        <!--</p>-->
 
-        <p>The most important thing to remember in an emergency is that every
-          second counts. Try to stay calm and act as quickly as you can.
-        </p>
+        <!--<p>The most important thing to remember in an emergency is that every-->
+          <!--second counts. Try to stay calm and act as quickly as you can.-->
+        <!--</p>-->
 
         <div class="section-header">What to do in an emergency</div>
         <ul>
