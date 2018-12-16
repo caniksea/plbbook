@@ -254,7 +254,8 @@ body {
 img {
   max-width: 100%;
   vertical-align: middle;
-  display: inline-block
+  display: inline-block;
+  margin: 12px;
 }
 
 html.w-mod-touch * {
@@ -3425,6 +3426,22 @@ figcaption {
   color: #B00342;
 }
 
+table th {
+  text-align: left;
+  background-color: #B00342;
+  color: white;
+}
+
+table tr {
+  background-color: #ffdde9;
+}
+
+table td, table th {
+  border: none;
+  padding: 10px;
+  text-align: justify;
+}
+
 #pink-table th {
   text-align: left;
   background-color: #B00342;
@@ -4092,6 +4109,12 @@ hr {
   margin-bottom: 10px;
 }
 
+.subsection-header {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 @media (max-width: 991px) {
   .navlink.internal {
     padding-right: 0px;
@@ -4666,13 +4689,23 @@ hr {
     font-size: 25px;
   }
 
-  /* Custom addition starts here*/
+
+  /* ==========================================================================
+     Start of custom BOOKAPI CSS starts here
+     ========================================================================== */
   div.lede > p > strong > em {
     text-transform: uppercase !important;
     font-size: 18px;
   }
 
-  /* Custom addition ends here*/
+  .subsection-title {
+    font-weight: bold;
+  }
+
+
+  /* ==========================================================================
+     Start of custom BOOKAPI CSS ends here
+     ========================================================================== */
 }
 
 @font-face {

@@ -28,91 +28,99 @@
   </div>
   <div class="rightside">
     <div class="rightnavigation center w-clearfix">
-      <a href="#/plbbook/health" class="bottomnav-links w-inline-block" (click)="closeMenu()">
+      <a *ngIf="previousChapter" href="#{{previousChapter?.chapterLink}}" class="bottomnav-links w-inline-block" (click)="closeMenu()">
         <div class="previous-next">Previous Chapter</div>
-        <div class="bottomnav-chapter">Health</div>
+        <div class="bottomnav-chapter">{{previousChapter?.chapterTitle}}</div>
       </a>
-      <a href="#/plbbook/higher-education-training" class="bottomnav-links cc-center w-inline-block"
+      <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-center w-inline-block"
          (click)="closeMenu()">
         <div class="previous-next">Next Chapter</div>
-        <div class="bottomnav-chapter">Higher Education and Training</div>
+        <div class="bottomnav-chapter">{{nextChapter?.chapterTitle}}</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <!--<div class="chapterpage-header">The Precious Little Black Book</div>-->
-        <div class="chapterpage-header chaptertext">Family</div>
+        <div class="chapterpage-header chaptertext">{{chapter?.chapterTitle}}</div>
       </div>
-      <div class="lede lede-emergencies">
-        In a world of turmoil and uncertainty, it is more important than ever to make our families the centre of our
-        lives and the top of our priorities.
+      <div class="lede w-richtext" [innerHTML]="chapter?.story"></div>
+      <div class="chaptercontent w-richtext" *ngIf="extendedSections">
+        <div *ngFor="let section of extendedSections">
+          <div class="section-header" [innerHTML]="section?.sectionTitle"></div>
+          <div [innerHTML]="section?.story"></div>
+          <div *ngIf="section.subsections">
+            <div *ngFor="let subsection of section.subsections">
+              <div class="subsection-header" [innerHTML]="subsection?.subsectionTitle"></div>
+              <div [innerHTML]="subsection?.story"></div>
+              <br>
+            </div>
+          </div>
+          <br>
+        </div>
       </div>
-      <div class="chaptercontent w-richtext">
-        <p>
-          Our children are the hope for the future. But looking after a family can be very challenging. Many women are
-          single parents with difficult work circumstances, some have no jobs and rely on maintenance and grants, and
-          others are living in disadvantaged situations of abuse and hardship.
-        </p>
+      <!--<div class="chaptercontent w-richtext">-->
+        <!--<p>-->
+          <!--Our children are the hope for the future. But looking after a family can be very challenging. Many women are-->
+          <!--single parents with difficult work circumstances, some have no jobs and rely on maintenance and grants, and-->
+          <!--others are living in disadvantaged situations of abuse and hardship.-->
+        <!--</p>-->
 
-        <p>
-          When looking after your children, remember that it is also important to
-          look after yourself too.
-        </p>
-        <br>
+        <!--<p>-->
+          <!--When looking after your children, remember that it is also important to-->
+          <!--look after yourself too.-->
+        <!--</p>-->
+        <!--<br>-->
 
-        <div class="section-header">Parenting</div>
-        <p>
-          Parents (including other caregivers) have a huge responsibility in taking care of children
-          and laying a solid foundation for them to grow into adulthood. The role of parenting
-          requires a lot of time, effort and resources, and may also mean less time for yourself,
-          friends and relationships, but it is key to maintain balance. Taking care of your own
-          wellbeing will mean you have more energy for interacting with your children.
-        </p>
+        <!--<div class="section-header">Parenting</div>-->
+        <!--<p>-->
+          <!--Parents (including other caregivers) have a huge responsibility in taking care of children-->
+          <!--and laying a solid foundation for them to grow into adulthood. The role of parenting-->
+          <!--requires a lot of time, effort and resources, and may also mean less time for yourself,-->
+          <!--friends and relationships, but it is key to maintain balance. Taking care of your own-->
+          <!--wellbeing will mean you have more energy for interacting with your children.-->
+        <!--</p>-->
 
-        <p>Remember:</p>
-        <ul>
-          <li>There’s no such thing as a perfect parent or a perfect child.</li>
-          <li>As the old saying goes, ‘It takes a village to raise a child.’ Ask for help from
-            grandparents, sisters and brothers, friends, teachers and the community. People
-            usually will gladly assist.
-          </li>
-          <li>You don’t have to know all the answers. It is fine to say you don’t know.</li>
-          <li>Take time to care for yourself and to manage your relationships.</li>
-        </ul>
+        <!--<p>Remember:</p>-->
+        <!--<ul>-->
+          <!--<li>There’s no such thing as a perfect parent or a perfect child.</li>-->
+          <!--<li>As the old saying goes, ‘It takes a village to raise a child.’ Ask for help from-->
+            <!--grandparents, sisters and brothers, friends, teachers and the community. People-->
+            <!--usually will gladly assist.-->
+          <!--</li>-->
+          <!--<li>You don’t have to know all the answers. It is fine to say you don’t know.</li>-->
+          <!--<li>Take time to care for yourself and to manage your relationships.</li>-->
+        <!--</ul>-->
 
-        <p>Parents’ responsibilities are to:</p>
-        <ul>
-          <li>Ensure the child is safe and healthy.</li>
-          <li>Provide day-to-day care of the child until 18 years old or can support themselves.</li>
-          <li>Make sure the child attends school.</li>
-          <li>Maintain regular contact with the child.</li>
-          <li>Act as a guardian of the child.</li>
-          <li>Contribute to the cost of maintaining the child, including food, clothing and school fees.</li>
-        </ul>
+        <!--<p>Parents’ responsibilities are to:</p>-->
+        <!--<ul>-->
+          <!--<li>Ensure the child is safe and healthy.</li>-->
+          <!--<li>Provide day-to-day care of the child until 18 years old or can support themselves.</li>-->
+          <!--<li>Make sure the child attends school.</li>-->
+          <!--<li>Maintain regular contact with the child.</li>-->
+          <!--<li>Act as a guardian of the child.</li>-->
+          <!--<li>Contribute to the cost of maintaining the child, including food, clothing and school fees.</li>-->
+        <!--</ul>-->
 
-        <p><strong>FINDING WORK-LIFE BALANCE</strong></p>
-        <ul>
-          <li>Most women, especially single mothers, have a challenge balancing work and family.</li>
-          <li>Society’s expectations mean that most parenting roles are carried out by women.
-            Some women decide to leave work to raise their children as a result.
-          </li>
-          <li>As we work towards equality for men and women, most women still have to negotiate
-            with their partners to share the responsibilities of childcare and/or household chores.
-          </li>
-          <li>Taking maternity leave (dads should also take paternity leave).</li>
-          <li>Working part-time or fl exi hours.</li>
-          <li>Employing home help or childminders.</li>
-          <li>Taking their children to day care centres.</li>
-        </ul>
-
-
-      </div>
+        <!--<p><strong>FINDING WORK-LIFE BALANCE</strong></p>-->
+        <!--<ul>-->
+          <!--<li>Most women, especially single mothers, have a challenge balancing work and family.</li>-->
+          <!--<li>Society’s expectations mean that most parenting roles are carried out by women.-->
+            <!--Some women decide to leave work to raise their children as a result.-->
+          <!--</li>-->
+          <!--<li>As we work towards equality for men and women, most women still have to negotiate-->
+            <!--with their partners to share the responsibilities of childcare and/or household chores.-->
+          <!--</li>-->
+          <!--<li>Taking maternity leave (dads should also take paternity leave).</li>-->
+          <!--<li>Working part-time or fl exi hours.</li>-->
+          <!--<li>Employing home help or childminders.</li>-->
+          <!--<li>Taking their children to day care centres.</li>-->
+        <!--</ul>-->
+      <!--</div>-->
     </div>
 
-    <a href="#/plbbook/higher-education-and-training" class="bottomnav-links cc-bottom w-inline-block">
+    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">
       <div class="previous-next">Next Chapter</div>
-      <div class="bottomnav-chapter">Higher Education and Training</div>
+      <div class="bottomnav-chapter">{{nextChapter?.chapterTitle}}</div>
     </a>
   </div>
 </div>
