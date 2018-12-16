@@ -28,73 +28,82 @@
   </div>
   <div class="rightside">
     <div class="rightnavigation center w-clearfix">
-      <a href="#/plbbook/family" class="bottomnav-links w-inline-block" (click)="closeMenu()" >
+      <a *ngIf="previousChapter" href="#{{previousChapter?.chapterLink}}" class="bottomnav-links w-inline-block" (click)="closeMenu()" >
         <div class="previous-next">Previous Chapter</div>
-        <div class="bottomnav-chapter">Family</div>
+        <div class="bottomnav-chapter">{{previousChapter?.chapterTitle}}</div>
       </a>
-      <a href="#/plbbook/women-in-the-workplace" (click)="closeMenu()"
+      <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" (click)="closeMenu()"
          class="bottomnav-links cc-center w-inline-block">
         <div class="previous-next">Next Chapter</div>
-        <div class="bottomnav-chapter">Women in the workplace</div>
+        <div class="bottomnav-chapter">{{nextChapter?.chapterTitle}}</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <!--<div class="chapterpage-header">The Precious Little Black Book</div>-->
-        <div class="chapterpage-header chaptertext">Higher Education and Training</div>
+        <div class="chapterpage-header chaptertext">{{chapter?.chapterTitle}}</div>
       </div>
-      <div class="lede lede-emergencies">
-        In current challenging times, a good job can be difficult to find and keep. This is why it's so important
-        to have a good education
+      <div class="lede w-richtext" [innerHTML]="chapter?.story"></div>
+      <div class="chaptercontent w-richtext" *ngIf="extendedSections">
+        <div *ngFor="let section of extendedSections">
+          <div class="section-header" [innerHTML]="section?.sectionTitle"></div>
+          <div [innerHTML]="section?.story"></div>
+          <div *ngIf="section.subsections">
+            <div *ngFor="let subsection of section.subsections">
+              <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
+              <div [innerHTML]="subsection.story"></div>
+              <br>
+            </div>
+          </div>
+          <br>
+        </div>
       </div>
-      <div class="chaptercontent w-richtext">
-        <p>
-          The Department of Higher Education and Training is responsible for tertiary education up to doctorate level,
-          technical and vocational training, as well as adult basic education and training.
-        </p>
-        <p>
-          The best investment you can make for yourself, or your child, is some
-          kind of post-school education and/or training.
-        </p>
-        <br>
+      <!--<div class="chaptercontent w-richtext">-->
+        <!--<p>-->
+          <!--The Department of Higher Education and Training is responsible for tertiary education up to doctorate level,-->
+          <!--technical and vocational training, as well as adult basic education and training.-->
+        <!--</p>-->
+        <!--<p>-->
+          <!--The best investment you can make for yourself, or your child, is some-->
+          <!--kind of post-school education and/or training.-->
+        <!--</p>-->
+        <!--<br>-->
 
-        <div class="section-header">Technical Vocational Education and Training (TVET)</div>
-        <p>
-          TVET Colleges offer vocational, occupational and artisan education and training. This
-          means that studies prepare students for the world of work (usually for a specific
-          occupation), giving people essential skills for the workplace.
-        </p>
-        <p>
-          Even if you only completed Grade 9, you can apply to a TVET College. This option is
-          ideal for responsible older adolescents and adults who are serious about getting skills
-          to find employment.
-        </p>
+        <!--<div class="section-header">Technical Vocational Education and Training (TVET)</div>-->
+        <!--<p>-->
+          <!--TVET Colleges offer vocational, occupational and artisan education and training. This-->
+          <!--means that studies prepare students for the world of work (usually for a specific-->
+          <!--occupation), giving people essential skills for the workplace.-->
+        <!--</p>-->
+        <!--<p>-->
+          <!--Even if you only completed Grade 9, you can apply to a TVET College. This option is-->
+          <!--ideal for responsible older adolescents and adults who are serious about getting skills-->
+          <!--to find employment.-->
+        <!--</p>-->
 
-        <p>
-          TVET Colleges offer certificate and diploma qualifications, and a wide range of courses
-          are offered. Categories of courses include:
-        </p>
+        <!--<p>-->
+          <!--TVET Colleges offer certificate and diploma qualifications, and a wide range of courses-->
+          <!--are offered. Categories of courses include:-->
+        <!--</p>-->
 
-        <ul>
-          <li>Agriculture.</li>
-          <li>Arts and culture.</li>
-          <li>Business.</li>
-          <li>Commerce and management.</li>
-          <li>Education.</li>
-          <li>Training and development.</li>
-          <li>Engineering.</li>
-          <li>Manufacturing and technology.</li>
-          <li>Services.</li>
-          <li>Building contruction and security.</li>
-        </ul>
-
-      </div>
+        <!--<ul>-->
+          <!--<li>Agriculture.</li>-->
+          <!--<li>Arts and culture.</li>-->
+          <!--<li>Business.</li>-->
+          <!--<li>Commerce and management.</li>-->
+          <!--<li>Education.</li>-->
+          <!--<li>Training and development.</li>-->
+          <!--<li>Engineering.</li>-->
+          <!--<li>Manufacturing and technology.</li>-->
+          <!--<li>Services.</li>-->
+          <!--<li>Building contruction and security.</li>-->
+        <!--</ul>-->
+      <!--</div>-->
     </div>
 
-    <a href="#/plbbook/women-in-the-workplace" class="bottomnav-links cc-bottom w-inline-block">
+    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">
       <div class="previous-next">Next Chapter</div>
-      <div class="bottomnav-chapter">Women in the workplace</div>
+      <div class="bottomnav-chapter">{{nextChapter?.chapterTitle}}</div>
     </a>
   </div>
 </div>
