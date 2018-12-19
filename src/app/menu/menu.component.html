@@ -8,7 +8,7 @@
         <div *ngFor="let chapter of chapters" class="sidechapter-wrap w-dyn-item">
           <a data-ix="side-chapter-link" href="#{{chapter.chapterLink}}" (click)="closeMenu()"
              class="sidechapter-link w-inline-block">
-            <div><img class="sidethumb" src="../../assets/img/{{getChapterImage(chapter.chapterNumber)}}"></div>
+            <div><img class="sidethumb" src="assets/img/{{getChapterImage(chapter.chapterNumber)}}"></div>
             <div>
               <div class="sidechapter-text">Chapter</div>
               <div class="sidechapter-text">{{chapter.chapterNumber}}</div>
