@@ -3492,6 +3492,11 @@ hr {
   float: left;
 }
 
+.sidechapter-wrap:hover {
+  background-color: #f0cccd;
+  /*color: #fff;*/
+}
+
 .sidethumb {
   width: 110px;
   height: 80px;
@@ -3513,7 +3518,10 @@ hr {
 }
 
 .sidechapter-link:hover {
-  color: #637179;
+  /*color: #637179;*/
+  /*background-color: #B00342;*/
+  /*color: #fff;*/
+  /*color: #b92159;*/
 }
 
 .sidecontent-wrap {
@@ -3704,6 +3712,18 @@ hr {
   margin-left: auto;
 }
 
+.next-arrow {
+  height: 1.5em;
+  margin: 0;
+  padding-left: 1em;
+}
+
+.previous-arrow {
+  height: 1.5em;
+  margin: 0;
+  padding-right: 1em;
+}
+
 .previous-next {
   margin-bottom: 5px;
   font-family: 'Graphik web', sans-serif;
@@ -3713,6 +3733,11 @@ hr {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  /*background-image: url("src/assets/img/right_arrow.png");*/
+  /*background-size: 16px;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 100% 90%;*/
+  /*padding-right: 5%;*/
 }
 
 .bottomnav-chapter {
@@ -3761,18 +3786,31 @@ hr {
 }
 
 .allchapters {
+  padding-top: 1px;
+  padding-bottom: 0px;
+  padding-left: 22px;
+  background-color: hsla(0, 0%, 100%, 0);
+  background-image: url("https://uploads-ssl.webflow.com/56c60feb4d4f81a50633a1b0/56c613c4654258a0060d79db_1455843312_BT_menu.svg");
+  background-position: 0px 50%;
+  background-size: 15px;
+  color: #fff;
+}
+
+.allchapters {
   display: block;
   margin-left: 10px;
   padding: 9px 9px 9px 38px;
-  background-color: #fff;
-  background-image: url("https://uploads-ssl.webflow.com/56c60feb4d4f81a50633a1b0/56c63ab3c7a3965c446a13d7_menu-dark.svg");
+  /*background-color: #fff;*/
+  background-color: #fbed24;
+  background-image: url("src/assets/img/images.png");
+  /*background-image: url("https://uploads-ssl.webflow.com/56c60feb4d4f81a50633a1b0/56c63ab3c7a3965c446a13d7_menu-dark.svg");*/
   background-position: 15px 50%;
   background-size: 16px;
   background-repeat: no-repeat;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
   font-family: 'Graphik web', sans-serif;
   color: #41474d;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .allchapters:hover {
@@ -4444,17 +4482,6 @@ hr {
     display: block;
     padding-right: 0px;
     padding-left: 0px;
-  }
-
-  .allchapters {
-    padding-top: 1px;
-    padding-bottom: 0px;
-    padding-left: 22px;
-    background-color: hsla(0, 0%, 100%, 0);
-    background-image: url("https://uploads-ssl.webflow.com/56c60feb4d4f81a50633a1b0/56c613c4654258a0060d79db_1455843312_BT_menu.svg");
-    background-position: 0px 50%;
-    background-size: 15px;
-    color: #fff;
   }
 
   .allchapters:hover {
