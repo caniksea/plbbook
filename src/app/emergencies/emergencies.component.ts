@@ -6,7 +6,6 @@ import {BookService} from '../../shared/services/book.service';
 import {SubSection} from '../../shared/domains/sub-section';
 import {ExtendedSection} from '../../shared/domains/extended-section';
 import {DomSanitizer} from '@angular/platform-browser';
-import {st} from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-emergencies',
