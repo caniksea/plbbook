@@ -86,8 +86,16 @@ export class EmergenciesComponent implements OnInit, OnChanges {
   }
 
   processDisplay(story: string) {
-    story = story.replace(/<oembed url=/g, '<iframe width="580" height="380" src=');
-    story = story.replace(/<\/oembed>/g, '<\/iframe>');
+    const startSearchValue = /<figure class="media"><oembed url=/g;
+    const replaceValue = '<div class="video-container"><iframe width="600" height="480" src=';
+    const endReplaceValue = '</iframe></div>';
+    const endSearchValue = /<\/oembed><\/figure>/g
+    const backupEndReplace = '<\/iframe>';
+    const backupReplace = '<iframe width="580" height="380" src=';
+    // story = story.replace(/<oembed url=/g, replaceValue);
+    story = story.replace(startSearchValue, replaceValue);
+    // story = story.replace(/<\/oembed>/g, endReplaceValue);
+    story = story.replace(endSearchValue, endReplaceValue);
     return this.sanitizer.bypassSecurityTrustHtml(story);
   }
 }
