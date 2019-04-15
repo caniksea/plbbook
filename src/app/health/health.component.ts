@@ -4,6 +4,7 @@ import {Chapter} from '../../shared/domains/chapter';
 import {Section} from '../../shared/domains/section';
 import {ExtendedSection} from '../../shared/domains/extended-section';
 import {BookService} from '../../shared/services/book.service';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-health',
@@ -22,7 +23,7 @@ export class HealthComponent implements OnInit {
   extendedSections: ExtendedSection[];
 
   constructor(private dataTransferService: DataTransferService,
-              private bookService: BookService) {
+              private bookService: BookService, private sanitizer: DomSanitizer) {
   }
 
   ngOnInit() {
@@ -74,6 +75,12 @@ export class HealthComponent implements OnInit {
         this.extendedSections.push(ges);
       }
     });
+  }
+
+  processDisplay(story: string) {
+    story = story.replace(/<oembed url=/g, '<iframe width="580" height="380" src=');
+    story = story.replace(/<\/oembed>/g, '<\/iframe>');
+    return this.sanitizer.bypassSecurityTrustHtml(story);
   }
 
 }

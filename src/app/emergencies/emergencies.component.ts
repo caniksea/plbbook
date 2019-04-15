@@ -5,6 +5,7 @@ import {Section} from '../../shared/domains/section';
 import {BookService} from '../../shared/services/book.service';
 import {SubSection} from '../../shared/domains/sub-section';
 import {ExtendedSection} from '../../shared/domains/extended-section';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-emergencies',
@@ -21,12 +22,14 @@ export class EmergenciesComponent implements OnInit, OnChanges {
   nextChapter: Chapter;
   sections: Section[];
   extendedSections: ExtendedSection[];
+  // sani: DomSanitizer
 
   constructor(private dataTransferService: DataTransferService,
-              private bookService: BookService) {
+              private bookService: BookService, private sanitizer: DomSanitizer) {
   }
 
   ngOnInit() {
+    // this.sani = this.sanitizer;
     this.dataTransferService.bookChapters.subscribe(chapters => {
       if (chapters) {
         this.chapters = chapters;
@@ -80,5 +83,11 @@ export class EmergenciesComponent implements OnInit, OnChanges {
 
   ngOnChanges(): void {
     console.log('Fetching subsections...');
+  }
+
+  processDisplay(story: string) {
+    story = story.replace(/<oembed url=/g, '<iframe width="580" height="380" src=');
+    story = story.replace(/<\/oembed>/g, '<\/iframe>');
+    return this.sanitizer.bypassSecurityTrustHtml(story);
   }
 }
