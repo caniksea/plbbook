@@ -1,0 +1,81 @@
+<app-menu></app-menu>
+<div class="fullscreen">
+  <div style="background-image:url()" class="leftside">
+    <div class="titlewrapper">
+      <div class="leftnavigation">
+        <div>
+          <a href="http://motsepefoundation.org/" target="_blank" class="logoblock w-inline-block">
+            <img src="assets/img/Motsepe-Foundation.png" alt="" class="logo"/></a>
+          <!--<a href="/" class="sitetitle">Ebooks</a>-->
+        </div>
+      </div>
+      <div class="leftnavigation bottom">
+        <div class="w-row">
+          <div
+            class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+          <div class="buttoncol w-col w-col-4 w-col-stack">
+            <a href="#" (click)="showMenu()" data-ix="view-chapters" class="allchapters">View Chapters</a>
+          </div>
+          <div
+            class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+        </div>
+      </div>
+      <div class="titleblock">
+        <a href="#" (click)="showMenu()" ><img src="assets/img/Logo_BlackBook.jpg"></a>
+      </div>
+    </div>
+    <div class="leftoverlay"></div>
+  </div>
+  <div class="rightside">
+    <div class="rightnavigation center w-clearfix">
+      <a href="#/plbbook/copyright" class="bottomnav-links w-inline-block" (click)="closeMenu()">
+        <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous</div>
+        <div class="bottomnav-chapter">Copyright</div>
+      </a>
+      <a href="#/plbbook/acknowledgements" class="bottomnav-links cc-center w-inline-block"
+         (click)="closeMenu()">
+        <div class="previous-next">Next<img class="next-arrow" src="assets/img/right_arrow.png"></div>
+        <div class="bottomnav-chapter">Acknowledgements</div>
+      </a>
+    </div>
+    <div class="maincontent-wrap">
+      <div class="chapterpage-head">
+        <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
+        <div class="chapterpage-header chaptertext">How To Use This Book</div>
+      </div>
+      <div class="lede w-richtext">
+        <p><em>The Precious Little Black Book</em> provides South African women with information about
+        their rights, health, education and economic empowerment, as well as know-how about
+        social and legal issues. We believe every woman has the ‘right to know’ and that this
+          book will therefore become precious to them.</p>
+        <p>Each section has been indexed to help you choose the correct section, and each
+        chapter ends with contact details which you can use for additional information or
+          support services.</p>
+        <p>No single book can cover every situation or answer every question, but this one should
+          provide you with the practical tools to achieve a better quality of life.</p>
+        <p><em><strong>Remember that this book is only a guide. If you have more serious issues or
+        need more help, use the information in this book to find organisations to help
+          you, or get help from a registered practitioner or reputable organisation.</strong></em></p>
+      </div>
+<!--      <div class="chaptercontent w-richtext" *ngIf="extendedSections">-->
+<!--        <div *ngFor="let section of extendedSections">-->
+<!--          <div class="section-header" [innerHTML]="section?.sectionTitle"></div>-->
+<!--          <div [innerHTML]="section?.story"></div>-->
+<!--          <div *ngIf="section.subsections">-->
+<!--            <div *ngFor="let subsection of section.subsections">-->
+<!--              <div class="subsection-header" [innerHTML]="subsection?.subsectionTitle"></div>-->
+<!--              <div [innerHTML]="subsection?.story"></div>-->
+<!--              <br>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <br>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+
+    <a href="#/plbbook/acknowledgements" class="bottomnav-links cc-bottom w-inline-block">
+      <div class="previous-next">Next</div>
+      <div class="bottomnav-chapter">Acknowledgements</div>
+    </a>
+  </div>
+</div>

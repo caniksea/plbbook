@@ -15,6 +15,11 @@ import {WomenInTheWorkplaceModule} from './women-in-the-workplace/women-in-the-w
 import {FinanceAndBankingModule} from './finance-and-banking/finance-and-banking.module';
 import {KnowYourRightsModule} from './know-your-rights/know-your-rights.module';
 import {UsefulContactsModule} from './useful-contacts/useful-contacts.module';
+import {CopyrightModule} from './copyright/copyright.module';
+import {HowToUseModule} from './how-to-use/how-to-use.module';
+import {AcknowledgementsModule} from './acknowledgements/acknowledgements.module';
+import {ForewordModule} from './foreword/foreword.module';
+import {PrefaceModule} from './preface/preface.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import {UsefulContactsModule} from './useful-contacts/useful-contacts.module';
     WomenInTheWorkplaceModule,
     FinanceAndBankingModule,
     KnowYourRightsModule,
-    UsefulContactsModule
+    UsefulContactsModule,
+    CopyrightModule,
+    HowToUseModule,
+    AcknowledgementsModule,
+    ForewordModule,
+    PrefaceModule,
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'},

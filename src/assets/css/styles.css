@@ -2626,6 +2626,30 @@ figcaption {
   text-transform: uppercase;
 }
 
+.sidechapter-text {
+  margin-top: 0px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.sidechapter-text {
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.sidechapter-text-before-book {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-family: 'Graphik web', sans-serif;
+  color: #343d42 !important;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .closex {
   display: inline-block;
   margin-bottom: 15px;
@@ -4315,12 +4339,6 @@ hr {
     line-height: 18px;
   }
 
-  .sidechapter-text {
-    margin-top: 0px;
-    font-size: 12px;
-    line-height: 12px;
-  }
-
   .navmenu {
     background-color: #323b40;
   }
@@ -4560,11 +4578,6 @@ hr {
     font-family: 'Avenir Next';
     font-size: 14px;
     font-weight: 500;
-  }
-
-  .sidechapter-text {
-    font-size: 11px;
-    line-height: 11px;
   }
 
   .navmenu {
