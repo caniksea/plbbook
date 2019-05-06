@@ -9,12 +9,22 @@ import {WomenInTheWorkplaceComponent} from './women-in-the-workplace/women-in-th
 import {FinanceAndBankingComponent} from './finance-and-banking/finance-and-banking.component';
 import {KnowYourRightsComponent} from './know-your-rights/know-your-rights.component';
 import {UsefulContactsComponent} from './useful-contacts/useful-contacts.component';
+import {CopyrightComponent} from './copyright/copyright.component';
+import {HowToUseComponent} from './how-to-use/how-to-use.component';
+import {AcknowledgementsComponent} from './acknowledgements/acknowledgements.component';
+import {ForewordComponent} from './foreword/foreword.component';
+import {PrefaceComponent} from './preface/preface.component';
 
 const routes: Routes = [
   {
     path: 'plbbook',
     component: PlbbookComponent
   },
+  {path: 'plbbook/copyright', component: CopyrightComponent},
+  {path: 'plbbook/how-to-use', component: HowToUseComponent},
+  {path: 'plbbook/acknowledgements', component: AcknowledgementsComponent},
+  {path: 'plbbook/foreword', component: ForewordComponent},
+  {path: 'plbbook/preface', component: PrefaceComponent},
   {path: 'plbbook/emergencies', component: EmergenciesComponent},
   {path: 'plbbook/health', component: HealthComponent},
   {path: 'plbbook/family', component: FamilyComponent},

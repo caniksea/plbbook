@@ -1,6 +1,58 @@
 <div class="chapterslider" [ngClass]="showMenu ? 'visible-menu': 'invisible-menu'">
   <a href="#" (click)="closeMenu()" data-ix="close-view-chapters" class="close-x">X</a>
   <div class="sidecontent-wrap">
+    <div class="w-dyn-list">
+      <div class="w-clearfix w-dyn-items">
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/copyright" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+<!--            <div><img class="sidethumb" src="assets/img/{{getChapterImage(chapter.chapterNumber)}}"></div>-->
+            <div>
+              <div class="sidechapter-text-before-book">Copyright</div>
+<!--              <div class="sidechapter-text">{{chapter.chapterNumber}}</div>-->
+            </div>
+            <div class="sidechapter-title before-book"></div>
+          </a>
+        </div>
+
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/how-to-use" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div>
+              <div class="sidechapter-text-before-book">How to use this book</div>
+            </div>
+<!--            <div class="sidechapter-title before-book"></div>-->
+          </a>
+        </div>
+
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/acknowledgements" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div>
+              <div class="sidechapter-text-before-book">Acknowledgements</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/foreword" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div>
+              <div class="sidechapter-text-before-book">Foreword</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/preface" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div>
+              <div class="sidechapter-text-before-book">Preface: Why Publish A Resource Guide for Women</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
     <h3>Chapters</h3>
     <div class="w-dyn-list">
       <div class="w-clearfix w-dyn-items">
