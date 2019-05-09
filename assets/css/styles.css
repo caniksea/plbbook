@@ -2639,15 +2639,16 @@ figcaption {
 
 .sidechapter-text-before-book {
   display: inline-block;
-  margin-top: 10px;
-  margin-right: 5px;
-  margin-bottom: 10px;
+  /*margin-top: 10px;*/
+  /*margin-right: 5px;*/
+  /*margin-bottom: 10px;*/
   font-family: 'Graphik web', sans-serif;
   color: #343d42 !important;
   font-size: 11px;
   line-height: 14px;
   font-weight: 800;
   text-transform: uppercase;
+  padding: 0 10px;
 }
 
 .closex {
@@ -3619,7 +3620,8 @@ hr {
   float: none;
   font-family: 'Graphik web', sans-serif;
   color: #B00342;
-  font-size: 10px;
+  /*font-size: 10px;*/
+  font-size: 12px;
   line-height: 10px;
   font-weight: 500;
   letter-spacing: 0.5px;
