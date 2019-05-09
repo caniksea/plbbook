@@ -12,7 +12,7 @@ import {BookService} from '../../shared/services/book.service';
 })
 export class UsefulContactsComponent implements OnInit {
 
-  private CURRENT_CHAPTER = 8;
+  CURRENT_CHAPTER = 8;
 
   chapters: Chapter[];
   chapter: Chapter;

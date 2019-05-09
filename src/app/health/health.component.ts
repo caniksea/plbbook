@@ -13,7 +13,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class HealthComponent implements OnInit {
 
-  private CURRENT_CHAPTER = 2;
+  CURRENT_CHAPTER = 2;
 
   chapters: Chapter[];
   chapter: Chapter;

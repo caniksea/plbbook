@@ -12,7 +12,7 @@ import {BookService} from '../../shared/services/book.service';
 })
 export class FamilyComponent implements OnInit {
 
-  private CURRENT_CHAPTER = 3;
+  CURRENT_CHAPTER = 3;
 
   chapters: Chapter[];
   chapter: Chapter;

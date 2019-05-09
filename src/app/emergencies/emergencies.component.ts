@@ -14,7 +14,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class EmergenciesComponent implements OnInit, OnChanges {
 
-  private CURRENT_CHAPTER = 1;
+  CURRENT_CHAPTER = 1;
 
   chapters: Chapter[];
   chapter: Chapter;

@@ -12,7 +12,7 @@ import {BookService} from '../../shared/services/book.service';
 })
 export class FinanceAndBankingComponent implements OnInit {
 
-  private CURRENT_CHAPTER = 6;
+  CURRENT_CHAPTER = 6;
 
   chapters: Chapter[];
   chapter: Chapter;
