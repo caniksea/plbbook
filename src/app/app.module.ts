@@ -20,6 +20,8 @@ import {HowToUseModule} from './how-to-use/how-to-use.module';
 import {AcknowledgementsModule} from './acknowledgements/acknowledgements.module';
 import {ForewordModule} from './foreword/foreword.module';
 import {PrefaceModule} from './preface/preface.module';
+import {ReferencesModule} from './references/references.module';
+import {BackCoverModule} from './back-cover/back-cover.module';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import {PrefaceModule} from './preface/preface.module';
     AcknowledgementsModule,
     ForewordModule,
     PrefaceModule,
+    ReferencesModule,
+    BackCoverModule,
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'},

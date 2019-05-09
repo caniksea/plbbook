@@ -6,12 +6,12 @@
         <div class="sidechapter-wrap w-dyn-item">
           <a data-ix="side-chapter-link" href="#plbbook/copyright" (click)="closeMenu()"
              class="sidechapter-link w-inline-block">
-<!--            <div><img class="sidethumb" src="assets/img/{{getChapterImage(chapter.chapterNumber)}}"></div>-->
+            <!--            <div><img class="sidethumb" src="assets/img/{{getChapterImage(chapter.chapterNumber)}}"></div>-->
             <div>
               <div class="sidechapter-text-before-book">Copyright</div>
-<!--              <div class="sidechapter-text">{{chapter.chapterNumber}}</div>-->
+              <!--              <div class="sidechapter-text">{{chapter.chapterNumber}}</div>-->
             </div>
-            <div class="sidechapter-title before-book"></div>
+<!--            <div class="sidechapter-title before-book"></div>-->
           </a>
         </div>
 
@@ -21,7 +21,7 @@
             <div>
               <div class="sidechapter-text-before-book">How to use this book</div>
             </div>
-<!--            <div class="sidechapter-title before-book"></div>-->
+            <!--            <div class="sidechapter-title before-book"></div>-->
           </a>
         </div>
 
@@ -56,7 +56,6 @@
     <h3>Chapters</h3>
     <div class="w-dyn-list">
       <div class="w-clearfix w-dyn-items">
-
         <div *ngFor="let chapter of chapters" class="sidechapter-wrap w-dyn-item">
           <a data-ix="side-chapter-link" href="#{{chapter.chapterLink}}" (click)="closeMenu()"
              class="sidechapter-link w-inline-block">
@@ -68,120 +67,31 @@
             <div class="sidechapter-title">{{chapter.chapterTitle}}</div>
           </a>
         </div>
+        <!-- End of book section -->
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/references" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div>
+              <div class="sidechapter-text-before-book">References</div>
+            </div>
+          </a>
+        </div>
 
-        <!--<div class="sidechapter-wrap w-dyn-item">-->
-          <!--<a data-ix="side-chapter-link" href="#/plbbook/emergencies" (click)="closeMenu()"-->
-             <!--class="sidechapter-link w-inline-block">-->
-            <!--&lt;!&ndash;<div&ndash;&gt;-->
-              <!--&lt;!&ndash;style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/56c620b120f9e0ef31f54905/56c64d71e7d76f195f0e1f5e_Visual%20Design%20Principles.jpg&quot;)"&ndash;&gt;-->
-              <!--&lt;!&ndash;class="sidethumb"></div>&ndash;&gt;-->
-            <!--<div><img class="sidethumb" src="../../assets/img/emergencies/Emergency-Kit.png"></div>-->
-            <!--<div>-->
-              <!--<div class="sidechapter-text">Chapter</div>-->
-              <!--<div class="sidechapter-text">1</div>-->
-            <!--</div>-->
-            <!--<div class="sidechapter-title">EMERGENCIES</div>-->
-          <!--</a>-->
-        <!--</div>-->
-        <!--<div class="sidechapter-wrap w-dyn-item">-->
-          <!--<a data-ix="side-chapter-link" href="#/plbbook/health" (click)="closeMenu()"-->
-             <!--class="sidechapter-link w-inline-block">-->
-            <!--&lt;!&ndash;<div&ndash;&gt;-->
-              <!--&lt;!&ndash;style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/56c620b120f9e0ef31f54905/56c64d7b8c8192f64d41b7d3_Color%20Theory.jpg&quot;)"&ndash;&gt;-->
-              <!--&lt;!&ndash;class="sidethumb"></div>&ndash;&gt;-->
-            <!--<div><img src="../../assets/img/health/Happy-Healthy.png" class="sidethumb"></div>-->
-            <!--<div>-->
-              <!--<div class="sidechapter-text">Chapter</div>-->
-              <!--<div class="sidechapter-text">2</div>-->
-            <!--</div>-->
-            <!--<div class="sidechapter-title">HEALTH</div>-->
-          <!--</a>-->
-        <!--</div>-->
-        <!--<div class="sidechapter-wrap w-dyn-item">-->
-          <!--<a data-ix="side-chapter-link" href="#/plbbook/family" (click)="closeMenu()"-->
-             <!--class="sidechapter-link w-inline-block">-->
-            <!--&lt;!&ndash;<div&ndash;&gt;-->
-            <!--&lt;!&ndash;style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/56c620b120f9e0ef31f54905/56c64d878c8192f64d41b7d9_Web%20Typography.jpg&quot;)"&ndash;&gt;-->
-            <!--&lt;!&ndash;class="sidethumb"></div>&ndash;&gt;-->
-            <!--<div><img src="../../assets/img/family/Happy-Family.png" class="sidethumb"></div>-->
-            <!--<div>-->
-              <!--<div class="sidechapter-text">Chapter</div>-->
-              <!--<div class="sidechapter-text">3</div>-->
-            <!--</div>-->
-            <!--<div class="sidechapter-title">FAMILY</div>-->
-          <!--</a>-->
-        <!--</div>-->
-        <!--<div class="sidechapter-wrap w-dyn-item">-->
-          <!--<a data-ix="side-chapter-link" href="#/plbbook/higher-education-and-training" (click)="closeMenu()"-->
-             <!--class="sidechapter-link w-inline-block">-->
-            <!--&lt;!&ndash;<div&ndash;&gt;-->
-              <!--&lt;!&ndash;style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/56c620b120f9e0ef31f54905/56c64d950034b33270664b96_Element%20Spacing.jpg&quot;)"&ndash;&gt;-->
-              <!--&lt;!&ndash;class="sidethumb"></div>&ndash;&gt;-->
-            <!--<div><img src="../../assets/img/higher_education_training/Female-Education.png" class="sidethumb"></div>-->
-           <!--<div>-->
-             <!--<div class="sidechapter-text">Chapter</div>-->
-             <!--<div class="sidechapter-text">4</div>-->
-           <!--</div>-->
-           <!--<div class="sidechapter-title">HIGHER EDUCATION & TRAINING</div>-->
-         <!--</a>-->
-        <!--</div>-->
-        <!--<div class="sidechapter-wrap w-dyn-item">-->
-           <!--<a data-ix="side-chapter-link" href="#/plbbook/women-in-the-workplace" (click)="closeMenu()"-->
-              <!--class="sidechapter-link w-inline-block">-->
-             <!--&lt;!&ndash;<div&ndash;&gt;-->
-             <!--&lt;!&ndash;style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/56c620b120f9e0ef31f54905/56c64dabe7d76f195f0e1fc3_Desinging%20User%20Interfaces.jpg&quot;)"&ndash;&gt;-->
-           <!--&lt;!&ndash;class="sidethumb"></div>&ndash;&gt;-->
-             <!--<div><img src="../../assets/img/women_in_the_workplace/Women-in-the-workplace.png" class="sidethumb"></div>-->
-           <!--<div>-->
-             <!--<div class="sidechapter-text">Chapter</div>-->
-             <!--<div class="sidechapter-text">5</div>-->
-           <!--</div>-->
-           <!--<div class="sidechapter-title">WOMEN IN THE WORKPLACE</div>-->
-         <!--</a>-->
-        <!--</div>-->
-        <!--<div class="sidechapter-wrap w-dyn-item">-->
-          <!--<a data-ix="side-chapter-link" href="#/plbbook/finance-and-banking" (click)="closeMenu()"-->
-            <!--class="sidechapter-link w-inline-block">-->
-       <!--&lt;!&ndash;<div&ndash;&gt;-->
-         <!--&lt;!&ndash; style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/56c620b120f9e0ef31f54905/56c64dbbc5d3303170c6fb79_Designing%20for%20Mobile.jpg&quot;)"&ndash;&gt;-->
-        <!--&lt;!&ndash;class="sidethumb"></div>&ndash;&gt;-->
-            <!--<div><img src="../../assets/img/finance_banking/Finance.png" class="sidethumb"></div>-->
-           <!--<div>-->
-             <!--<div class="sidechapter-text">Chapter</div>-->
-             <!--<div class="sidechapter-text">6</div>-->
-           <!--</div>-->
-           <!--<div class="sidechapter-title">FINANCE & BANKING</div>-->
-          <!--</a>-->
-        <!--</div>-->
-        <!--<div class="sidechapter-wrap w-dyn-item">-->
-         <!--<a data-ix="side-chapter-link" href="#/plbbook/know-your-rights" (click)="closeMenu()"-->
-            <!--class="sidechapter-link w-inline-block">-->
-           <!--&lt;!&ndash;<div&ndash;&gt;-->
-           <!--&lt;!&ndash; style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/56c620b120f9e0ef31f54905/56c64dc98c8192f64d41b83d_Interaction%20and%20Animations.jpg&quot;)"&ndash;&gt;-->
-            <!--&lt;!&ndash;class="sidethumb"></div>&ndash;&gt;-->
-           <!--<div><img src="../../assets/img/know_your_rights/South-African-Female-Rights-Court.png" class="sidethumb"></div>-->
-           <!--<div>-->
-             <!--<div class="sidechapter-text">Chapter</div>-->
-             <!--<div class="sidechapter-text">7</div>-->
-           <!--</div>-->
-           <!--<div class="sidechapter-title">KNOW YOUR RIGHTS</div>-->
-         <!--</a>-->
-        <!--</div>-->
-        <!--<div class="sidechapter-wrap w-dyn-item">-->
-         <!--<a data-ix="side-chapter-link" href="#/plbbook/useful-contacts" (click)="closeMenu()"-->
-            <!--class="sidechapter-link w-inline-block">-->
-           <!--&lt;!&ndash;<div&ndash;&gt;-->
-             <!--&lt;!&ndash;style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/56c620b120f9e0ef31f54905/56c64dd6e7d76f195f0e1fc6_High%20Performance%20Websites.jpg&quot;)"&ndash;&gt;-->
-             <!--&lt;!&ndash;class="sidethumb"></div>&ndash;&gt;-->
-           <!--<div><img src="../../assets/img/useful_contacts/Useful-Contacts-for-Females.png" class="sidethumb"></div>-->
-           <!--<div>-->
-             <!--<div class="sidechapter-text">Chapter</div>-->
-             <!--<div class="sidechapter-text">8</div>-->
-           <!--</div>-->
-           <!--<div class="sidechapter-title">USEFUL CONTACTS</div>-->
-         <!--</a>-->
-        <!--</div>-->
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/back-cover" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div>
+              <div class="sidechapter-text-before-book">Back Cover</div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
+
+    <!--    <div class="w-dyn-list">-->
+    <!--      <div class="w-clearfix w-dyn-items">-->
+    <!--      </div>-->
+    <!--    </div>-->
   </div>
 </div>
