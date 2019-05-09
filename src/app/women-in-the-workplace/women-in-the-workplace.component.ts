@@ -12,7 +12,7 @@ import {BookService} from '../../shared/services/book.service';
 })
 export class WomenInTheWorkplaceComponent implements OnInit {
 
-  private CURRENT_CHAPTER = 5;
+  CURRENT_CHAPTER = 5;
 
   chapters: Chapter[];
   chapter: Chapter;
