@@ -1,0 +1,74 @@
+<app-menu></app-menu>
+<div class="fullscreen">
+  <div class="leftside" style="background-image:url()">
+    <div class="titlewrapper">
+      <div class="leftnavigation">
+        <div>
+          <a class="logoblock w-inline-block" href="http://motsepefoundation.org/" target="_blank">
+            <img alt="" class="logo" src="assets/img/Motsepe-Foundation.png"/></a>
+          <!--<a href="/" class="sitetitle">Ebooks</a>-->
+        </div>
+      </div>
+      <div class="leftnavigation bottom">
+        <div class="w-row">
+          <div
+            class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+          <div class="buttoncol w-col w-col-4 w-col-stack">
+            <a (click)="showMenu()" class="allchapters" data-ix="view-chapters" href="#">View Chapters</a>
+          </div>
+          <div
+            class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+        </div>
+      </div>
+      <div class="titleblock">
+        <a (click)="showMenu()" href="#"><img src="assets/img/Logo_BlackBook.jpg"></a>
+      </div>
+    </div>
+    <div class="leftoverlay"></div>
+  </div>
+  <div class="rightside">
+    <div class="rightnavigation center w-clearfix">
+      <a (click)="closeMenu()" class="bottomnav-links w-inline-block" href="#/plbbook/references">
+        <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous</div>
+        <div class="bottomnav-chapter">References</div>
+      </a>
+      <a (click)="closeMenu()" class="bottomnav-links cc-center w-inline-block"
+         href="#">
+        <!--              <div class="previous-next">Next<img class="next-arrow" src="assets/img/right_arrow.png"></div>-->
+        <!--              <div class="bottomnav-chapter">Back Cover</div>-->
+      </a>
+    </div>
+    <div class="maincontent-wrap">
+      <div class="chapterpage-head">
+        <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
+        <div class="chapterpage-header chaptertext">Back Cover</div>
+      </div>
+      <div class="lede w-richtext text-centered">
+        <p>A South African gem, The Precious Little Black Book has condensed into
+          a single publication the most essential information every woman may need.
+          From the domestic worker to the woman in the workplace or shelter in
+          the rural areas, the intention of the book is to empower every woman by
+          providing critical information in one, easy-to-use directory.</p>
+        <p>Chic and compact, this book is a powerful hub for all things important
+          to women. Whether you need advice on funding your business, need
+          pregnancy tips, or simply need a book detailing emergency numbers for
+          your home, <em>The Precious Little Black Book</em> will help you in
+          your time of need.</p>
+        <p><em>“A wonderful resource that is sure to benefit South African women,
+          regardless of their race, class or age.”</em><br/>
+          <span class="quote-name"> – South African Federation for Mental Health (SAFMH)</span></p>
+        <p><em>“A great reference book for women and women’s health,
+          written in a way that is accessible to gender and health activists.”</em><br/>
+          <span class="quote-name"> – Professor Pamela Naidoo</span></p>
+        <p><em>“Helpful and empowering ... and written in a way that is accessible
+          and understandable.”</em><br/>
+          <span class="quote-name"> – Department of Small Business Development</span></p>
+      </div>
+    </div>
+
+    <!--    <a href="#/plbbook/back-cover" class="bottomnav-links cc-bottom w-inline-block">-->
+    <!--      <div class="previous-next">Next</div>-->
+    <!--      <div class="bottomnav-chapter">Back Cover</div>-->
+    <!--    </a>-->
+  </div>
+</div>

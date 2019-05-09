@@ -14,6 +14,8 @@ import {HowToUseComponent} from './how-to-use/how-to-use.component';
 import {AcknowledgementsComponent} from './acknowledgements/acknowledgements.component';
 import {ForewordComponent} from './foreword/foreword.component';
 import {PrefaceComponent} from './preface/preface.component';
+import {ReferencesComponent} from './references/references.component';
+import {BackCoverComponent} from './back-cover/back-cover.component';
 
 const routes: Routes = [
   {
@@ -33,6 +35,8 @@ const routes: Routes = [
   {path: 'plbbook/finance-banking', component: FinanceAndBankingComponent},
   {path: 'plbbook/know-your-rights', component: KnowYourRightsComponent},
   {path: 'plbbook/useful-contacts', component: UsefulContactsComponent},
+  {path: 'plbbook/references', component: ReferencesComponent},
+  {path: 'plbbook/back-cover', component: BackCoverComponent},
   {path: '', redirectTo: 'plbbook', pathMatch: 'full'},
   {path: '**', redirectTo: 'plbbook'},
 ];
