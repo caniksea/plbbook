@@ -22,6 +22,7 @@ import {ForewordModule} from './foreword/foreword.module';
 import {PrefaceModule} from './preface/preface.module';
 import {ReferencesModule} from './references/references.module';
 import {BackCoverModule} from './back-cover/back-cover.module';
+import {MatMenuModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import {BackCoverModule} from './back-cover/back-cover.module';
     PrefaceModule,
     ReferencesModule,
     BackCoverModule,
+    MatMenuModule,
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'},

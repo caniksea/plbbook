@@ -1,8 +1,10 @@
 /* Generated on: Wed Sep 12 2018 20:49:22 GMT+0000 (UTC) */
 /* ==========================================================================
-   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
+   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
