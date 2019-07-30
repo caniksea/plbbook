@@ -9,3 +9,26 @@
   transition: transform 600ms ease 0s;
   transform: translateX(-100%) translateY(0px) translateZ(0px);
 }
+
+mat-expansion-panel-header {
+  height: 48px !important;
+}
+
+mat-expansion-panel {
+  margin: 0 10px 10px 0 !important;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 5px !important;
+}
+
+.mat-expansion-panel-body {
+  padding: 5px 10px !important;
+}
+
+p {
+  /*line-height: 0 !important;*/
+  margin: 0 !important;
+
+}
+

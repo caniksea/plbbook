@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {DataTransferService} from '../../shared/services/data-transfer.service';
 import {MenuService} from './services/menu.service';
 import {Chapter} from '../../shared/domains/chapter';
+import {BookService} from '../../shared/services/book.service';
+import {Section} from '../../shared/domains/section';
 
 @Component({
   selector: 'app-menu',
@@ -12,12 +14,15 @@ export class MenuComponent implements OnInit {
 
   showMenu: boolean;
   chapters: Chapter[];
+  sections: Section[];
 
   constructor(private dataTransferService: DataTransferService,
-              private menuService: MenuService) { }
+              private menuService: MenuService,
+              private bookService: BookService) { }
 
   ngOnInit() {
     this.chapters = [];
+    this.sections = [];
     this.dataTransferService.showMenu.subscribe(showMenu => this.showMenu = showMenu);
     this.getChapters('5dd6ad2b89b794b917294ba420c83474');
   }
@@ -37,7 +42,28 @@ export class MenuComponent implements OnInit {
       }
     }, error => {
       console.error('Menu::Could not get chapters:: ' + error.message);
-    }, () => {});
+    }, () => {
+      if (this.chapters) {
+        this.chapters.forEach(chapter => this.getSections(chapter));
+      }
+    });
+  }
+
+  private getSections(chapter: Chapter) {
+    console.log('Fetching chapter sections...');
+    this.bookService.getSectionsInChapter(chapter.chapterId).subscribe(sections => {
+      if (sections) {
+        this.sections.push(...sections);
+      }
+    }, error => {
+      console.error(error.message);
+    }, () => {
+    });
+  }
+
+  private getChapterSections(chapter: Chapter): Section[] {
+    const chapterSections: Section[] = this.sections.filter(section => section.chapterId === chapter.chapterId)
+    return chapterSections;
   }
 
   getChapterImage(chapterNumber: number): string {
@@ -78,5 +104,15 @@ export class MenuComponent implements OnInit {
         return 'Motsepe-Foundation.png';
       }
     }
+  }
+
+  getSectionLink(chapter: Chapter, section: Section): String {
+    const chapterLink = chapter.chapterLink;
+    const sectionTitle = section.sectionTitle;
+    const sds = sectionTitle.split(' ');
+    const sectionLinkData = [];
+    sds.forEach(s => sectionLinkData.push(s.replace(/[^a-zA-Z ]/g, '')))
+    const sectionLink = chapterLink + '/' + sectionLinkData.join('_');
+    return sectionLink;
   }
 }
