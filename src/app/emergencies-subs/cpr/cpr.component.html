@@ -1,0 +1,61 @@
+<app-menu></app-menu>
+<div class="fullscreen">
+  <div style="background-image:url()" class="leftside">
+    <div class="titlewrapper">
+      <div class="leftnavigation">
+        <div>
+          <a href="http://motsepefoundation.org/" target="_blank" class="logoblock w-inline-block">
+            <img src="assets/img/Motsepe-Foundation.png" alt="" class="logo"/></a>
+          <!--<a href="/" class="sitetitle">Ebooks</a>-->
+        </div>
+      </div>
+      <div class="leftnavigation bottom">
+        <div class="w-row">
+          <div
+            class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+          <div class="buttoncol w-col w-col-4 w-col-stack">
+            <a href="#" (click)="showMenu()" data-ix="view-chapters" class="allchapters">View Chapters</a>
+          </div>
+          <div
+            class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
+        </div>
+      </div>
+      <div class="titleblock">
+        <img src="assets/img/emergencies/Emergency-Kit.png">
+      </div>
+    </div>
+    <div class="leftoverlay"></div>
+  </div>
+  <div class="rightside">
+    <div class="rightnavigation center w-clearfix">
+<!--      <a *ngIf="previousChapter" href="#{{previousChapter?.chapterLink}}" class="bottomnav-links w-inline-block w-condition-invisible">-->
+<!--        <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous Chapter</div>-->
+<!--        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER - 1}}: {{previousChapter?.chapterTitle}}</div>-->
+<!--      </a>-->
+<!--      <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-center w-inline-block" (click)="closeMenu()">-->
+<!--        <div class="previous-next">Next Chapter<img class="next-arrow" src="assets/img/right_arrow.png"></div>-->
+<!--        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
+<!--      </a>-->
+    </div>
+    <div class="maincontent-wrap">
+      <div class="chapterpage-head">
+        <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
+        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+      </div>
+      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
+      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div *ngIf="extendedSection?.subsections">
+        <div *ngFor="let subsection of extendedSection?.subsections">
+          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
+          <div [innerHTML]="subsection.story"></div>
+          <br>
+        </div>
+      </div>
+    </div>
+
+<!--    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">-->
+<!--      <div class="previous-next">Next Chapter</div>-->
+<!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
+<!--    </a>-->
+<!--  </div>-->
+</div>

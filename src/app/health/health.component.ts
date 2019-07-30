@@ -33,7 +33,7 @@ export class HealthComponent implements OnInit {
         this.chapter = chapters.find(c => c.chapterNumber === this.CURRENT_CHAPTER);
         this.previousChapter = chapters.find(c => c.chapterNumber === (this.CURRENT_CHAPTER - 1));
         this.nextChapter = chapters.find(c => c.chapterNumber === (this.CURRENT_CHAPTER + 1));
-        if (this.chapter) { this.getChapterSections(); }
+        // if (this.chapter) { this.getChapterSections(); }
       }
     });
   }
