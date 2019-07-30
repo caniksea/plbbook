@@ -64,11 +64,42 @@
               <div class="sidechapter-text">Chapter</div>
               <div class="sidechapter-text">{{chapter.chapterNumber}}</div>
             </div>
-            <div class="sidechapter-title">{{chapter.chapterTitle}}</div>
-            <mat-expansion-panel>
+<!--            <div class="sidechapter-title">{{chapter.chapterTitle}}</div>-->
 
-            </mat-expansion-panel>
           </a>
+
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{chapter.chapterTitle}}
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p *ngFor="let section of getChapterSections(chapter)">
+                <a href="#{{getSectionLink(chapter, section)}}">{{section.sectionTitle}}</a>
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+<!--          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">-->
+<!--            <mat-icon>more_vert</mat-icon>-->
+<!--          </button>-->
+<!--          <mat-menu #menu="matMenu">-->
+<!--            <button mat-menu-item>-->
+<!--              <mat-icon>dialpad</mat-icon>-->
+<!--              <span>Redial</span>-->
+<!--            </button>-->
+<!--            <button mat-menu-item disabled>-->
+<!--              <mat-icon>voicemail</mat-icon>-->
+<!--              <span>Check voice mail</span>-->
+<!--            </button>-->
+<!--            <button mat-menu-item>-->
+<!--              <mat-icon>notifications_off</mat-icon>-->
+<!--              <span>Disable alerts</span>-->
+<!--            </button>-->
+<!--          </mat-menu>-->
+
         </div>
         <!-- End of book section -->
         <div class="sidechapter-wrap w-dyn-item">
@@ -91,7 +122,6 @@
 
       </div>
     </div>
-
     <!--    <div class="w-dyn-list">-->
     <!--      <div class="w-clearfix w-dyn-items">-->
     <!--      </div>-->

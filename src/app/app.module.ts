@@ -22,7 +22,11 @@ import {ForewordModule} from './foreword/foreword.module';
 import {PrefaceModule} from './preface/preface.module';
 import {ReferencesModule} from './references/references.module';
 import {BackCoverModule} from './back-cover/back-cover.module';
-import {MatMenuModule} from '@angular/material';
+import {EmergenciesSubsModule} from './emergencies-subs/emergencies-subs.module';
+import {HealthSubsModule} from './health-subs/health-subs.module';
+import {FamilySubsModule} from './family-subs/family-subs.module';
+import {HigherEducationAndTrainingSubsModule} from './higher-education-and-training-subs/higher-education-and-training-subs.module';
+import {WomenInTheWorkplaceSubsModule} from './women-in-the-workplace-subs/women-in-the-workplace-subs.module';
 
 @NgModule({
   declarations: [
@@ -49,7 +53,11 @@ import {MatMenuModule} from '@angular/material';
     PrefaceModule,
     ReferencesModule,
     BackCoverModule,
-    MatMenuModule,
+    EmergenciesSubsModule,
+    HealthSubsModule,
+    FamilySubsModule,
+    HigherEducationAndTrainingSubsModule,
+    WomenInTheWorkplaceSubsModule,
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'},
