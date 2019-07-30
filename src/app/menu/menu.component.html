@@ -78,7 +78,7 @@
                 </mat-panel-description>
               </mat-expansion-panel-header>
               <p *ngFor="let section of getChapterSections(chapter)">
-                <a href="#{{getSectionLink(chapter, section)}}">{{section.sectionTitle}}</a>
+                <a href="#{{getSectionLink(chapter, section)}}" (click)="closeMenu()">{{section.sectionTitle}}</a>
               </p>
             </mat-expansion-panel>
           </mat-accordion>
