@@ -64,7 +64,7 @@ const routes: Routes = [
   {path: emergency, component: EmergenciesComponent},
   {path: emergency + '/How_to_do_CPR', component: CprComponent},
   {path: emergency + '/What_to_do_in_an_emergency', component: WtdComponent},
-  {path: emergency + '/Gender-based_violence', component: GbvComponent},
+  {path: emergency + '/Genderbased_violence', component: GbvComponent},
   {path: health, component: HealthComponent},
   {path: health + '/Health_assessments', component: HaComponent},
   {path: health + '/Nutrition_and_lifestyle', component: NlComponent},
