@@ -27,6 +27,9 @@ import {HealthSubsModule} from './health-subs/health-subs.module';
 import {FamilySubsModule} from './family-subs/family-subs.module';
 import {HigherEducationAndTrainingSubsModule} from './higher-education-and-training-subs/higher-education-and-training-subs.module';
 import {WomenInTheWorkplaceSubsModule} from './women-in-the-workplace-subs/women-in-the-workplace-subs.module';
+import {FinanceAndBankingSubsModule} from './finance-and-banking-subs/finance-and-banking-subs.module';
+import {KnowYourRightsSubsModule} from './know-your-rights-subs/know-your-rights-subs.module';
+import {UsefulContactsSubsModule} from './useful-contacts-subs/useful-contacts-subs.module';
 
 @NgModule({
   declarations: [
@@ -58,6 +61,9 @@ import {WomenInTheWorkplaceSubsModule} from './women-in-the-workplace-subs/women
     FamilySubsModule,
     HigherEducationAndTrainingSubsModule,
     WomenInTheWorkplaceSubsModule,
+    FinanceAndBankingSubsModule,
+    KnowYourRightsSubsModule,
+    UsefulContactsSubsModule
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'},
