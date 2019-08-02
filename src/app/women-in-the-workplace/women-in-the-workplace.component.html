@@ -43,20 +43,20 @@
         <div class="chapterpage-header chaptertext">Chapter {{CURRENT_CHAPTER}} {{chapter?.chapterTitle}}</div>
       </div>
       <div class="lede w-richtext" [innerHTML]="chapter?.story"></div>
-<!--      <div class="chaptercontent w-richtext" *ngIf="extendedSections">-->
-<!--        <div *ngFor="let section of extendedSections">-->
-<!--          <div class="section-header" [innerHTML]="section?.sectionTitle"></div>-->
-<!--          <div [innerHTML]="section?.story"></div>-->
-<!--          <div *ngIf="section.subsections">-->
-<!--            <div *ngFor="let subsection of section.subsections">-->
-<!--              <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>-->
-<!--              <div [innerHTML]="subsection.story"></div>-->
-<!--              <br>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <br>-->
-<!--        </div>-->
-<!--      </div>-->
+      <div class="chaptercontent w-richtext" *ngIf="extendedSections">
+        <div *ngFor="let section of extendedSections">
+          <div class="section-header" [innerHTML]="section?.sectionTitle"></div>
+          <div [innerHTML]="section?.story"></div>
+          <div *ngIf="section.subsections">
+            <div *ngFor="let subsection of section.subsections">
+              <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
+              <div [innerHTML]="subsection.story"></div>
+              <br>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
 
     </div>
 
