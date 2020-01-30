@@ -30,15 +30,15 @@ export class EmergenciesComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     // this.sani = this.sanitizer;
-    this.dataTransferService.bookChapters.subscribe(chapters => {
-      if (chapters) {
-        this.chapters = chapters;
-        this.chapter = chapters.find(c => c.chapterNumber === this.CURRENT_CHAPTER);
-        this.previousChapter = chapters.find(c => c.chapterNumber === (this.CURRENT_CHAPTER - 1));
-        this.nextChapter = chapters.find(c => c.chapterNumber === (this.CURRENT_CHAPTER + 1));
-        if (this.chapter) { this.getChapterSections(); }
-      }
-    });
+    // this.dataTransferService.bookChapters.subscribe(chapters => {
+    //   if (chapters) {
+    //     this.chapters = chapters;
+    //     this.chapter = chapters.find(c => c.chapterNumber === this.CURRENT_CHAPTER);
+    //     this.previousChapter = chapters.find(c => c.chapterNumber === (this.CURRENT_CHAPTER - 1));
+    //     this.nextChapter = chapters.find(c => c.chapterNumber === (this.CURRENT_CHAPTER + 1));
+    //     if (this.chapter) { this.getChapterSections(); }
+    //   }
+    // });
   }
 
   showMenu() {
@@ -50,32 +50,32 @@ export class EmergenciesComponent implements OnInit, OnChanges {
     return true;
   }
 
-  private getChapterSections() {
-    console.log('Fetching chapter sections...');
-    this.bookService.getSectionsInChapter(this.chapter.chapterId).subscribe(sections => {
-      if (sections) {
-        this.sections = sections;
-      }
-    }, error => {
-      console.error(error.message);
-    }, () => {
-      if (this.sections) {
-        this.extendedSections = [];
-        this.sections.forEach(section => this.getSubsections(section));
-      }
-    });
-  }
+  // private getChapterSections() {
+  //   console.log('Fetching chapter sections...');
+  //   this.bookService.getSectionsInChapter(this.chapter.chapterId).subscribe(sections => {
+  //     if (sections) {
+  //       this.sections = sections;
+  //     }
+  //   }, error => {
+  //     console.error(error.message);
+  //   }, () => {
+  //     if (this.sections) {
+  //       this.extendedSections = [];
+  //       this.sections.forEach(section => this.getSubsections(section));
+  //     }
+  //   });
+  // }
 
-  getSubsections(section: Section): void {
-    console.log('Fetching subsections...');
-    this.bookService.getSubsectionsInSection(section.sectionId).subscribe(subsections => {
-      if (subsections) {
-        const ges: ExtendedSection = Object.create(section);
-        ges.subsections = subsections;
-        this.extendedSections.push(ges);
-      }
-    });
-  }
+  // getSubsections(section: Section): void {
+  //   console.log('Fetching subsections...');
+  //   this.bookService.getSubsectionsInSection(section.sectionId).subscribe(subsections => {
+  //     if (subsections) {
+  //       const ges: ExtendedSection = Object.create(section);
+  //       ges.subsections = subsections;
+  //       this.extendedSections.push(ges);
+  //     }
+  //   });
+  // }
 
   selectedSection(index, section) {
     console.log(section);

@@ -28,19 +28,19 @@
   </div>
   <div class="rightside">
     <div class="rightnavigation center w-clearfix">
-      <a *ngIf="previousChapter" href="#{{previousChapter?.chapterLink}}" class="bottomnav-links w-inline-block w-condition-invisible">
-        <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous Chapter</div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER - 1}}: {{previousChapter?.chapterTitle}}</div>
+      <a href="#plbbook/preface" class="bottomnav-links w-inline-block">
+        <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous</div>
+        <div class="bottomnav-chapter">Preface</div>
       </a>
-      <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-center w-inline-block" (click)="closeMenu()">
+      <a href="#plbbook/health" class="bottomnav-links cc-center w-inline-block" (click)="closeMenu()">
         <div class="previous-next">Next Chapter<img class="next-arrow" src="assets/img/right_arrow.png"></div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">Chapter 2: Health</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CURRENT_CHAPTER}} {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 1: Emergency</div>
       </div>
       <div class="lede w-richtext">
         <p>

@@ -24,7 +24,7 @@ export class MenuComponent implements OnInit {
     this.chapters = [];
     this.sections = [];
     this.dataTransferService.showMenu.subscribe(showMenu => this.showMenu = showMenu);
-    this.getChapters('5dd6ad2b89b794b917294ba420c83474');
+    // this.getChapters('5dd6ad2b89b794b917294ba420c83474');
   }
 
   closeMenu() {
@@ -32,37 +32,37 @@ export class MenuComponent implements OnInit {
     return true;
   }
 
-  private getChapters(bookId: string): void {
-    this.menuService.getBookChapters(bookId).subscribe(chapters => {
-      if (chapters) {
-        this.chapters = chapters;
-        this.dataTransferService.setBookChapters(chapters);
-      } else {
-        console.log('No chapters!');
-      }
-    }, error => {
-      console.error('Menu::Could not get chapters:: ' + error.message);
-    }, () => {
-      if (this.chapters) {
-        this.chapters.forEach(chapter => this.getSections(chapter));
-      }
-    });
-  }
+  // private getChapters(bookId: string): void {
+  //   this.menuService.getBookChapters(bookId).subscribe(chapters => {
+  //     if (chapters) {
+  //       this.chapters = chapters;
+  //       this.dataTransferService.setBookChapters(chapters);
+  //     } else {
+  //       console.log('No chapters!');
+  //     }
+  //   }, error => {
+  //     console.error('Menu::Could not get chapters:: ' + error.message);
+  //   }, () => {
+  //     if (this.chapters) {
+  //       this.chapters.forEach(chapter => this.getSections(chapter));
+  //     }
+  //   });
+  // }
 
-  private getSections(chapter: Chapter) {
-    console.log('Fetching chapter sections...');
-    this.bookService.getSectionsInChapter(chapter.chapterId).subscribe(sections => {
-      if (sections) {
-        this.sections.push(...sections);
-      }
-    }, error => {
-      console.error(error.message);
-    }, () => {
-    });
-  }
+  // private getSections(chapter: Chapter) {
+  //   console.log('Fetching chapter sections...');
+  //   this.bookService.getSectionsInChapter(chapter.chapterId).subscribe(sections => {
+  //     if (sections) {
+  //       this.sections.push(...sections);
+  //     }
+  //   }, error => {
+  //     console.error(error.message);
+  //   }, () => {
+  //   });
+  // }
 
   private getChapterSections(chapter: Chapter): Section[] {
-    const chapterSections: Section[] = this.sections.filter(section => section.chapterId === chapter.chapterId)
+    const chapterSections: Section[] = this.sections.filter(section => section.chapterId === chapter.chapterId);
     return chapterSections;
   }
 
@@ -111,7 +111,7 @@ export class MenuComponent implements OnInit {
     const sectionTitle = section.sectionTitle;
     const sds = sectionTitle.split(' ');
     const sectionLinkData = [];
-    sds.forEach(s => sectionLinkData.push(s.replace(/[^a-zA-Z ]/g, '')))
+    sds.forEach(s => sectionLinkData.push(s.replace(/[^a-zA-Z ]/g, '')));
     const sectionLink = chapterLink + '/' + sectionLinkData.join('_');
     return sectionLink;
   }

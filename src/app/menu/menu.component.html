@@ -64,8 +64,6 @@
               <div class="sidechapter-text">Chapter</div>
               <div class="sidechapter-text">1</div>
             </div>
-            <!--            <div class="sidechapter-title">{{chapter.chapterTitle}}</div>-->
-
           </a>
 
           <mat-accordion>
@@ -82,80 +80,7 @@
 <!--              </p>-->
             </mat-expansion-panel>
           </mat-accordion>
-          <!--          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">-->
-          <!--            <mat-icon>more_vert</mat-icon>-->
-          <!--          </button>-->
-          <!--          <mat-menu #menu="matMenu">-->
-          <!--            <button mat-menu-item>-->
-          <!--              <mat-icon>dialpad</mat-icon>-->
-          <!--              <span>Redial</span>-->
-          <!--            </button>-->
-          <!--            <button mat-menu-item disabled>-->
-          <!--              <mat-icon>voicemail</mat-icon>-->
-          <!--              <span>Check voice mail</span>-->
-          <!--            </button>-->
-          <!--            <button mat-menu-item>-->
-          <!--              <mat-icon>notifications_off</mat-icon>-->
-          <!--              <span>Disable alerts</span>-->
-          <!--            </button>-->
-          <!--          </mat-menu>-->
-
-        </div>
-
-<!--        <div *ngFor="let chapter of chapters" class="sidechapter-wrap w-dyn-item">-->
-<!--          <a data-ix="side-chapter-link" href="#{{chapter.chapterLink}}" (click)="closeMenu()"-->
-<!--             class="sidechapter-link w-inline-block">-->
-<!--            <div><img class="sidethumb" src="assets/img/{{getChapterImage(chapter.chapterNumber)}}"></div>-->
-<!--            <div>-->
-<!--              <div class="sidechapter-text">Chapter</div>-->
-<!--              <div class="sidechapter-text">{{chapter.chapterNumber}}</div>-->
-<!--            </div>-->
-<!--&lt;!&ndash;            <div class="sidechapter-title">{{chapter.chapterTitle}}</div>&ndash;&gt;-->
-
-<!--          </a>-->
-
-<!--          <mat-accordion>-->
-<!--            <mat-expansion-panel>-->
-<!--              <mat-expansion-panel-header>-->
-<!--                <mat-panel-title>-->
-<!--                  {{chapter.chapterTitle}}-->
-<!--                </mat-panel-title>-->
-<!--                <mat-panel-description>-->
-<!--                </mat-panel-description>-->
-<!--              </mat-expansion-panel-header>-->
-<!--              <p *ngFor="let section of getChapterSections(chapter)">-->
-<!--                <a href="#{{getSectionLink(chapter, section)}}" (click)="closeMenu()">{{section.sectionTitle}}</a>-->
-<!--              </p>-->
-<!--            </mat-expansion-panel>-->
-<!--          </mat-accordion>-->
-<!--&lt;!&ndash;          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">&ndash;&gt;-->
-<!--&lt;!&ndash;            <mat-icon>more_vert</mat-icon>&ndash;&gt;-->
-<!--&lt;!&ndash;          </button>&ndash;&gt;-->
-<!--&lt;!&ndash;          <mat-menu #menu="matMenu">&ndash;&gt;-->
-<!--&lt;!&ndash;            <button mat-menu-item>&ndash;&gt;-->
-<!--&lt;!&ndash;              <mat-icon>dialpad</mat-icon>&ndash;&gt;-->
-<!--&lt;!&ndash;              <span>Redial</span>&ndash;&gt;-->
-<!--&lt;!&ndash;            </button>&ndash;&gt;-->
-<!--&lt;!&ndash;            <button mat-menu-item disabled>&ndash;&gt;-->
-<!--&lt;!&ndash;              <mat-icon>voicemail</mat-icon>&ndash;&gt;-->
-<!--&lt;!&ndash;              <span>Check voice mail</span>&ndash;&gt;-->
-<!--&lt;!&ndash;            </button>&ndash;&gt;-->
-<!--&lt;!&ndash;            <button mat-menu-item>&ndash;&gt;-->
-<!--&lt;!&ndash;              <mat-icon>notifications_off</mat-icon>&ndash;&gt;-->
-<!--&lt;!&ndash;              <span>Disable alerts</span>&ndash;&gt;-->
-<!--&lt;!&ndash;            </button>&ndash;&gt;-->
-<!--&lt;!&ndash;          </mat-menu>&ndash;&gt;-->
-
-<!--        </div>-->
-        <!-- End of book section -->
-        <div class="sidechapter-wrap w-dyn-item">
-          <a data-ix="side-chapter-link" href="#plbbook/references" (click)="closeMenu()"
-             class="sidechapter-link w-inline-block">
-            <div>
-              <div class="sidechapter-text-before-book">References</div>
-            </div>
-          </a>
-        </div>
+          </div>
 
         <div class="sidechapter-wrap w-dyn-item">
           <a data-ix="side-chapter-link" href="#plbbook/back-cover" (click)="closeMenu()"
@@ -168,9 +93,5 @@
 
       </div>
     </div>
-    <!--    <div class="w-dyn-list">-->
-    <!--      <div class="w-clearfix w-dyn-items">-->
-    <!--      </div>-->
-    <!--    </div>-->
   </div>
 </div>
