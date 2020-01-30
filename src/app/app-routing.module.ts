@@ -144,7 +144,9 @@ const routes: Routes = [
 
 const config: ExtraOptions = {
   useHash: true,
-  anchorScrolling: 'enabled'
+  anchorScrolling: 'enabled',
+  scrollPositionRestoration: 'enabled',
+  scrollOffset: [0, 64]
 };
 
 @NgModule({
