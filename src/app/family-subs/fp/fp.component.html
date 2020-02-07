@@ -40,10 +40,72 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 3 - Family</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div class="section-header">
+        Parenting
+      </div>
+      <div>
+        <p>Parents (including other caregivers) have a huge responsibility in taking care of children and laying a solid foundation for them to grow into adulthood. The role of parenting requires a lot of time, effort and resources, and may also mean less time for yourself, friends and relationships, but it is key to maintain balance. Taking care of your own wellbeing will mean you have more energy for interacting with your children.</p>
+
+        <p>Remember:</p>
+
+        <ul>
+          <li>There’s no such thing as a perfect parent or a perfect child.</li>
+          <li>As the old saying goes, ‘it takes a village to raise a child.’ Ask for help from grandparents, sisters and brothers, friends, teachers and the community. People usually will gladly assist.</li>
+          <li>You don’t have to know all the answers. it is fine to say you don’t know.</li>
+          <li>Take time to care for yourself and to manage your relationships.</li>
+        </ul>
+
+        <p>Parents' responsible are to:</p>
+
+        <ul>
+          <li>Ensure the child is safe and healthy.</li>
+          <li>Provide day-to-day care of the child until 18 years old or can support themselves.</li>
+          <li>Make sure the child attends school.</li>
+          <li>Maintain regular contact with the child.</li>
+          <li>Act as a guardian of the child.</li>
+          <li>Contribute to the cost of maintaining the child, including food, clothing and school fees.</li>
+        </ul>
+
+        <p><strong>FINDING WORK-LIFE BALANCE</strong></p>
+
+        <ul>
+          <li>Most women, especially single mothers, have a challenge balancing work and family.</li>
+          <li>Society’s expectations mean that most parenting roles are carried out by women. some women decide to leave work to raise their children as a result.</li>
+          <li>As we work towards equality for men and women, most women still have to negotiate with their partners to share the responsibilities of childcare and/or household chores.</li>
+          <li>Taking maternity leave (dads should also take paternity leave).</li>
+          <li>Working part-time or flexi hours.</li>
+          <li>Employing home help or childminders.</li>
+          <li>Taking their children to day care centres.</li>
+        </ul>
+
+        <p><strong>Single mothers and caregivers</strong></p>
+
+        <p>According to statistics South Africa, most households in South Africa are run by single mothers. HIV and Aids have also taken a huge toll on the country, with parents dying and leaving orphaned children. According to UNICF, there are an estimated 3.7 million orphans in South Africa (half of whom have lost one or both parents to Aids), and 150 000 children are living in child-headed households (where all family members are under the age of 18).</p>
+
+        <table cellpadding="1" cellspacing="1" style="width:500px">
+          <tbody>
+          <tr>
+            <td><strong>The majority of children in South Africa and through the world have someone other than a parent to raise them. It is important that government policy, employers and society in general help in assuring that childcare facilities, parental leave and societal attitude in general are supportive towards working mothers and fathers.</strong></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <p>&nbsp;</p>
+
+        <hr>
+        <p><strong>Family and Marriage Association of South Africa (FAMSA)</strong></p>
+
+        <p><a href="tel:0119757106"><strong>011 975 7106</strong></a><strong>/<a href="tel:0119757107">7</a></strong><strong> to find your nearest branch or&nbsp;</strong><a href="http://www.famsa.org.za"><strong>www.famsa.org.za</strong></a></p>
+
+        <hr>
+        <p><strong>Tough Love South Africa</strong></p>
+
+        <p><a href="tel:0861868455"><strong>0861 868 455</strong></a><strong> or </strong><a href="http://www.toughlove.org.za"><strong>www.toughlove.org.za</strong></a></p>
+
+        <hr>
+      </div>
       <div *ngIf="extendedSection?.subsections">
         <div *ngFor="let subsection of extendedSection?.subsections">
           <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>

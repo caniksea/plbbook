@@ -40,10 +40,83 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 3 - Family</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div class="section-header">
+        Bullying
+      </div>
+      <div>
+        <p>Bullying among school-aged children is unwanted, aggressive behaviour that is usually repeated over time. Bullying includes making threats, making fun of, spreading rumours, attacking someone physically or verbally, and excluding someone from a group on purpose.</p>
+
+        <p>Repeated bullying can cause severe emotional harm, and affect your child’s self-esteem and mental health.</p>
+
+        <p>There are many roles children play in bullying. Some bully others, some are bullied, and some witness bullying. When children are involved in bullying, they often play more than one role.</p>
+
+        <p><strong>Signs and symptoms that your child is being bullied</strong></p>
+
+        <ul>
+          <li>Not wanting to go to school.</li>
+          <li>Afraid of taking the same school transport as others.</li>
+          <li>Unexplained loss of belongings (clothing, books or lunchboxes).</li>
+          <li>Unexplained injuries.</li>
+          <li>Sudden drop in school marks.</li>
+          <li>Loss of interest in or avoiding extramural activities.</li>
+          <li>Frequent headaches or stomach aches (real or faked).</li>
+          <li>Difficulty sleeping; nightmares.</li>
+          <li>Fear of being left alone.</li>
+          <li>Appearing sad or anxious.</li>
+          <li>Self-destructive behaviour, e.g. self-harming, running away from home, talking about suicide.</li>
+        </ul>
+
+        <p>Some children will tell their parents when they’re being bullied. If your child confides in you, you must get help for them, whether this is from the school, or a counsellor or therapist.</p>
+
+        <p>Children often find it hard to voice their feelings, however. If you’re concerned that they’re involved in bullying, and especially that they’re being bullied, you need to ask some questions. Watch your child’s reaction when they answer. Their body language (or silence) can give you good clues. Ask leading questions, for example:</p>
+
+        <ul>
+          <li>‘I&nbsp;can’t find your school jersey. has someone taken it?’</li>
+          <li>‘How did this tear in your shirt happen? did someone do this to you?’</li>
+          <li>‘Why are you in such a hurry to eat when you get home? did you eat your lunch at school?’</li>
+        </ul>
+
+        <p><img alt="Children-Bullying" src="assets/img/family/Children-Bullying.png"></p>
+
+        <p><strong>What to do if your child is being bullied</strong></p>
+
+        <ul>
+          <li>Find out what happened, who was involved, and when and where it happened, and keep a record of this information.</li>
+          <li>Encourage your child to express his/her thoughts and feelings about what happened. Let your child know that it is normal to feel hurt, fear and anger.</li>
+          <li>Teach your child to be assertive (stand up for himself/herself) without being aggressive. Retaliation is against school rules and often makes bullying worse.</li>
+          <li>Assure the child/children that you will handle the situation.</li>
+          <li>Speak confidentially to an educator at their school – the head of the school is the best choice.</li>
+          <li>Find out if the child needs to avoid certain areas on school property at certain times; suggest that the school increase supervision in high-risk areas or monitor the child’s interactions with other learners more closely.</li>
+          <li>Encourage your child to talk to an adult (such as a supportive teacher) every day to give an update on the mistreatment.</li>
+          <li>Monitor your child’s whereabouts and friendships.</li>
+          <li>Watch for signs of depression and anxiety in your child, and do not hesitate to seek professional counselling.</li>
+        </ul>
+
+        <p><strong>CYBER-BULLYING</strong></p>
+
+        <p>Cyber-bullying is when a child of any age is tormented, threatened, harassed, made fun of, humiliated, embarrassed or otherwise targeted by another child using the internet and/or any other digital technology such as a smartphone. Cyber-bullying often happens on social-media sites like Facebook.</p>
+
+        <p>You can handle cyber-bullying by:</p>
+
+        <ul>
+          <li>Teaching your child not to share personal or embarrassing information online or on social media. this includes making sure that passwords are protected.</li>
+          <li>Keeping track of how much time your child spends online and who he/she is interacting with. Ask him/her who each person is and how your child knows him/her.</li>
+          <li>Asking your child if he/she has ever experienced cyberbullying or seen it happen to someone.</li>
+          <li>Discussing with your child what to do if he/she is bullied by someone online. if your child is being bullied, tell him/her not to respond but rather show the threatening message to an adult.</li>
+          <li>Make sure your child knows that bullyng others is wrong and unacceptable.<br>
+            &nbsp;</li>
+        </ul>
+
+        <hr>
+        <p><strong>ChildLine</strong></p>
+
+        <p><a href="tel:0800055555"><strong>0800 055 555</strong></a><strong> or&nbsp;</strong><a href="http://www.childline.org.za"><strong>www.childline.org.za</strong></a></p>
+
+        <hr>
+        <p>&nbsp;</p>
+      </div>
       <div *ngIf="extendedSection?.subsections">
         <div *ngFor="let subsection of extendedSection?.subsections">
           <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>

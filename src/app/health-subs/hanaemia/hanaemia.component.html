@@ -40,10 +40,52 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 2 - anaemia</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div class="section-header">
+        Anaemia
+      </div>
+      <div>
+        <div>
+          <p>Anaemia is a medical condition where you have fewer red blood cells than normal, or you have less haemoglobin in each red blood cell than normal. This results in reduced amounts of oxygen being carried in the blood. Doctors may sometimes explain anaemia to patients as ‘weak blood’.</p>
+        </div>
+
+        <div>
+          <p>Warning signs and symptoms of anaemia:</p>
+
+          <p>Most people with anaemia may not know it because they may not have any symptoms.</p>
+
+          <ul>
+            <li>Breathlessness when exerting little effort.</li>
+            <li>A fast heartbeat or palpitations.</li>
+            <li>Tiredness or feeling weak.</li>
+            <li>Dizzy spells.</li>
+            <li>Lethargy or low energy levels.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>WHAT CAUSES ANAEMIA?</strong></p>
+
+          <p>There are many causes of anaemia, but the most common cause of anaemia in women is iron deficiency. Low intake of iron in the diet, poor absorption in the gut (intestines), or loss of iron from bleeding are common causes of iron deficiency anaemia. Most women suffer from iron deficiency for the following reasons:</p>
+
+          <ul>
+            <li>Pregnancy.</li>
+            <li>Heavy menstrual bleeding.</li>
+            <li>Bleeding from the gut due to ulcers or other intestinal diseases.</li>
+            <li>A diet that doesn't have enough iron in it, such as vegetarian or vegan diets.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p>Prevention and treatment:</p>
+
+          <ul>
+            <li>Take iron supplements before and during pregnancy as directed by your doctor.</li>
+            <li>Report abnormal menstrual periods to your doctor (heavy bleeding with clots, or for more than 7 days in a month).</li>
+          </ul>
+        </div>
+      </div>
       <div *ngIf="extendedSection?.subsections">
         <div *ngFor="let subsection of extendedSection?.subsections">
           <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>

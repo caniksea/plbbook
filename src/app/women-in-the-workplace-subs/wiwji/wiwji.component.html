@@ -40,10 +40,23 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 5 - Women in the Workplace</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div class="section-header">Job interviews</div>
+      <div _ngcontent-gol-c21=""><div>
+        <p>Job interviews can make job-seekers very nervous. The key to a successful job interview is to prepare well:</p>
+
+        <ul>
+          <li>Research the company: If you can, find out what the company does (products and services), if they have branches in other regions and who their main clients are.</li>
+          <li>Dress appropriately: Whether we like it or not, our first physical impression counts. Dress smartly and neatly.</li>
+          <li>Be on time for the interview: In fact, arrive early, as this will help you calm down before you go in. If you live in a busy area, allow for possible traffic delays – even if you have a genuine reason for being late, it will still create a bad impression.</li>
+          <li>Show a positive attitude: Employers like positive people; nobody likes to employ miserable people or complainers.</li>
+          <li>Know the description of the position: Find out all you can about the job you’re applying for.</li>
+          <li>Be ready to answer questions: You will be asked about your previous jobs, your likes and dislikes, your strengths and weaknesses, your goals, etc. Have these answers prepared before the interview.</li>
+          <li>Ask questions: It shows that you’re interested in the job. Find out about working hours, annual leave, and any legal responsibilities and rights.</li>
+        </ul>
+      </div>
+      </div>
       <div *ngIf="extendedSection?.subsections">
         <div *ngFor="let subsection of extendedSection?.subsections">
           <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>

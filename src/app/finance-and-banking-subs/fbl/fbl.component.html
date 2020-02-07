@@ -40,10 +40,96 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 6 - Finance & Banking</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div class="section-header">
+        Loans
+      </div>
+      <div>
+        <div _ngcontent-imd-c6=""><div>
+          <div>
+            <p>Banks offer a variety of different loans, for different purposes. These include personal loans (to pay for things in your personal life, such as a special occasion), home loans (to buy property), vehicle finance (to buy a car or motorbike), student loans (to pay student fees) and business loans (to start and/or grow your business).</p>
+          </div>
+
+          <div>
+            <p><strong>How do you qualify for a loan?</strong><br>
+              Whether you qualify for a loan from the bank will depend on the following factors:</p>
+          </div>
+
+          <div>
+            <p>Your income</p>
+
+            <ul>
+              <li>You need to be earning regular income – the bank needs to see that you will be able to pay back the loan.</li>
+              <li>If you are not earning a salary, the bank may require someone else to stand surety for you. This means that they will be legally obligated to pay the money back to the bank if you don’t.</li>
+            </ul>
+          </div>
+
+          <div>
+            <p>The need for collateral/security</p>
+
+            <ul>
+              <li>You may need collateral or security for the loan. This is the primary source of repayment if you fail to pay the loan (e.g. if you own property, the bank could use this as security, and may auction off your house to get their money back if you can’t pay them back).</li>
+              <li>Usually the bank would want the security to be larger than the amount you’re borrowing.</li>
+            </ul>
+          </div>
+
+          <div>
+            <p>The type of loan</p>
+
+            <ul>
+              <li>The type of loan you are applying for and the repayment period will influence the terms the bank offers you.</li>
+            </ul>
+          </div>
+
+          <div>
+            <p>Your credit history</p>
+
+            <ul>
+              <li>Your credit history matters. The bank will look at how you have managed previous personal or business loans (i.e. whether you paid the loan back in time).</li>
+              <li>They will conduct a full credit analysis and may also get your credit score from the credit bureau (a private company that keeps records of each consumer’s credit history)</li>
+            </ul>
+          </div>
+
+          <div>
+            <p>Your business</p>
+
+            <ul>
+              <li>For business loans, the bank will look at your business experience, skills, financial statements, internal control of your business, other loans, the type of business, and the financial viability of the business.</li>
+            </ul>
+          </div>
+
+          <div>
+            <p>If you’re in doubt about the kind of loan that meets your needs, speak to one of your bank’s consultants.</p>
+          </div>
+
+          <div>
+            <div>
+              <table cellpadding="1" cellspacing="1" style="width:500px">
+                <thead>
+                <tr>
+                  <th scope="col">What is interest?</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>
+                    <div>
+                      <p>Interest is the added fee you pay the lender (e.g. bank) for using their money.</p>
+
+                      <p>A loan is borrowed money (it is not your money) and the lender makes extra money by charging you for this privilege.</p>
+                    </div>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
       <div *ngIf="extendedSection?.subsections">
         <div *ngFor="let subsection of extendedSection?.subsections">
           <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
