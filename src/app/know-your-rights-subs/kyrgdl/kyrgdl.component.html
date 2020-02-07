@@ -40,10 +40,49 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 7 - Know your Rights</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div class="section-header">GETTING A DRIVER’S LICENCE</div>
+      <div>
+        <div _ngcontent-imd-c16=""><div>
+          <div>
+            <p>It is illegal to drive a vehicle on public roads in south Africa without a driver’s licence. Before you can apply for a driver’s licence, you need to apply for a learner’s licence. for this, you will need to write a test.</p>
+          </div>
+
+          <div>
+            <p>When you book your driver’s test you will have to pass an eyesight exam. You will then be given a date and time for your test. You will be required to pay a booking fee.</p>
+          </div>
+
+          <div>
+            <p>When you book your driver’s test you will need:</p>
+
+            <ul>
+              <li>Your learner’s licence.</li>
+              <li>Your ID.</li>
+              <li>four black-and-white head-and-shoulder photographs.</li>
+              <li>Proof of residence (e.g. a utility bill). if the bill is not in your name, the owner of the bill must produce an affi davit declaring that you live with him/her at that address.</li>
+              <li>if you stay in an informal settlement, take a letter from your ward councillor confi rming your address (this must have an offi cial date stamp).</li>
+            </ul>
+          </div>
+
+          <div>
+            <p>Once you’ve passed your driving test, you will be required to submit fi ngerprints, and you may need to take another eyesight exam.</p>
+
+            <table cellpadding="1" cellspacing="1" style="width:700px">
+              <tbody>
+              <tr>
+                <td>Passing your driver’s licence isn’t easy. It’s highly recommended that you book at least a few lessons with a driving school before you take your driver’s test.</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <p>&nbsp;</p>
+
+            <p>Contact your local licencing office for more information on getting a driver’s licence.</p>
+          </div>
+        </div>
+        </div>
+      </div>
       <div *ngIf="extendedSection?.subsections">
         <div *ngFor="let subsection of extendedSection?.subsections">
           <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
