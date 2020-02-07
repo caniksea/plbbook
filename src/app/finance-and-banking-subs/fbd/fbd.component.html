@@ -40,10 +40,35 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 6 - Finance & Banking</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div class="section-header">Debts</div>
+      <div>
+        <div _ngcontent-imd-c5=""><p>Being in debt (owing money) can cause huge stress and may affect relationships at home and at work. Getting out of debt isn’t easy, but it can be done.</p>
+
+          <p>Managing your debt</p>
+
+          <ul>
+            <li>Start by tracking your expenses. To do this, you need to draw up a budget.</li>
+            <li>Work out where you can cut back every month (e.g. buying fewer clothes, walking instead of taking a taxi, getting together with a group of people to buy groceries in bulk).</li>
+            <li>Start paying off your debts. Pay off the debt with the highest interest first.</li>
+            <li>Try not to get into any more debt. Pay cash as often as you can.</li>
+            <li>Save some money each month.</li>
+            <li>If you’re getting overwhelmed by your debt, ask for help.</li>
+          </ul>
+
+          <hr>
+          <p><strong>National Debt Mediation Assistance (NDMA)</strong><br>
+            <strong><a href="tel:0860144677">0860 144 677</a></strong> or <a href="http://www.ndma.org.za/"><strong>www.ndma.org.za</strong></a></p>
+
+          <hr>
+          <p><strong>Financial Services Board (FSB)</strong><br>
+            <a href="tel:0800202087"><strong>0800 202 087</strong></a><strong> or </strong><a href="http://www.fsb.co.za/"><strong>www.fsb.co.za</strong></a></p>
+
+          <hr>
+          <p><img alt="Debt-Finance" src="assets/img/finance_banking/Debt-Finance.png"></p>
+        </div>
+      </div>
       <div *ngIf="extendedSection?.subsections">
         <div *ngFor="let subsection of extendedSection?.subsections">
           <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>

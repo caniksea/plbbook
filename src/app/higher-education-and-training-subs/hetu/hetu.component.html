@@ -40,10 +40,51 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 4 - HIGHER EDUCATION & TRAINING</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div class="section-header">Universities</div>
+      <div>
+        <table cellpadding="1" cellspacing="1" style="width:500px">
+          <thead>
+          <tr>
+            <th scope="col">South Africa’s 26 universities offer a range of academic and research options. There is at least one university in each province in South Africa.</th>
+          </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+
+        <p>&nbsp;</p>
+
+        <p>Today there are a number of university degrees or diplomas available from tertiary education institutions.</p>
+
+        <p>If your Grade 12 (matric) marks are good enough, you may qualify for university admission. You will then have the option of registering at a traditional university (offering theoretically orientated degrees); a comprehensive university (offering a combination of academic and vocational diplomas); or a university of technology (focusing on vocationally orientated education).</p>
+
+        <p>How long you study for will depend on your chosen field as well as the type of qualification that you are aiming for. You may also decide to study part-time, which will mean that your qualification will take longer than if you were studying full-time but you should be able to work and support yourself during this time.</p>
+
+        <p>Some universities offer residence options (staying on or nearby the campus), if you are studying far from home, while others offer distance learning. Distance learning is a method of study where teachers and students do not meet in a classroom, but use the Internet, e-mail, mail, etc, to have classes.</p>
+
+        <p>When choosing an institution, it is important to check if the one you have selected is accredited with the South African Qualifications Authority (SAQA). You can also get assistance from a career counsellor at the nearest labour centre to you.</p>
+
+        <p>For information on higher learning institutions and universities in South Africa contact:</p>
+
+        <hr>
+        <p><strong>Department of Higher Education and Training Career Helpline</strong><br>
+          <a href="tel:0869990123"><strong>086 999 0123</strong></a><strong> or </strong><a href="http://www.dhet.gov.za/"><strong>www.dhet.gov.za</strong></a></p>
+
+        <hr>
+        <p><strong>Department of Labour (Labour centres)</strong><br>
+          <a href="tel:0860105350"><strong>0860 10 5350</strong></a><strong> or </strong><a href="http://www.labour.gov.za/DOL/contacts"><strong>www.labour.gov.za/DOL/contacts</strong></a></p>
+
+        <hr>
+        <p><strong>The South African Qualification Authority (SAQA)</strong><br>
+          <a href="tel:0860111673"><strong>0860 111 673</strong></a><strong> or </strong><a href="http://www.saqa.org.za/"><strong>www.saqa.org.za</strong></a></p>
+
+        <hr>
+        <p><img alt="Female-University-Graduate" src="assets/img/higher_education_training/Female-University-Graduate.png"></p>
+
+        <p>&nbsp;</p>
+      </div>
       <div *ngIf="extendedSection?.subsections">
         <div *ngFor="let subsection of extendedSection?.subsections">
           <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>

@@ -41,7 +41,7 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CURRENT_CHAPTER}} {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 3:Family</div>
       </div>
       <div class="lede w-richtext" [innerHTML]="chapter?.story"></div>
       <div class="chaptercontent w-richtext" *ngIf="extendedSections">
@@ -62,7 +62,7 @@
 
     <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">
       <div class="previous-next">Next Chapter</div>
-      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+      <div class="bottomnav-chapter">Chapter 4: Higher Education & Training</div>
     </a>
   </div>
 </div>

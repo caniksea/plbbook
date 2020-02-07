@@ -40,10 +40,66 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 7 - KNOW YOUR RIGHTS</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
+      <div class="section-header" >Detention and arrest</div>
+      <div >
+        <div _ngcontent-imd-c9=""><div>
+          <ul>
+            <li>You must be told immediately of the reason for being arrested or detained.</li>
+            <li>You must be taken to a police station as soon as possible after your arrest. This is to ensure that you are in the custody of the SAPS as soon as possible.</li>
+            <li>You may not be detained by the police for more than 48 hours.</li>
+            <li>You must be told of your right to remain silent, and of the consequences of not remaining silent.</li>
+            <li>You may not be forced to make any confession or admission of guilt.</li>
+            <li>You must be allowed to choose and consult with a lawyer or to apply for legal aid.</li>
+            <li>You must be treated with dignity, and given proper accommodation, food and medical treatment if needed.</li>
+            <li>You must be allowed to be visited by family, your partner/spouse, religious counsellor or medical practitioner if needed.</li>
+            <li>You must be brought before a court as soon as possible.</li>
+            <li>You must be charged, or be informed of the reason for your detention to continue, at the first court appearance after being arrested.</li>
+            <li>You must be released from detention if the interests of justice allow this, subject to reasonable conditions.</li>
+          </ul>
+        </div>
+
+          <div><img alt="Handcuffs-Arrest-Detention" src="assets/img/know_your_rights/Handcuffs-Arrest-Detention.png"></div>
+
+          <p>&nbsp;</p>
+
+          <div>
+            <p>If you feel you’ve been treated badly by the police, you have the right to make a complaint to the officer in charge, who must investigate and take action. Try to remember the name of the officer who gave poor service.</p>
+          </div>
+
+          <p>&nbsp;</p>
+
+          <div>
+            <p>You can also lodge a complaint with the Independent Police Investigative Directorate.</p>
+          </div>
+
+          <div>
+            <hr>
+            <p><strong>Independent Police Investigative Directorate<br>
+              <a href="tel:012 399 0000">012 399 0000</a> or <a href="http://www.icd.gov.za/">www.icd.gov.za</a> </strong></p>
+
+            <hr></div>
+
+          <div>
+            <p>&nbsp;</p>
+
+            <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+              <tbody>
+              <tr>
+                <td>
+                  <p>GETTING BAIL</p>
+
+                  <p>If you are arrested for a minor crime, you may ask for bail at the police station. The police will decide if you can get bail and go home until the court hearing or if you have to stay in custody. If you are given bail, make sure to keep the receipt, and arrive on time at your court hearing.</p>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      </div>
       <div *ngIf="extendedSection?.subsections">
         <div *ngFor="let subsection of extendedSection?.subsections">
           <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
