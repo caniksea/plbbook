@@ -34,13 +34,13 @@
       </a>
       <a href="#plbbook/health" class="bottomnav-links cc-center w-inline-block" (click)="closeMenu()">
         <div class="previous-next">Next Chapter<img class="next-arrow" src="assets/img/right_arrow.png"></div>
-        <div class="bottomnav-chapter">Chapter 2: Health</div>
+        <div class="bottomnav-chapter">2: Health</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter 1: Emergency</div>
+        <div class="chapterpage-header chaptertext">Chapter 1: Emergencies</div>
       </div>
       <div class="lede w-richtext">
         <p>
@@ -309,9 +309,9 @@
 <!--      </div>-->
     </div>
 
-    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">
+    <a href="#plbbook/health" class="bottomnav-links cc-bottom w-inline-block">
       <div class="previous-next">Next Chapter</div>
-      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+      <div class="bottomnav-chapter">2: Health</div>
     </a>
   </div>
 </div>

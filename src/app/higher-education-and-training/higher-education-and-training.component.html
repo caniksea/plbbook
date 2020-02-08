@@ -28,42 +28,781 @@
   </div>
   <div class="rightside">
     <div class="rightnavigation center w-clearfix">
-      <a *ngIf="previousChapter" href="#{{previousChapter?.chapterLink}}" class="bottomnav-links w-inline-block" (click)="closeMenu()" >
+      <a href="#plbbook/family" class="bottomnav-links w-inline-block" (click)="closeMenu()">
         <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous Chapter</div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER - 1}}: {{previousChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">3: Family</div>
       </a>
-      <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" (click)="closeMenu()"
+      <a href="#plbbook/women-in-the-workplace" (click)="closeMenu()"
          class="bottomnav-links cc-center w-inline-block">
         <div class="previous-next">Next Chapter<img class="next-arrow" src="assets/img/right_arrow.png"></div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">5: Women in the Workplace</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CURRENT_CHAPTER}} {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 4: HIGHER EDUCATION & TRAINING</div>
       </div>
-      <div class="lede w-richtext" [innerHTML]="chapter?.story"></div>
-      <div class="chaptercontent w-richtext" *ngIf="extendedSections">
-        <div *ngFor="let section of extendedSections">
-          <div class="section-header" [innerHTML]="section?.sectionTitle"></div>
-          <div [innerHTML]="section?.story"></div>
-          <div *ngIf="section.subsections">
-            <div *ngFor="let subsection of section.subsections">
-              <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-              <div [innerHTML]="subsection.story"></div>
-              <br>
-            </div>
+      <div class="lede w-richtext">
+        <p><strong><em>In current challenging times, a good job can be difficult to find and keep. This is why it's so
+          important to have a good education.</em></strong></p>
+      </div>
+
+      <div>
+        <p>The Department of Higher Education and Training is responsible for tertiary education up to doctorate level,
+          technical and vocational training, as well as adult basic education and training.</p>
+      </div>
+
+      <div>
+        <p>The best investment you can make for yourself, or your child, is some kind of post-school education and/or
+          training.</p>
+      </div>
+
+      <div class="chaptercontent w-richtext">
+        <div>
+          <div class="section-header">TECHNICAL VOCATIONAL EDUCATION AND TRAINING (TVET)</div>
+          <div>
+            <table cellpadding="1" cellspacing="1">
+              <thead>
+              <tr>
+                <th scope="col">There are over 50 registered and accredited TVET Colleges in South Africa, with over 264
+                  campuses in both rural and urban areas. Private colleges also exist, although some operate illegally.
+                  Phone the DHET Helpline (0800 87 2222) to verify a college.
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+
+            <p>TVET Colleges offer vocational, occupational and artisan education and training. This means that studies
+              prepare students for the world of work (usually for a specific occupation), giving people essential skills
+              for
+              the workplace.</p>
+
+            <p>Even if you only completed Grade 9, you can apply to a TVET College. This option is ideal for responsible
+              older adolescents and adults who are serious about getting skills to find employment.</p>
+
+            <p>TVET Colleges offer certificate and diploma qualifications, and a wide range of courses are offered.
+              Categories of courses include:</p>
+
+            <ul>
+              <li>Agriculture.</li>
+              <li>Arts and culture.</li>
+              <li>Business.</li>
+              <li>Commerce and management.</li>
+              <li>Education.</li>
+              <li>Training and development.</li>
+              <li>Engineering.</li>
+              <li>Manufacturing and technology.</li>
+              <li>Services.</li>
+              <li>Building contruction and security.</li>
+            </ul>
+
+            <table cellpadding="1" cellspacing="1">
+              <thead>
+              <tr>
+                <th scope="col">Community Education and Training Colleges</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <p>Colleges have been established to cater for disadvantaged groups. These colleges focus on youth and
+                    adults who, for various reasons, did not complete their schooling or never attended school and wish
+                    to
+                    raise the base for further learning, improve their skills for employability, and/or progress to
+                    opportunities in TVET colleges and university education. There is a least one community college in
+                    each
+                    province.</p>
+
+                  <p>Qualifications or part-qualifications are registered on Levels 1 to 4 of the National
+                    Qualifications
+                    Framework, and include:</p>
+
+                  <ul>
+                    <li>General Education and Training Certificate for Adults.</li>
+                    <li>Senior Certificate.</li>
+                    <li>National Senior Certificate for Adults (still to be implemented).</li>
+                  </ul>
+
+                  <p>Skills development courses include:</p>
+
+                  <ul>
+                    <li>Sewing.</li>
+                    <li>Plumbing.</li>
+                    <li>Mechanics.</li>
+                    <li>Welding.</li>
+                    <li>Gardening.</li>
+                    <li>Travel and tourism.</li>
+                  </ul>
+
+                  <p><strong>Entry requirement</strong><br>
+                    There is no entry requirement, except that learners should be 15 years old and above. Applicants
+                    will be
+                    assessed and placed in appropriate levels that meet their needs. For more information contact the
+                    Department of Higher Education:</p>
+
+                  <hr>
+                  <p><strong>Department of Higher Education</strong></p>
+
+                  <hr>
+                  <p><strong>Call Centre </strong><a href="tel:0800872222"><strong>0800 872 222</strong></a><strong>
+                    or </strong><a href="http://www.dhet.gov.za/"><strong>www.dhet.gov.za</strong></a></p>
+
+                  <hr>
+                  <p><strong>Gauteng </strong><a href="tel:0114749041"><strong>011 474 9041</strong></a></p>
+
+                  <hr>
+                  <p>&nbsp;</p>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+
+            <p>&nbsp;</p>
           </div>
-          <br>
         </div>
+
+        <div>
+          <div class="section-header">Universities</div>
+          <div>
+            <table cellpadding="1" cellspacing="1" style="width:500px">
+              <thead>
+              <tr>
+                <th scope="col">South Africa’s 26 universities offer a range of academic and research options. There is
+                  at
+                  least one university in each province in South Africa.
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+
+            <p>&nbsp;</p>
+
+            <p>Today there are a number of university degrees or diplomas available from tertiary education
+              institutions.</p>
+
+            <p>If your Grade 12 (matric) marks are good enough, you may qualify for university admission. You will then
+              have
+              the option of registering at a traditional university (offering theoretically orientated degrees); a
+              comprehensive university (offering a combination of academic and vocational diplomas); or a university of
+              technology (focusing on vocationally orientated education).</p>
+
+            <p>How long you study for will depend on your chosen field as well as the type of qualification that you are
+              aiming for. You may also decide to study part-time, which will mean that your qualification will take
+              longer
+              than if you were studying full-time but you should be able to work and support yourself during this
+              time.</p>
+
+            <p>Some universities offer residence options (staying on or nearby the campus), if you are studying far from
+              home, while others offer distance learning. Distance learning is a method of study where teachers and
+              students
+              do not meet in a classroom, but use the Internet, e-mail, mail, etc, to have classes.</p>
+
+            <p>When choosing an institution, it is important to check if the one you have selected is accredited with
+              the
+              South African Qualifications Authority (SAQA). You can also get assistance from a career counsellor at the
+              nearest labour centre to you.</p>
+
+            <p>For information on higher learning institutions and universities in South Africa contact:</p>
+
+            <hr>
+            <p><strong>Department of Higher Education and Training Career Helpline</strong><br>
+              <a href="tel:0869990123"><strong>086 999 0123</strong></a><strong> or </strong><a
+                href="http://www.dhet.gov.za/"><strong>www.dhet.gov.za</strong></a></p>
+
+            <hr>
+            <p><strong>Department of Labour (Labour centres)</strong><br>
+              <a href="tel:0860105350"><strong>0860 10 5350</strong></a><strong> or </strong><a
+                href="http://www.labour.gov.za/DOL/contacts"><strong>www.labour.gov.za/DOL/contacts</strong></a></p>
+
+            <hr>
+            <p><strong>The South African Qualification Authority (SAQA)</strong><br>
+              <a href="tel:0860111673"><strong>0860 111 673</strong></a><strong> or </strong><a
+                href="http://www.saqa.org.za/"><strong>www.saqa.org.za</strong></a></p>
+
+            <hr>
+            <p><img alt="Female-University-Graduate"
+                    src="assets/img/higher_education_training/Female-University-Graduate.png"></p>
+
+            <p>&nbsp;</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">Bursaries and scholarships</div>
+          <div>
+            <p>With the rising cost of education, not all parents can afford the cost of tertiary
+              education. Fortunately, there are both government and private bursaries that can help.</p>
+
+            <p>A bursary is a financial contribution made by a higher-education institute, a private company or a
+              government organisation to help students who can’t afford to pay for their education themselves.</p>
+
+            <p><strong>Means-tested bursaries</strong><br>
+              A means-tested bursary evaluates whether a family may receive government assistance. This bursary type is
+              available for students of parents who earn below an annual threshold amount</p>
+
+            <p><strong>Scholarships</strong><br>
+              A scholarship is performance-based and is usually awarded to top students who receive high results in
+              their
+              matric exams. A scholarship is not usually required to be ‘paid back’. However, some organisations may
+              require that recipients work with the organisation for a given time once the student has successfully
+              completed their studies.</p>
+
+            <p>You can find a list of available bursaries here:</p>
+
+            <p><a href="https://bursaries-southafrica.co.za/list-of-all-bursaries-in-south-africa/">http://bursaries-southafrica.co.za/list-of-all-bursaries-in-south-africa/</a>
+            </p>
+
+            <hr>
+            <p><strong>National Qualification Framework (NQF) and Career Development Services</strong><br>
+              <strong>Helpline (for info on career, qualifications and educational providers)</strong><br>
+              <a href="tel:0860356635"><strong>0860 35 66 35</strong></a></p>
+
+            <hr>
+            <p><strong>Department of Labour (labour centres)</strong><br>
+              <a href="tel:0860101018"><strong>0860 10 1018</strong></a><strong> or </strong><a
+                href="http://www.labour.gov.za/DOL/contacts"><strong>www.labour.gov.za/DOL/contacts</strong></a></p>
+
+            <hr>
+            <p><strong>GoStudy </strong><a href="tel:0215553928"><strong>021 555 3928</strong></a><strong>
+              or </strong><a
+              href="http://www.sa.gostudy.info/"><strong>www.sa.gostudy.info</strong></a></p>
+
+            <hr>
+            <p><strong>National Youth Development Agency </strong><a href="tel:0800525252"><strong>0800 52
+              5252</strong></a><strong> or </strong><a href="http://www.nyda.gov.za/Pages/default.aspx"><strong>www.nyda.gov.za</strong></a>
+            </p>
+
+            <hr>
+            <p><strong>Motsepe Foundation Bursary </strong><a href="tel:0113241500"><strong>011 324
+              1500</strong></a><br>
+              <strong>or </strong><a href="http://motsepefoundation.org/"><strong>motsepefoundation.org</strong></a></p>
+
+            <hr>
+            <p><img alt="Bursary-Scholarship" src="assets/img/higher_education_training/Bursary-Scholarship.png"></p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Community education and training</strong></p>
+
+            <hr>
+            <p>NATIONAL CALL CENTRE</p>
+
+            <p><a href="tel:0123126018">012 312 6018</a></p>
+
+            <hr>
+            <p>EASTERN CAPE</p>
+
+            <p><a href="tel:0406084200">040 608 4200</a></p>
+
+            <hr>
+            <p>GAUTENG AND FREE STATE</p>
+
+            <p><a href="tel:0113550930">011 355 0930</a>/<a href="tel:0113550892">0892</a></p>
+
+            <hr>
+            <p>KWAZULU-NATAL</p>
+
+            <p><a href="tel:0824378800">082 437 8800</a></p>
+
+            <hr>
+            <p>LIMPOPO</p>
+
+            <p><a href="tel:0152912012">015 291 2012</a></p>
+
+            <hr>
+            <p>MPUMALANGA AND NORTH WEST</p>
+
+            <p><a href="tel:0183898150">018 389 8150</a></p>
+
+            <hr>
+            <p>WESTERN AND NORTHERN CAPE</p>
+
+            <p><a href="tel:0214672614">021 467 2614</a>/<a href="tel:0214679278">9278</a></p>
+
+            <hr>
+            <p>&nbsp;</p>
+
+            <p><strong>TVET (Technical education vocational training)</strong></p>
+
+            <hr>
+            <p><strong>EASTERN CAPE</strong></p>
+
+            <hr>
+            <p>Buffalo City TVET College</p>
+
+            <p><a href="tel:0437049218">043 704 9218</a></p>
+
+            <hr>
+            <p>East Cape Midlands TVET College</p>
+
+            <p><a href="tel:0419952000">041 995 2000</a></p>
+
+            <hr>
+            <p>Ikhala TVET College</p>
+
+            <p><a href="tel:0478738843">047 873 8843</a></p>
+
+            <hr>
+            <p>Ingwe TVET College</p>
+
+            <p><a href="tel:0392551415">039 255 1415</a>/<a href="tel:0392550346">0346</a></p>
+
+            <hr>
+            <p>King Hintsa TVET College</p>
+
+            <p><a href="tel:0474016400">047 401 6400</a></p>
+
+            <hr>
+            <p>King Sabata Dalindyebo TVET College</p>
+
+            <p><a href="tel:0475051001">047 505 1001</a>/<a href="tel:0475051002">2</a></p>
+
+            <hr>
+            <p>Lovedale TVET College</p>
+
+            <p><a href="tel:0475051001">047 505 1001</a>/<a href="tel:0475051002">2</a></p>
+
+            <hr>
+            <p>Port Elizabeth TVET College</p>
+
+            <p><a href="tel:0415860002">041 586 0002</a></p>
+
+            <hr>
+            <p><strong>FREE STATE</strong></p>
+
+            <hr>
+            <p>Flavius Mareka</p>
+
+            <p><a href="tel:0169760815">016 976 0815</a>/<a href="tel:0169760829">0829</a></p>
+
+            <hr>
+            <p>Goldfields TVET College</p>
+
+            <p><a href="tel:0579106000">057 910 6000</a></p>
+
+            <hr>
+            <p>Maluti TVET College</p>
+
+            <p><a href="tel:0587136100">058 713 6100</a></p>
+
+            <hr>
+            <p>Motheo TVET College</p>
+
+            <p><a href="tel:0514069330">051 406 9330</a>/<a href="tel:051 406 9331">1</a></p>
+
+            <hr>
+            <p><strong>GAUTENG</strong></p>
+
+            <hr>
+            <p>Central JHB</p>
+
+            <p><a href="tel:0113516000">011 351 6000</a></p>
+
+            <hr>
+            <p>Ekurhuleni East TVET College</p>
+
+            <p><a href="tel:0117364400">011 736 4400</a>/<a href="tel:0117366600">736 6600</a></p>
+
+            <hr>
+            <p>Ekurhuleni West College</p>
+
+            <p><a href="tel:0113231600">011 323 1600</a></p>
+
+            <hr>
+            <p>Sedibeng TVET College</p>
+
+            <p><a href="tel:0164226645">016 422 6645</a></p>
+
+            <hr>
+            <p>South West TVET College</p>
+
+            <p><a href="tel:0115278300">011 527 8300</a></p>
+
+            <hr>
+            <p>Tshwane North TVET College</p>
+
+            <p><a href="tel:0124011941">012 401 1941</a>/<a href="tel:0124011600">1600</a></p>
+
+            <hr>
+            <p>Western College TVET</p>
+
+            <p><a href="tel:0116924004">011 692 4004</a></p>
+
+            <hr>
+            <p>Western College TVET</p>
+
+            <p><a href="tel:0116924004">011 692 4004</a></p>
+
+            <hr>
+            <p><strong>KWAZULU-NATAL</strong></p>
+
+            <hr>
+            <p>Coastal TVET College (Mobeni)</p>
+
+            <p><a href="tel:0319057000">031 905 7000</a></p>
+
+            <hr>
+            <p>Elangeni TVET College</p>
+
+            <p><a href="tel:0317166700">031 716 6700</a></p>
+
+            <hr>
+            <p>Esayidi TVET College</p>
+
+            <p><a href="tel:0396840110">039 684 0110</a></p>
+
+            <hr>
+            <p>Majuba TVET College</p>
+
+            <p><a href="tel:0396840110">039 684 0110</a></p>
+
+            <hr>
+            <p>Mnambithi TVET College</p>
+
+            <p><a href="tel:0366374790">036 637 4790</a></p>
+
+            <hr>
+            <p>Mthashana TVET College</p>
+
+            <p><a href="tel:0349815337">034 981 5337</a>/<a href="tel:0349801010">034 980 1010</a></p>
+
+            <hr>
+            <p>Thekwini TVET College</p>
+
+            <p><a href="tel:0312508400">031 250 8400</a>/<a href="tel:0312508248">8248</a>/<a
+              href="tel:0312508256">8256</a></p>
+
+            <hr>
+            <p>Umfolozi tvet College</p>
+
+            <p><a href="tel:0359029501">035 902 9501</a></p>
+
+            <hr>
+            <p>Umgungundlovu TVET College</p>
+
+            <p><a href="tel:033341210">033 341 2101</a></p>
+
+            <hr>
+            <p><strong>LIMPOPO</strong></p>
+
+            <hr>
+            <p>Capricorn TVET College</p>
+
+            <p><a href="tel:0152301800">015 230 1800</a></p>
+
+            <hr>
+            <p>Lephalale TVET College</p>
+
+            <p><a href="tel:0147632252">014 763 2252</a></p>
+
+            <hr>
+            <p>Letaba TVET College</p>
+
+            <p><a href="tel:0153075440">015 307 5440</a></p>
+
+            <hr>
+            <p>Mopani South East TVET College</p>
+
+            <p><a href="tel:0157815721">015 781 5721</a>/<a href="tel:0157815725">5</a></p>
+
+            <hr>
+            <p>Sekhukhune TVET College</p>
+
+            <p><a href="tel:0132690278">013 269 0278</a></p>
+
+            <hr>
+            <p>Vhembe TVET College</p>
+
+            <p><a href="tel:0159633156">015 963 3156</a>/<a href="tel:0159633100">963 3100</a></p>
+
+            <hr>
+            <p>Waterberg TVET College</p>
+
+            <p><a href="tel:0154918581">015 491 8581</a>/<a href="tel:0154918602">8602</a></p>
+
+            <hr>
+            <p><strong>MPUMALANGA</strong></p>
+
+            <hr>
+            <p>Ehlanzeni TVET College</p>
+
+            <p><a href="tel:0137527105">013 752 7105</a></p>
+
+            <hr>
+            <p>Gert Sibande TVET College</p>
+
+            <p><a href="tel:0717129040">071 712 9040</a>/<a href="tel:0717121458">1458</a>/<a
+              href="tel:0717121459">1459</a></p>
+
+            <hr>
+            <p>Nkangala TVET College</p>
+
+            <p><a href="tel:0136901430">013 690 1430</a>/<a href="tel:0136903824">3824</a></p>
+
+            <hr>
+            <p><strong>NORTHERN CAPE</strong></p>
+
+            <hr>
+            <p>Northern Cape Rural TVET College</p>
+
+            <p><a href="tel:0543313836">054 331 3836</a></p>
+
+            <hr>
+            <p>Northern Cape Urban TVET College</p>
+
+            <p><a href="tel:0538392000">053 839 2000</a>/<a href="tel:0538392061">2061</a></p>
+
+            <hr>
+            <p><strong>NORTH WEST</strong></p>
+
+            <hr>
+            <p>Orbit TVET College</p>
+
+            <p><a href="tel:0145928461">014 592 8461</a>/<a href="tel:0145928462">2</a>/<a
+              href="tel:0145928814">8814</a>
+            </p>
+
+            <hr>
+            <p>Taletso TVET College</p>
+
+            <p><a href="tel:0183842346">018 384 2346</a>/<a href="tel:0183842347">7</a>/<a href="tel:0183842349">9</a>
+            </p>
+
+            <hr>
+            <p>Vuselela TVET College</p>
+
+            <p><a href="tel:0184067800">018 406 7800</a></p>
+
+            <hr>
+            <p><strong>WESTERN CAPE</strong></p>
+
+            <hr>
+            <p>Boland TVET College</p>
+
+            <p><a href="tel:0218867111">021 886 7111</a>/<a href="tel:0218867112">2</a></p>
+
+            <hr>
+            <p>College of Cape Town TVET College</p>
+
+            <p><a href="tel:0214046700">021 404 6700</a>/<a href="tel:0214046708">8</a></p>
+
+            <hr>
+            <p>False Bay TVET College</p>
+
+            <p><a href="tel:0217870800">021 787 0800</a></p>
+
+            <hr>
+            <p>Northlink tvet College</p>
+
+            <p><a href="tel:0219709011">021 970 9011</a>/<a href="tel:0219709213">213</a></p>
+
+            <hr>
+            <p>South Cape TVET College</p>
+
+            <p><a href="tel:0448840359">044 884 0359</a></p>
+
+            <hr>
+            <p>West Coast TVET College</p>
+
+            <p><a href="tel:0224821143">022 482 1143</a>/<a href="tel:0224821179">79</a>/<a href="tel:0224821195">95</a>
+            </p>
+
+            <hr>
+            <p>&nbsp;</p>
+
+            <p><img alt="Image missing (not provided)"
+                    src="assets/img/higher_education_training/University-Building.PNG">
+            </p>
+
+            <p>&nbsp;</p>
+
+            <p>
+              <strong>UNIVERSITIES</strong><br>
+              <strong>Traditional universities</strong></p>
+
+            <hr>
+            <p>Rhodes University</p>
+
+            <p><a href="tel:0466033811">046 603 3811</a></p>
+
+            <p><a href="https://www.ru.ac.za/">www.ru.ac.za</a></p>
+
+            <hr>
+            <p>North-West University</p>
+
+            <p><a href="tel:0182994897">018 299 4897</a></p>
+
+            <p><a href="http://www.nwu.ac.za/">www.nwu.ac.za</a></p>
+
+            <hr>
+            <p>University of Cape Town</p>
+
+            <p><a href="tel:0216509111">021 650 9111</a></p>
+
+            <p><a href="http://www.uct.ac.za/">www.uct.ac.za</a></p>
+
+            <hr>
+            <p>University of Fort Hare</p>
+
+            <p><a href="tel:0406022016">040 602 2016</a></p>
+
+            <p><a href="http://www.ufh.ac.za/">www.ufh.ac.za</a></p>
+
+            <hr>
+            <p>University of the Free State</p>
+
+            <p><a href="tel:0514019111">051 401 9111</a></p>
+
+            <p><a href="http://www.uvos.ac.za/">www.uvos.ac.za</a></p>
+
+            <hr>
+            <p>University of KwaZulu-Natal</p>
+
+            <p><a href="tel:0312601111">031 260 1111</a></p>
+
+            <p><a href="https://www.ukzn.ac.za/">www.ukzn.ac.za</a></p>
+
+            <hr>
+            <p>University of Limpopo</p>
+
+            <p><a href="tel:0152683332">015 268 3332</a></p>
+
+            <p><a href="https://www.ul.ac.za/">www.ul.ac.za</a></p>
+
+            <hr>
+            <p>University of Pretoria</p>
+
+            <p><a href="tel:0124204111">012 420 4111</a></p>
+
+            <p><a href="http://web.up.ac.za/">web.up.ac.za</a></p>
+
+            <hr>
+            <p>University of Stellenbosch</p>
+
+            <p><a href="tel:0218089111">021 808 9111</a></p>
+
+            <p><a href="http://www.sun.ac.za/Home.aspx">www.sun.ac.za</a></p>
+
+            <hr>
+            <p>University of the Western Cape</p>
+
+            <p><a href="tel:0219592911">021 959 2911</a></p>
+
+            <p><a href="https://www.uwc.ac.za/Pages/default.aspx">www.uwc.ac.za</a></p>
+
+            <hr>
+            <p>University of the Witwatersrand</p>
+
+            <p><a href="tel:0117171000">011 717 1000</a></p>
+
+            <p><a href="http://www.wits.ac.za/">www.wits.ac.za</a></p>
+
+            <hr>
+            <p><strong>Comprehensive universities</strong></p>
+
+            <hr>
+            <p>University of Johannesburg</p>
+
+            <p><a href="tel:0115594595">011 559 4595</a></p>
+
+            <p><a href="https://www.uj.ac.za/">www.uj.ac.za</a></p>
+
+            <hr>
+            <p>Nelson Mandela Metropolitan University</p>
+
+            <p><a href="tel:0415041111">041 504 1111</a></p>
+
+            <p><a href="https://www.mandela.ac.za/">www.mandela.ac.za</a></p>
+
+            <hr>
+            <p>University of South Africa</p>
+
+            <p><a href="tel:0124293111">012 429 3111</a></p>
+
+            <p><a href="https://www.unisa.ac.za/sites/corporate/default">www.unisa.ac.za</a></p>
+
+            <hr>
+            <p>University of Venda</p>
+
+            <p><a href="tel:0159628000">015 962 8000</a></p>
+
+            <p><a href="http://www.univen.ac.za/">www.univen.ac.za</a></p>
+
+            <hr>
+            <p>University of Zululand</p>
+
+            <p><a href="tel:0359026001">035 902 6001</a>/<a href="tel:0359026006">6</a></p>
+
+            <p><a href="http://www.uzulu.ac.za/">www.uzulu.ac.za</a></p>
+
+            <hr>
+            <p>Walter Sisulu University</p>
+
+            <p><a href="tel:0475022844">047 502 2844</a></p>
+
+            <p><a href="http://www.wsu.ac.za/waltersisulu/">www.wsu.ac.za</a></p>
+
+            <hr>
+            <p><strong>Universities of technology</strong></p>
+
+            <hr>
+            <p>Cape Peninsula University of Technology</p>
+
+            <p><a href="tel:0219596767">021 959 6767</a></p>
+
+            <p><a href="http://www.cput.ac.za/">www.cput.ac.za</a></p>
+
+            <hr>
+            <p>Central University of Technology</p>
+
+            <p><a href="tel:0515073911">051 507 3911</a></p>
+
+            <p><a href="http://www.cut.ac.za/">www.cut.ac.za</a></p>
+
+            <hr>
+            <p>Durban University of Technology</p>
+
+            <p><a href="tel:0313732411">031 373 2411</a></p>
+
+            <p><a href="https://www.dut.ac.za/">www.dut.ac.za</a></p>
+
+            <hr>
+            <p>Mangosuthu University of Technology</p>
+
+            <p><a href="tel:0319077111">031 907 7111</a></p>
+
+            <p><a href="http://www.mut.ac.za/">www.mut.ac.za</a></p>
+
+            <hr>
+            <p>Tshwane University of Technology</p>
+
+            <p><a href="tel:0123825911">012 382 5911</a></p>
+
+            <p><a href="https://www.tut.ac.za/">www.tut.ac.za</a></p>
+
+            <hr>
+            <p>Vaal University of Technology</p>
+
+            <p><a href="tel:0169509924">016 950 9924</a></p>
+
+            <p><a href="https://www.vut.ac.za/">www.vut.ac.za</a></p>
+
+            <hr>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
-    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">
+    <a href="#plbbook/women-in-the-workplace" class="bottomnav-links cc-bottom w-inline-block">
       <div class="previous-next">Next Chapter</div>
-      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+      <div class="bottomnav-chapter">5: Women in the Workplace</div>
     </a>
   </div>
 </div>

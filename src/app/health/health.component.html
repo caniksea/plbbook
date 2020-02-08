@@ -28,21 +28,21 @@
   </div>
   <div class="rightside">
     <div class="rightnavigation center w-clearfix">
-      <a (click)="closeMenu()" *ngIf="previousChapter" class="bottomnav-links w-inline-block"
-         href="#{{previousChapter?.chapterLink}}">
+      <a (click)="closeMenu()" class="bottomnav-links w-inline-block"
+         href="#plbbook/emergencies">
         <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous Chapter</div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER - 1}}: {{previousChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">1: Emergencies</div>
       </a>
-      <a (click)="closeMenu()" *ngIf="nextChapter" class="bottomnav-links cc-center w-inline-block"
-         href="#{{nextChapter?.chapterLink}}">
+      <a (click)="closeMenu()" class="bottomnav-links cc-center w-inline-block"
+         href="#plbbook/family">
         <div class="previous-next">Next Chapter<img class="next-arrow" src="assets/img/right_arrow.png"></div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">3: Family</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CURRENT_CHAPTER}} {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 2: Health</div>
       </div>
       <div class="lede w-richtext">
         <p>
@@ -1849,9 +1849,9 @@
     <!--      </div>-->
     <!--  </div>-->
 
-    <a *ngIf="nextChapter" class="bottomnav-links cc-bottom w-inline-block" href="#{{nextChapter?.chapterLink}}">
+    <a class="bottomnav-links cc-bottom w-inline-block" href="#plbbook/family">
       <div class="previous-next">Next Chapter</div>
-      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+      <div class="bottomnav-chapter">3: Family</div>
     </a>
   </div>
 </div>

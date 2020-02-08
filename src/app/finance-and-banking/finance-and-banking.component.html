@@ -28,41 +28,644 @@
   </div>
   <div class="rightside">
     <div class="rightnavigation center w-clearfix">
-      <a *ngIf="previousChapter" href="#{{previousChapter?.chapterLink}}" class="bottomnav-links w-inline-block"
+      <a href="#plbbook/women-in-the-workplace" class="bottomnav-links w-inline-block"
          (click)="closeMenu()">
         <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous Chapter</div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER - 1}}: {{previousChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">5: Women in the Workplace</div>
       </a>
-      <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-center w-inline-block"
+      <a href="#plbbook/know-your-rights" class="bottomnav-links cc-center w-inline-block"
          (click)="closeMenu()">
         <div class="previous-next">Next Chapter<img class="next-arrow" src="assets/img/right_arrow.png"></div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">7: Know your Rights</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CURRENT_CHAPTER}} {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 6: Finance & Banking</div>
       </div>
-      <div class="lede w-richtext" [innerHTML]="chapter?.story"></div>
-      <div class="chaptercontent w-richtext" *ngIf="extendedSections">
-        <div *ngFor="let section of extendedSections">
-          <div class="section-header" [innerHTML]="section?.sectionTitle"></div>
-          <div [innerHTML]="section?.story"></div>
-          <div *ngIf="section.subsections">
-            <div *ngFor="let subsection of section.subsections">
-              <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-              <div [innerHTML]="subsection.story"></div>
-              <br>
+      <div class="lede w-richtext">
+        <p><em><strong>We all know that life can spring unpleasant surprises on us, such as job loss or a medical
+          emergency that will need money.</strong></em></p>
+        <p>That’s why financial planning and knowing about how to manage your money is important.</p>
+        <p>Managing your finances means you need to understand about banking and how to budget and save. It is also
+          important to know about debt, loans and insurance</p>
+      </div>
+      <div class="chaptercontent w-richtext">
+
+        <div>
+          <div class="section-header">FINANCIAL PLANNING</div>
+          <div>
+            <p>Financial planning helps you to use your money wisely. One of the key factors in financial planning and
+              management is saving money each month. This gives you a safety net for when you need it most, and can help you
+              during emergencies.</p>
+            <div _ngcontent-gol-c25="" class="subsection-header">Budgeting</div>
+            <div _ngcontent-gol-c25="">
+              <div>
+                <p>Budgeting means keeping an accurate track of your income (money coming in) and expenses (money going
+                  out), so that you can see clearly where your money is going. Keeping a monthly budget makes you face
+                  reality. It helps you to manage your money wisely.</p>
+              </div>
+
+              <div>
+                <p>Sticking to a monthly budget needs discipline and commitment, but it will help you stay out of debt by
+                  making sure you keep control of your expenses. When you can easily see what your necessary and unnecessary
+                  expenses are, it’s easier to decide what to cut back on.</p>
+
+                <ul>
+                  <li><strong>Income:</strong> Your income is what you earn every month. It could be from wages or a salary,
+                    or casual payment for odd jobs, or earnings from sales.
+                  </li>
+                  <li><strong>Expenses:</strong>Expenses are what you spend money on every month. They can be ‘fixed’
+                    expenses (the ones you can’t change, like rent, electricity, water, food, transport, school fees, and
+                    monthly savings) or ‘variable’ expenses (things you can cut back on, like clothing and entertainment).
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p>At the end of the month, subtract your expenses from your income. Ideally, you should have some money
+                  left over. These are your savings. You should try to avoid debt by never having higher expenses than your
+                  income.</p>
+              </div>
+
+              <div>
+                <p><strong>A simple family budget</strong></p>
+
+                <table cellpadding="1" cellspacing="1">
+                  <tbody>
+                  <tr>
+                    <th>INCOME</th>
+                    <th>AMOUNT</th>
+                    <th>TOTAL</th>
+                  </tr>
+                  <tr>
+                    <td>Salary or wages</td>
+                    <td>R3 000</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Other earnings</td>
+                    <td>R500</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Maintenance</td>
+                    <td>R500</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Grant</td>
+                    <td>-</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Total income</strong></td>
+                    <td>&nbsp;</td>
+                    <td><strong>R4 000</strong></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th><strong>EXPENSES</strong></th>
+                    <th><strong>AMOUNT</strong></th>
+                    <th><strong>TOTAL</strong></th>
+                  </tr>
+                  <tr>
+                    <td>Rent</td>
+                    <td>R800</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>School fees</td>
+                    <td>R400</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Electricity</td>
+                    <td>R200</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Medical</td>
+                    <td>R100</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Groceries</td>
+                    <td>R1 000</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Toiletries</td>
+                    <td>R50</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Transport</td>
+                    <td>R1 000</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Debt payment</td>
+                    <td>R100</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Clothes</td>
+                    <td>R150</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Airtime</td>
+                    <td>R100</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Savings</td>
+                    <td>R100</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Total expenses</strong></td>
+                    <td>&nbsp;</td>
+                    <td><strong>R4 000</strong></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th><strong>NETT (income less expenses)</strong></th>
+                    <th>&nbsp;</th>
+                    <th><strong>R–</strong></th>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <p>&nbsp;</p>
+              </div>
+            </div>
+            <br _ngcontent-gol-c25="">
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">Banking</div>
+          <div>
+            <div>
+              <div>
+                <p>There are two kinds of financial institutions in South Africa:</p>
+
+                <ul>
+                  <li>The formal sector is dominated by big commercial banks, and smaller financial institutions, such as
+                    Postbank, and savings and credit cooperatives.
+                  </li>
+                  <li>Informal banking options include unlicenced moneylenders, burial societies, rotating saving and credit
+                    associations (ROSCAs) and stockvels, which mainly provide financial services to people without access to
+                    bank accounts in both rural and urban areas.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div _ngcontent-imd-c0="" class="subsection-header">Products and services offered by banks</div>
+            <div _ngcontent-imd-c0="">
+              <div>
+                <p>All commercial banks offer a wide range of services and products, including different types of accounts,
+                  investments opportunities, loans, insurance, overdraft facilities, revolving credits, as well as
+                  self-service banking such as telephone banking, internet banking and ATMs. There are branches throughout
+                  South Africa where you can also get assistance in person.</p>
+              </div>
+
+              <div>
+                <p>Before committing to a particular bank, do some research. Look at the products and services the bank is
+                  offering and assess if they meet your needs in terms of monthly fees, interest rates and customer
+                  service.</p>
+              </div>
+
+              <div>
+                <p>With advances in technology, you don’t have to visit a branch to do your day-to-day banking. You can
+                  perform transactions via the following channels at any time of the day:</p>
+
+                <ul>
+                  <li>
+                    <p><strong>ATM banking: </strong>ATMs (or automated teller machines) offer the option to perform
+                      financial transactions without entering a branch. Most banks have a national network of ATMs for easy
+                      access to your bank account.</p>
+                  </li>
+                  <li>
+                    <p><strong>Cellphone banking:</strong>You can perform a range of transactions safely through a dial-up
+                      session on your cellphone. Some banks also have smartphone applications (‘apps’) that you can download
+                      and use on your cellphone.</p>
+                  </li>
+                  <li>
+                    <p><strong>Telephone banking:</strong>You can do your banking over the telephone. Most banks offer this
+                      service 24 hours a day, and you can choose between the voice- recording option (self-help) or speaking
+                      to a consultant directly.</p>
+                  </li>
+                  <li>
+                    <p><strong>Internet banking:</strong>You can log in to your bank account via your bank’s secure website
+                      to manage your money online.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div><img alt="Wallet" src="assets/img/finance_banking/Wallet.png"></div>
+            </div>
+            <br _ngcontent-imd-c0="">
+            <div class="subsection-header">Opening a bank account</div>
+            <div>
+              <p>There are many different types of accounts offered by banks in South Africa. These include the
+                following:</p>
+
+              <ul>
+                <li>Access or saving accounts.</li>
+                <li>Cheque or current accounts.</li>
+                <li>Mzansi accounts.</li>
+                <li>Money market or investment accounts.</li>
+              </ul>
+            </div>
+
+            <div>
+              <p>Which account you choose will depend on your financial situation – whether you have a job or regular
+                income, and what your current and future needs are likely to be.</p>
+            </div>
+
+            <div>
+              <p>To open most bank accounts, you’ll need the following:</p>
+
+              <ul>
+                <li>Some money as an opening deposit.</li>
+                <li>Your green barcoded South African identity document or the new smart identity card.</li>
+                <li>Proof of residence: This could be a lease (if you’re renting), or a recent electricity or phone bill
+                  that has your name and physical address on it. If you are living with someone who owns or rents the
+                  home, you will need him/her to confirm in writing that you live together. He/she will also need to
+                  provide his/her ID number and proof of residence.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p>For non-South African citizens, you’ll need:</p>
+
+              <ul>
+                <li>A valid passport.</li>
+                <li>Proof of residence.</li>
+                <li>Work permit.</li>
+                <li>Employment contract.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div><strong>Different types of bank accounts</strong></div>
+
+              <div>
+                <p>Your chosen bank should be able to advise you on the different types of bank accounts they offer. All
+                  banks should offer the following options:</p>
+
+                <ul>
+                  <li>
+                    <p><strong>Cheque or current account:</strong>Ideal if you are earning income each month and need to
+                      make regular transactions, such as paying bills and withdrawing money. You may also be offered an
+                      overdraft facility, which is a loan offered by the bank each month if your expenses are more than
+                      your income. You will be charged interest fees on this amount.</p>
+                  </li>
+                  <li>
+                    <p><strong>Savings account:</strong>This account is perfect for people looking to invest money and
+                      save. The bank may charge you more than a current account to make transactions, so if you have a lot
+                      of transactions each month, a savings account may not be the most cost-effective option for you.
+                      There are also different types of savings accounts. Some allow you immediate access to your money,
+                      while others, like a 32-day notice account, offer more interest on savings but require you to
+                      request your money from the bank in advance.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div><img alt="Bank-Card" src="assets/img/finance_banking/Bank-Card.png"></div>
+            </div>
+            <br>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">Savings</div>
+          <div>
+            <div>
+              <div>
+                <p>Savings are a portion of income or money put aside after you’ve paid all your expenses. You should try to
+                  save money to pay for unexpected events or emergencies such as a leaky roof, a car breakdown, a medical
+                  emergency or a sudden loss of income. You should try to save about 10% of your monthly income. You should
+                  also try to save for your children’s education and for your own retirement.</p>
+              </div>
+
+              <div>
+                <p>Without money put away in savings and/or investments, you may be forced to take out a loan in an
+                  emergency. Borrowing money is very expensive.</p>
+              </div>
+            </div>
+            <div class="subsection-header">Saving through a bank</div>
+            <div>
+              <div>
+                <div>
+                  <p>There are many different kinds of savings and investment accounts to choose from.</p>
+
+                  <ul>
+                    <li>Some are <strong>short-term savings accounts</strong> that are easy to use and don’t cost much to
+                      operate. To start with, look for a tax-free savings account that doesn’t have a minimum deposit.
+                    </li>
+                    <li>Other kinds of savings accounts are <strong>longer-term accounts</strong> that need a bit more money
+                      to open, and which you need to ‘give notice on’ (warn the bank) when you want to withdraw money.
+                    </li>
+                    <li><strong>Fixed-deposit savings accounts</strong> require you to put a specific amount of money into
+                      saving for a longer time, sometimes for a certain number of years.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="subsection-header">Saving through a stockvel</div>
+            <div>
+              <div>
+                <table cellpadding="1" cellspacing="1">
+                  <thead>
+                  <tr>
+                    <th scope="col">Every year, more than R45 billion is invested in an estimated 800 000 stokvels in South
+                      Africa.
+                    </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+
+                <p>&nbsp;</p>
+
+                <p>A stokvel is a form of informal saving where a group of people save money together. Each member
+                  contributes a fixed amount on a regular basis, and members take turns to receive the full amount.</p>
+              </div>
+
+              <div>
+                <p>Stokvels are popular because there are no credit checks and no hidden costs, and members are ‘forced’ to
+                  save by the group. Stokvels traditionally meet regularly and make an occasion of the meetings, giving
+                  members a sense of community.</p>
+              </div>
+
+              <div>
+                <p>Many stokvels have a constitution that guides the operation of the group. This means that all the members
+                  agree on how the savings should work, including how often and how much people should contribute.</p>
+              </div>
+            </div>
+            <br>
+            <div class="subsection-header">Saving through a burial society</div>
+            <div>
+              <div>
+                <div>
+                  <p>This is a kind of stokvel, where a group of people meet regularly and each member contributes an agreed
+                    amount. Then, on the death of a main member, spouse, child or an extended family member, the burial
+                    society pays out an agreed amount.</p>
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">Debts</div>
+          <div>
+            <div _ngcontent-imd-c5=""><p>Being in debt (owing money) can cause huge stress and may affect relationships at
+              home and at work. Getting out of debt isn’t easy, but it can be done.</p>
+
+              <p>Managing your debt</p>
+
+              <ul>
+                <li>Start by tracking your expenses. To do this, you need to draw up a budget.</li>
+                <li>Work out where you can cut back every month (e.g. buying fewer clothes, walking instead of taking a
+                  taxi, getting together with a group of people to buy groceries in bulk).
+                </li>
+                <li>Start paying off your debts. Pay off the debt with the highest interest first.</li>
+                <li>Try not to get into any more debt. Pay cash as often as you can.</li>
+                <li>Save some money each month.</li>
+                <li>If you’re getting overwhelmed by your debt, ask for help.</li>
+              </ul>
+
+              <hr>
+              <p><strong>National Debt Mediation Assistance (NDMA)</strong><br>
+                <strong><a href="tel:0860144677">0860 144 677</a></strong> or <a href="http://www.ndma.org.za/"><strong>www.ndma.org.za</strong></a>
+              </p>
+
+              <hr>
+              <p><strong>Financial Services Board (FSB)</strong><br>
+                <a href="tel:0800202087"><strong>0800 202 087</strong></a><strong> or </strong><a
+                  href="http://www.fsb.co.za/"><strong>www.fsb.co.za</strong></a></p>
+
+              <hr>
+              <p><img alt="Debt-Finance" src="assets/img/finance_banking/Debt-Finance.png"></p>
             </div>
           </div>
-          <br>
         </div>
+
+        <div>
+          <div class="section-header">Loans</div>
+          <div>
+            <div _ngcontent-imd-c6="">
+              <div>
+                <div>
+                  <p>Banks offer a variety of different loans, for different purposes. These include personal loans (to pay
+                    for things in your personal life, such as a special occasion), home loans (to buy property), vehicle
+                    finance (to buy a car or motorbike), student loans (to pay student fees) and business loans (to start
+                    and/or grow your business).</p>
+                </div>
+
+                <div>
+                  <p><strong>How do you qualify for a loan?</strong><br>
+                    Whether you qualify for a loan from the bank will depend on the following factors:</p>
+                </div>
+
+                <div>
+                  <p>Your income</p>
+
+                  <ul>
+                    <li>You need to be earning regular income – the bank needs to see that you will be able to pay back the
+                      loan.
+                    </li>
+                    <li>If you are not earning a salary, the bank may require someone else to stand surety for you. This
+                      means that they will be legally obligated to pay the money back to the bank if you don’t.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p>The need for collateral/security</p>
+
+                  <ul>
+                    <li>You may need collateral or security for the loan. This is the primary source of repayment if you
+                      fail to pay the loan (e.g. if you own property, the bank could use this as security, and may auction
+                      off your house to get their money back if you can’t pay them back).
+                    </li>
+                    <li>Usually the bank would want the security to be larger than the amount you’re borrowing.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p>The type of loan</p>
+
+                  <ul>
+                    <li>The type of loan you are applying for and the repayment period will influence the terms the bank
+                      offers you.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p>Your credit history</p>
+
+                  <ul>
+                    <li>Your credit history matters. The bank will look at how you have managed previous personal or
+                      business loans (i.e. whether you paid the loan back in time).
+                    </li>
+                    <li>They will conduct a full credit analysis and may also get your credit score from the credit bureau
+                      (a private company that keeps records of each consumer’s credit history)
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p>Your business</p>
+
+                  <ul>
+                    <li>For business loans, the bank will look at your business experience, skills, financial statements,
+                      internal control of your business, other loans, the type of business, and the financial viability of
+                      the business.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p>If you’re in doubt about the kind of loan that meets your needs, speak to one of your bank’s
+                    consultants.</p>
+                </div>
+
+                <div>
+                  <div>
+                    <table cellpadding="1" cellspacing="1" style="width:500px">
+                      <thead>
+                      <tr>
+                        <th scope="col">What is interest?</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>
+                          <div>
+                            <p>Interest is the added fee you pay the lender (e.g. bank) for using their money.</p>
+
+                            <p>A loan is borrowed money (it is not your money) and the lender makes extra money by charging
+                              you for this privilege.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">Insurance</div>
+          <div>
+            <div _ngcontent-imd-c7="">
+              <div>
+                <div>
+                  <p>Insurance is an an arrangement that protects you financially from future losses from, for example,
+                    theft, damage, illness or death.</p>
+
+                  <p>There are different types of insurance. The most common are:</p>
+
+                  <ul>
+                    <li>Medical insurance: Medical insurance covers unforeseen health-related events, such as accidental
+                      injuries and disabilities.
+                    </li>
+                    <li>Car insurance: If you own a car, it is important to take out car insurance as it safeguards you
+                      against unforeseen vehicle loss/damage (e.g. theft, hijacking, road accidents). Third-party insurance
+                      covers damage you do to the vehicle of a third party (e.g. if you crash into another car).
+                    </li>
+                    <li>Home insurance: Homeowner’s insurance (also known as building insurance) protects you financially
+                      from loss or damage (e.g. through fire or natural disasters) to the structure of your home. You can
+                      also take out household insurance (also known as home contents insurance), which covers the items in
+                      your home against theft, accidents, fire and natural disasters.
+                    </li>
+                    <li>Life insurance: Life insurance (or life cover) gives you peace of mind, knowing that your family’s
+                      expenses will be paid if you die and your own debts will be paid. Life insurance also often includes
+                      disability insurance, which means you are covered if you can’t work due to an illness or injury.
+                    </li>
+                    <li>Funeral insurance: Funeral cover takes care of the expenses of a funeral for you or your family.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div _ngcontent-imd-c7="" class="subsection-header">Choosing the right insurance company</div>
+            <div _ngcontent-imd-c7="">
+              <div>
+                <p>There are many insurance companies in South Africa so finding the right one for your needs can be
+                  confusing.</p>
+
+                <ul>
+                  <li>Do your research and get at least four quotes to compare prices and policies. Remember that you can
+                    choose different insurance companies for different types of insurance.
+                  </li>
+                  <li>Find out what the insurer’s reputation is like. Do they give good service? How long do they take to
+                    settle claims?
+                  </li>
+                  <li>Make sure you know about any hidden costs (e.g. excess).</li>
+                  <li>Make sure you understand the policy you’re being offered. Discuss the details with the inurance
+                    company or your insurance broker.
+                  </li>
+                  <li>The insurance company you pick must be a registered Financial Services Provider. You can verify this
+                    with the Financial Services Board.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <table>
+                  <thead>
+                  <tr>
+                    <th scope="col">What is an excess ?</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>An excess is the part of the insurance claim that is paid by you. When you submit a successful claim
+                      to the insurance company, they will pay out a certain amount, according to your policy, but you will
+                      still be expected to pay a fee for making the claim.
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <br _ngcontent-imd-c7="">
+          </div>
+        </div>
+
       </div>
 
-      <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">
+      <a href="#plbbook/know-your-rights" class="bottomnav-links cc-bottom w-inline-block">
         <div class="previous-next">Next Chapter</div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">7: Know your Rights</div>
       </a>
     </div>
   </div>
+</div>

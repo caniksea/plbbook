@@ -1,11 +1,11 @@
 <app-menu></app-menu>
 <div class="fullscreen">
-  <div style="background-image:url()" class="leftside">
+  <div class="leftside" style="background-image:url()">
     <div class="titlewrapper">
       <div class="leftnavigation">
         <div>
-          <a href="http://motsepefoundation.org/" target="_blank" class="logoblock w-inline-block">
-            <img src="assets/img/Motsepe-Foundation.png" alt="" class="logo"/></a>
+          <a class="logoblock w-inline-block" href="http://motsepefoundation.org/" target="_blank">
+            <img alt="" class="logo" src="assets/img/Motsepe-Foundation.png"/></a>
           <!--<a href="/" class="sitetitle">Ebooks</a>-->
         </div>
       </div>
@@ -14,7 +14,7 @@
           <div
             class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
           <div class="buttoncol w-col w-col-4 w-col-stack">
-            <a href="#" (click)="showMenu()" data-ix="view-chapters" class="allchapters">View Chapters</a>
+            <a (click)="showMenu()" class="allchapters" data-ix="view-chapters" href="#">View Chapters</a>
           </div>
           <div
             class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
@@ -42,62 +42,86 @@
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
         <div class="chapterpage-header chaptertext">Chapter 6 - Finance & Banking</div>
       </div>
-      <div class="section-header">Savings</div>
       <div>
+        <div class="section-header">Savings</div>
         <div>
           <div>
-            <p>Savings are a portion of income or money put aside after you’ve paid all your expenses. You should try to save money to pay for unexpected events or emergencies such as a leaky roof, a car breakdown, a medical emergency or a sudden loss of income. You should try to save about 10% of your monthly income. You should also try to save for your children’s education and for your own retirement.</p>
-          </div>
+            <div>
+              <p>Savings are a portion of income or money put aside after you’ve paid all your expenses. You should try to
+                save money to pay for unexpected events or emergencies such as a leaky roof, a car breakdown, a medical
+                emergency or a sudden loss of income. You should try to save about 10% of your monthly income. You should
+                also try to save for your children’s education and for your own retirement.</p>
+            </div>
 
+            <div>
+              <p>Without money put away in savings and/or investments, you may be forced to take out a loan in an
+                emergency. Borrowing money is very expensive.</p>
+            </div>
+          </div>
+          <div class="subsection-header">Saving through a bank</div>
           <div>
-            <p>Without money put away in savings and/or investments, you may be forced to take out a loan in an emergency. Borrowing money is very expensive.</p>
+            <div>
+              <div>
+                <p>There are many different kinds of savings and investment accounts to choose from.</p>
+
+                <ul>
+                  <li>Some are <strong>short-term savings accounts</strong> that are easy to use and don’t cost much to
+                    operate. To start with, look for a tax-free savings account that doesn’t have a minimum deposit.
+                  </li>
+                  <li>Other kinds of savings accounts are <strong>longer-term accounts</strong> that need a bit more money
+                    to open, and which you need to ‘give notice on’ (warn the bank) when you want to withdraw money.
+                  </li>
+                  <li><strong>Fixed-deposit savings accounts</strong> require you to put a specific amount of money into
+                    saving for a longer time, sometimes for a certain number of years.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <div _ngcontent-imd-c4="" class="subsection-header">Saving through a bank</div><div _ngcontent-imd-c4=""><div>
-        <div>
-          <p>There are many different kinds of savings and investment accounts to choose from.</p>
+          <br>
+          <div class="subsection-header">Saving through a stockvel</div>
+          <div>
+            <div>
+              <table cellpadding="1" cellspacing="1">
+                <thead>
+                <tr>
+                  <th scope="col">Every year, more than R45 billion is invested in an estimated 800 000 stokvels in South
+                    Africa.
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
 
-          <ul>
-            <li>Some are <strong>short-term savings accounts</strong> that are easy to use and don’t cost much to operate. To start with, look for a tax-free savings account that doesn’t have a minimum deposit.</li>
-            <li>Other kinds of savings accounts are <strong>longer-term accounts</strong> that need a bit more money to open, and which you need to ‘give notice on’ (warn the bank) when you want to withdraw money.</li>
-            <li><strong>Fixed-deposit savings accounts</strong> require you to put a specific amount of money into saving for a longer time, sometimes for a certain number of years.</li>
-          </ul>
-        </div>
-      </div>
-      </div><br _ngcontent-imd-c4=""></div><div _ngcontent-imd-c4="" class="ng-star-inserted"><div _ngcontent-imd-c4="" class="subsection-header">Saving through a stockvel</div><div _ngcontent-imd-c4=""><div>
-      <table cellpadding="1" cellspacing="1">
-        <thead>
-        <tr>
-          <th scope="col">Every year, more than R45 billion is invested in an estimated 800 000 stokvels in South Africa.</th>
-        </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+              <p>&nbsp;</p>
 
-      <p>&nbsp;</p>
+              <p>A stokvel is a form of informal saving where a group of people save money together. Each member
+                contributes a fixed amount on a regular basis, and members take turns to receive the full amount.</p>
+            </div>
 
-      <p>A stokvel is a form of informal saving where a group of people save money together. Each member contributes a fixed amount on a regular basis, and members take turns to receive the full amount.</p>
-    </div>
+            <div>
+              <p>Stokvels are popular because there are no credit checks and no hidden costs, and members are ‘forced’ to
+                save by the group. Stokvels traditionally meet regularly and make an occasion of the meetings, giving
+                members a sense of community.</p>
+            </div>
 
-      <div>
-        <p>Stokvels are popular because there are no credit checks and no hidden costs, and members are ‘forced’ to save by the group. Stokvels traditionally meet regularly and make an occasion of the meetings, giving members a sense of community.</p>
-      </div>
-
-      <div>
-        <p>Many stokvels have a constitution that guides the operation of the group. This means that all the members agree on how the savings should work, including how often and how much people should contribute.</p>
-      </div>
-    </div><br _ngcontent-imd-c4=""></div><div _ngcontent-imd-c4="" class="ng-star-inserted"><div _ngcontent-imd-c4="" class="subsection-header">Saving through a burial society</div><div _ngcontent-imd-c4=""><div>
-      <div>
-        <p>This is a kind of stokvel, where a group of people meet regularly and each member contributes an agreed amount. Then, on the death of a main member, spouse, child or an extended family member, the burial society pays out an agreed amount.</p>
-      </div>
-    </div>
-    </div><br _ngcontent-imd-c4="">
-      </div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
+            <div>
+              <p>Many stokvels have a constitution that guides the operation of the group. This means that all the members
+                agree on how the savings should work, including how often and how much people should contribute.</p>
+            </div>
+          </div>
+          <br>
+          <div class="subsection-header">Saving through a burial society</div>
+          <div>
+            <div>
+              <div>
+                <p>This is a kind of stokvel, where a group of people meet regularly and each member contributes an agreed
+                  amount. Then, on the death of a main member, spouse, child or an extended family member, the burial
+                  society pays out an agreed amount.</p>
+              </div>
+            </div>
+          </div>
           <br>
         </div>
       </div>
@@ -107,5 +131,5 @@
     <!--      <div class="previous-next">Next Chapter</div>-->
     <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
     <!--    </a>-->
-    <!--  </div>-->
   </div>
+</div>

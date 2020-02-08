@@ -28,41 +28,1195 @@
   </div>
   <div class="rightside">
     <div class="rightnavigation center w-clearfix">
-      <a *ngIf="previousChapter" href="#{{previousChapter?.chapterLink}}" class="bottomnav-links w-inline-block" (click)="closeMenu()">
+      <a href="#plbbook/health" class="bottomnav-links w-inline-block" (click)="closeMenu()">
         <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous Chapter</div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER - 1}}: {{previousChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">2: Health</div>
       </a>
-      <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-center w-inline-block"
+      <a href="#plbbook/higher-education-training" class="bottomnav-links cc-center w-inline-block"
          (click)="closeMenu()">
         <div class="previous-next">Next Chapter<img class="next-arrow" src="assets/img/right_arrow.png"></div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">4: Higher Education & Training</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter 3:Family</div>
+        <div class="chapterpage-header chaptertext">Chapter 3: Family</div>
       </div>
-      <div class="lede w-richtext" [innerHTML]="chapter?.story"></div>
-      <div class="chaptercontent w-richtext" *ngIf="extendedSections">
-        <div *ngFor="let section of extendedSections">
-          <div class="section-header" [innerHTML]="section?.sectionTitle"></div>
-          <div [innerHTML]="section?.story"></div>
-          <div *ngIf="section.subsections">
-            <div *ngFor="let subsection of section.subsections">
-              <div class="subsection-header" [innerHTML]="subsection?.subsectionTitle"></div>
-              <div [innerHTML]="subsection?.story"></div>
-              <br>
-            </div>
+      <div class="lede w-richtext">
+        <p><em><strong>In a world of turmoil and uncertainty, it is more important than ever to make our families the
+          centre of our lives and the top of our priorities.</strong></em></p>
+      </div>
+      <div>
+        <p>Our children are the hope for the future. But looking after a family can be very challenging. Many women are
+          single parents with difficult work circumstances, some have no jobs and rely on maintenance and grants, and
+          others are living in disadvantaged situations of abuse and hardship.</p>
+        <p>When looking after your children, remember that it is also important to look after yourself too.</p>
+      </div>
+      <div class="chaptercontent w-richtext">
+        <div>
+          <div class="section-header">Parenting</div>
+          <div>
+            <p>Parents (including other caregivers) have a huge responsibility in taking care of children and laying a
+              solid foundation for them to grow into adulthood. The role of parenting requires a lot of time, effort and
+              resources, and may also mean less time for yourself, friends and relationships, but it is key to maintain
+              balance. Taking care of your own wellbeing will mean you have more energy for interacting with your
+              children.</p>
+
+            <p>Remember:</p>
+
+            <ul>
+              <li>There’s no such thing as a perfect parent or a perfect child.</li>
+              <li>As the old saying goes, ‘it takes a village to raise a child.’ Ask for help from grandparents, sisters
+                and brothers, friends, teachers and the community. People usually will gladly assist.
+              </li>
+              <li>You don’t have to know all the answers. it is fine to say you don’t know.</li>
+              <li>Take time to care for yourself and to manage your relationships.</li>
+            </ul>
+
+            <p>Parents' responsible are to:</p>
+
+            <ul>
+              <li>Ensure the child is safe and healthy.</li>
+              <li>Provide day-to-day care of the child until 18 years old or can support themselves.</li>
+              <li>Make sure the child attends school.</li>
+              <li>Maintain regular contact with the child.</li>
+              <li>Act as a guardian of the child.</li>
+              <li>Contribute to the cost of maintaining the child, including food, clothing and school fees.</li>
+            </ul>
+
+            <p><strong>FINDING WORK-LIFE BALANCE</strong></p>
+
+            <ul>
+              <li>Most women, especially single mothers, have a challenge balancing work and family.</li>
+              <li>Society’s expectations mean that most parenting roles are carried out by women. some women decide to
+                leave work to raise their children as a result.
+              </li>
+              <li>As we work towards equality for men and women, most women still have to negotiate with their partners
+                to share the responsibilities of childcare and/or household chores.
+              </li>
+              <li>Taking maternity leave (dads should also take paternity leave).</li>
+              <li>Working part-time or flexi hours.</li>
+              <li>Employing home help or childminders.</li>
+              <li>Taking their children to day care centres.</li>
+            </ul>
+
+            <p><strong>Single mothers and caregivers</strong></p>
+
+            <p>According to statistics South Africa, most households in South Africa are run by single mothers. HIV and
+              Aids have also taken a huge toll on the country, with parents dying and leaving orphaned children.
+              According to UNICF, there are an estimated 3.7 million orphans in South Africa (half of whom have lost one
+              or both parents to Aids), and 150 000 children are living in child-headed households (where all family
+              members are under the age of 18).</p>
+
+            <table cellpadding="1" cellspacing="1">
+              <tbody>
+              <tr>
+                <td><strong>The majority of children in South Africa and through the world have someone other than a
+                  parent to raise them. It is important that government policy, employers and society in general help in
+                  assuring that childcare facilities, parental leave and societal attitude in general are supportive
+                  towards working mothers and fathers.</strong></td>
+              </tr>
+              </tbody>
+            </table>
+
+            <p>&nbsp;</p>
+
+            <hr>
+            <p><strong>Family and Marriage Association of South Africa (FAMSA)</strong></p>
+
+            <p><a href="tel:0119757106"><strong>011 975 7106</strong></a><strong>/<a
+              href="tel:0119757107">7</a></strong><strong> to find your nearest branch or&nbsp;</strong><a
+              href="http://www.famsa.org.za"><strong>www.famsa.org.za</strong></a></p>
+
+            <hr>
+            <p><strong>Tough Love South Africa</strong></p>
+
+            <p><a href="tel:0861868455"><strong>0861 868 455</strong></a><strong> or </strong><a
+              href="http://www.toughlove.org.za"><strong>www.toughlove.org.za</strong></a></p>
+
+            <hr>
           </div>
           <br>
         </div>
+
+        <div>
+          <div class="section-header">VACCINATION</div>
+          <div>
+            <p>Vaccinations, also called immunisations, are meant to help keep children safe from preventable diseases,
+              including mumps, polio, measles, chicken pox and whooping cough. Vaccination is free at government health
+              facilities</p>
+
+            <p>It’s possible that some side effects (such as a slight fever) may result, but these are usually mild and
+              will clear up quickly.</p>
+
+            <p>Children need various vaccinations at different growth stages: birth, 6 weeks, 10 weeks, 14 weeks, 9
+              months, 18 months, 6 years and 12 years.</p>
+
+            <p>All your child’s vaccinations will be recorded on a ‘Road to health’ card. this is given to you when your
+              child is born and it tracks your child’s development until the age of five.</p>
+
+            <div>
+              <p><img alt="Vaccinations-Family" src="assets/img/family/Vaccinations-Family.png"></p>
+            </div>
+
+            <div>
+              <p><strong>Vaccine schedules for South Africa</strong></p>
+
+              <div>
+                <hr>
+                <p><strong>AGE OF CHILD:</strong> Birth</p>
+              </div>
+
+              <div>
+                <p><strong>VACCINE NEEDED:</strong></p>
+
+                <ul>
+                  <li><strong>BCG&nbsp;</strong>Bacilles Calmette Guerin</li>
+                  <li><strong>OPV (0)&nbsp;</strong>Oral Polio Vaccine</li>
+                </ul>
+              </div>
+
+              <div>
+                <p><strong>HOW AND WHERE IT IS GIVEN?</strong></p>
+
+                <ul>
+                  <li>Intradermal/right arm</li>
+                  <li>Drops by mouth</li>
+                </ul>
+
+                <hr>
+              </div>
+
+              <div>
+                <p><strong>AGE OF CHILD:</strong> 6 weeks</p>
+              </div>
+
+              <div>
+                <p><strong>VACCINE NEEDED:</strong></p>
+
+                <ul>
+                  <li><strong>OPV (1)&nbsp;</strong>Oral Polio Vaccine</li>
+                  <li><strong>RV (1)&nbsp;</strong>Rotavirus Vaccine</li>
+                  <li><strong>D Tap-IPV-Hib (1)&nbsp;</strong>Diphtheria, Tetanus, acellular. Pertussis, Inactivated
+                    Polio. Vaccine and Haemophilus influenzae type b Combined
+                  </li>
+                  <li><strong>Heb B (1)&nbsp;</strong>Hepatitis B Vaccine</li>
+                  <li><strong>PCV7 (1)&nbsp;</strong>Pneumococcal Conjugated Vaccine</li>
+                </ul>
+              </div>
+
+              <div>
+                <p><strong>HOW AND WHERE IT IS GIVEN?</strong></p>
+
+                <ul>
+                  <li>Drops by mouth</li>
+                  <li>Liquid by the mouth</li>
+                  <li>Intramuscular/left thigh</li>
+                  <li>Intramuscular/right thigh</li>
+                  <li>Intramuscular/right thigh</li>
+                </ul>
+
+                <hr>
+              </div>
+
+              <div>
+                <p><strong>AGE OF CHILD:</strong>&nbsp;10&nbsp;weeks</p>
+              </div>
+
+              <div>
+                <p><strong>VACCINE NEEDED:</strong></p>
+
+                <ul>
+                  <li><strong>D Tap-IPV-Hib (2)&nbsp;</strong>Diphtheria, Tetanus, acellular. Pertussis, Inactivated
+                    Polio. Vaccine and Haemophilus influenzae type b Combined
+                  </li>
+                  <li><strong>Heb B (2)&nbsp;</strong>Hepatitis B Vaccine</li>
+                </ul>
+              </div>
+
+              <div>
+                <p><strong>HOW AND WHERE IT IS GIVEN?</strong></p>
+
+                <ul>
+                  <li>Intramuscular/left thigh</li>
+                  <li>Intramuscular/right thigh</li>
+                </ul>
+
+                <hr>
+              </div>
+
+              <div>
+                <p><strong>AGE OF CHILD:</strong>&nbsp;14&nbsp;weeks</p>
+              </div>
+
+              <div>
+                <p><strong>VACCINE NEEDED:</strong></p>
+
+                <ul>
+                  <li><strong>RV (2)&nbsp;</strong>Rotavirus Vaccine (should not be administered after 24 weeks)</li>
+                  <li><strong>D Tap-IPV-Hib (3)&nbsp;</strong>Diphtheria, Tetanus, acellular. Pertussis, Inactivated
+                    Polio. Vaccine and Haemophilus influenzae type b Combined
+                  </li>
+                  <li><strong>Heb B (3)&nbsp;</strong>Hepatitis B Vaccine</li>
+                  <li><strong>PCV7 (3)&nbsp;</strong>Pneumococcal Conjugated Vaccine</li>
+                </ul>
+              </div>
+
+              <div>
+                <p><strong>HOW AND WHERE IT IS GIVEN?</strong></p>
+
+                <ul>
+                  <li>Liquid by the mouth</li>
+                  <li>Intramuscular/left thigh</li>
+                  <li>Intramuscular/right thigh</li>
+                  <li>Intramuscular/right thigh</li>
+                </ul>
+
+                <hr>
+              </div>
+
+              <div>
+                <p><strong>AGE OF CHILD:</strong>&nbsp;9 months</p>
+              </div>
+
+              <div>
+                <p><strong>VACCINE NEEDED:</strong></p>
+
+                <ul>
+                  <li><strong>Measles Vaccine (1)</strong></li>
+                  <li><strong>OPV (0)</strong> Pneumococcal Conjugated Vaccine</li>
+                </ul>
+              </div>
+
+              <div>
+                <p><strong>HOW AND WHERE IT IS GIVEN?</strong></p>
+
+                <ul>
+                  <li>Intramuscular/left thigh</li>
+                  <li>Intramuscular/right thigh</li>
+                </ul>
+
+                <hr>
+              </div>
+
+              <div>
+                <p><strong>AGE OF CHILD:</strong>&nbsp;18&nbsp;months</p>
+              </div>
+
+              <div>
+                <p><strong>VACCINE NEEDED:</strong></p>
+
+                <ul>
+                  <li><strong>D Tap-IPV-Hib (4)&nbsp;</strong>Diphtheria, Tetanus, acellular. Pertussis, Inactivated
+                    Polio. Vaccine and Haemophilus influenzae type b Combined
+                  </li>
+                  <li><strong>Measles Vaccine (2)</strong></li>
+                </ul>
+              </div>
+
+              <div>
+                <p><strong>HOW AND WHERE IT IS GIVEN?</strong></p>
+
+                <ul>
+                  <li>Intramuscular/left arm</li>
+                  <li>Intramuscular/right arm</li>
+                </ul>
+
+                <hr>
+              </div>
+
+              <div>
+                <p><strong>AGE OF CHILD:&nbsp;</strong>6 years</p>
+              </div>
+
+              <div>
+                <p><strong>VACCINE NEEDED:</strong></p>
+
+                <ul>
+                  <li><strong>Td Vaccine</strong>&nbsp;Tetanus and reduced strenght of diphtheria vaccine</li>
+                </ul>
+              </div>
+
+              <div>
+                <p><strong>HOW AND WHERE IT IS GIVEN?</strong></p>
+
+                <ul>
+                  <li>Intramuscular/left arm</li>
+                </ul>
+
+                <hr>
+              </div>
+
+              <div>
+                <p><strong>AGE OF CHILD: 12</strong>&nbsp;years</p>
+              </div>
+
+              <div>
+                <p><strong>VACCINE NEEDED:</strong></p>
+
+                <ul>
+                  <li><strong>Td Vaccine</strong>&nbsp;Tetanus and reduced strenght of diphtheria vaccine</li>
+                </ul>
+              </div>
+
+              <div>
+                <p><strong>HOW AND WHERE IT IS GIVEN?</strong></p>
+
+                <ul>
+                  <li>Intramuscular/left arm</li>
+                </ul>
+
+                <hr>
+              </div>
+            </div>
+
+            <p>&nbsp;</p>
+          </div>
+          <br>
+        </div>
+
+        <div>
+          <div class="section-header">child support</div>
+          <div>
+            <div class="ng-star-inserted"><!---->
+              <div class="ng-star-inserted">
+                <div class="subsection-header">Maintenance</div>
+                <div _ngcontent-gol-c13="">
+                  <div>
+                    <table cellpadding="1" cellspacing="1">
+                      <thead>
+                      <tr>
+                        <th scope="col"><strong>A child is person under the age of 18.</strong></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+
+                    <p>&nbsp;</p>
+
+                    <p>It’s both parents’ duty to provide for their child’s wellbeing. This includes housing, education
+                      and clothing, as well as medical and other expenses.</p>
+                  </div>
+
+                  <div>
+                    <p>Both parents need to support their child or children according to what they can afford. It
+                      doesn’t matter whether the child was born in a marriage or outside a marriage, or is adopted. It
+                      also doesn’t matter if the mother is no longer with the father of the child or is in another
+                      relationship</p>
+
+                    <p>Child maintenance is regular financial support that the parent without the main day-to-day
+                      responsibilities of caring for a child pays to the parent who is taking care of the child. in some
+                      cases, the person taking care of the child is a grandparent, a legal guardian or an adoptive
+                      parent.</p>
+
+                    <p>The maintenance Act, no 99 of 1998, and the children’s Act, no 38 of 2005, support your right to
+                      maintenance for your child.</p>
+                  </div>
+
+                  <div>
+                    <p><img alt="Mother-Single-Parent" src="assets/img/family/Mother-Single-Parent.png"></p>
+                  </div>
+
+                  <div>
+                    <p><strong>How to apply for maintenance</strong></p>
+
+                    <ul>
+                      <li>Go to your nearest magistrates’ court (see page 107) or local court to get the necessary
+                        forms.
+                      </li>
+                      <li>Fill out the forms (they will ask for your personal information, your income, and what you
+                        spend on both yourself and your child/ren).
+                      </li>
+                      <li>A maintenance officer will look into your case. they may hold an interview with both you and
+                        the father of your child/ren.
+                      </li>
+                      <li>If the maintenance officer is satisfied that all the necessary information has been provided
+                        and your case is valid, you will be given a court date.
+                      </li>
+                      <li>On that date, the magistrate will make a decision, taking into account the best interests of
+                        the child/ren, and based on the reasonable maintenance needs of the child/ren, and both parents’
+                        ability to support the child or children.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><img alt="Court-Judge" src="assets/img/family/Court-Judge.png"></p>
+                  </div>
+
+                  <div>
+                    <div>
+                      <table cellpadding="1" cellspacing="1">
+                        <thead>
+                        <tr>
+                          <th scope="col">REFUSING TO PAY MAINTENANCE IS A CRIMINAL OFFENCE AND THE ACCUSED CAN BE FINED
+                            OR IMPRISONED FOR UP TO ONE YEAR, OR BOTH.
+                          </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>
+                            <p>If you (or the father) need to change the maintenance order or amount, you need to
+                              approach the magistrates’ court to grant the change.</p>
+
+                            <p>If the responsible person refuses to pay maintenance money, you can go to your local
+                              magistrates’ court, and they will issue a subpoena for the parent to appear in court. If
+                              he/she refuses to come, a warrant of arrest will be issued.</p>
+
+                            <p>An effective way to enforce child support is to have the payments taken directly from the
+                              other parent’s salary. the court can issue an order to the other parent’s employer to make
+                              sure this happens.</p>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+
+                      <p>&nbsp;</p>
+                    </div>
+
+                    <div>
+                      <p><strong>For support and advice, speak to a legal clinic</strong></p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <hr>
+                    <p><strong>For a list of Magistrates' Courts contact details, see the website</strong></p>
+
+                    <p><a href="http://www.justice.gov.za/contact/lowercourts_full.html">www.justice.gov.za/contact/lowercourts_full.html</a>
+                    </p>
+
+                    <hr>
+                  </div>
+                </div>
+                <br _ngcontent-gol-c13=""></div>
+              <div class="ng-star-inserted">
+                <div class="subsection-header">Social grants</div>
+                <div _ngcontent-gol-c13=""><p>If you need financial help to raise a child, as a mother or primary
+                  caregiver, you may qualify for a social grant from the government.</p>
+
+                  <table cellpadding="1" cellspacing="1">
+                    <thead>
+                    <tr>
+                      <th scope="col"><strong>HOW TO APPLY FOR A SOCIAL GRANT</strong></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <p>Contact your nearest SASSA (South African Social Security Agency) office to apply for a
+                          social grant. Application is free. SASSA will give you the application forms and answer any
+                          additional questions you may have.</p>
+
+                        <p>For up-to-date information on grant amounts, which change every year, and qualifying
+                          criteria, see&nbsp;<a href="http://www.sassa.gov.za">www.sassa.gov.za</a></p>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+
+                  <p>&nbsp;</p>
+
+                  <p><strong>Child Support Grants</strong></p>
+
+                  <p>The child support Grant is intended to provide for the basic needs of south African children whose
+                    parents or primary caregivers are not able to provide sufficient support due to unemployment.</p>
+
+                  <p>A primary caregiver can be a parent, grandparent, or anyone who is mainly responsible for looking
+                    after and providing for the basic needs of the child. The primary caregiver is responsible for
+                    ensuring that the child is fed, clothed, immunised and given access to healthcare. The money from
+                    the grant must be used to benefit the child.</p>
+
+                  <p>Parents and primary caregivers qualify for the Child Support Grant if:</p>
+
+                  <ul>
+                    <li>The child is under the age of 18.</li>
+                    <li>The child lives with the primary caregiver and not in a state institution.</li>
+                    <li>The primary caregiver is over the age of 16.</li>
+                    <li>The primary caregiver is not paid to look after the child.</li>
+                    <li>The primary caregiver is a south African citizen or permanent resident.</li>
+                    <li>Both the child and primary caregiver live in south Africa.</li>
+                    <li>The primary caregiver passes the means test (which assesses financial need).</li>
+                  </ul>
+
+                  <p>The ability to get the grant will depend on the financial situation of the primary caregiver and
+                    their spouse. If the primary caregiver is a single parent, he/she should first try to get money from
+                    the child’s other parent by applying for a maintenance order from the magistrates’ court.</p>
+
+                  <p>Payment of the grant</p>
+
+                  <ul>
+                    <li>The grant will be paid for all qualifying biological or legally adopted children. in the case of
+                      non-biological children and those who are not legally adopted, the grant will be paid for a
+                      maximum of six children. • &nbsp; the grant is paid to the primary caregiver, but the grant
+                      follows the child. this means that if someone else becomes the primary caregiver, then the grant
+                      goes to that person.
+                    </li>
+                    <li>There is a waiting period of up to three months before the primary caregiver receives payment.
+                      the first payment of the grant should include all the money from the date of application.
+                    </li>
+                    <li>If the application is not approved, a letter will be sent to give reasons for the rejection. You
+                      have the right to appeal against this decision.
+                    </li>
+                  </ul>
+
+                  <p><strong>Foster Child Grants</strong></p>
+
+                  <p>A foster child Grant is intended to provide for the basic needs of foster children who have been
+                    placed in the care of foster parents by a children’s court. The foster child Grant is paid to foster
+                    parents for children under 18 years old. An extension order for foster care can be given until the
+                    age of 21 years if the child is still at secondary school. Usually a grant is for two years but a
+                    social worker can extend the grant depending on the circumstances.</p>
+
+                  <p>A foster parent is responsible for ensuring that the child is fed, clothed, healthy, attending
+                    school and that the grant is used to benefit the child. SASSA (South African social security Agency)
+                    officers must always be allowed to have access to the child, as the situation of the child who is
+                    placed in need of care is reviewed from time to time.</p>
+
+                  <p>A social work review may take into account, whether the foster child:</p>
+
+                  <ul>
+                    <li>Remains in the care of the parents.</li>
+                    <li>Is living in adequate housing.</li>
+                    <li>Is fed and given clothes to wear.</li>
+                    <li>Receives necessary medical and dental care.</li>
+                    <li>Goes to school regularly.</li>
+                  </ul>
+
+                  <p>In order to apply for a Foster Child Grant, the following criteria must be met:</p>
+
+                  <ul>
+                    <li>The applicant and the child must be resident in south Africa.</li>
+                    <li>The applicant must be in possession of a court order that makes the foster care status legal.
+                    </li>
+                    <li>The foster parent must be a south African citizen, permanent resident or refugee.</li>
+                    <li>The child must remain in the care of the foster parent.</li>
+                  </ul>
+
+                  <p>If a child is severely disabled, the foster parent can get a Care Dependency Grant as well as a
+                    Foster Grant.</p>
+
+                  <p><strong>Grants for children with disabilities (Care Dependency Grants)</strong></p>
+
+                  <p>if you are the parent, foster parent or the primary caregiver of a child with a disability, who
+                    needs full-time and/or special care, you could qualify for a care dependency Grant.</p>
+
+                  <p>To qualify for a Care Dependency Grant:</p>
+
+                  <ul>
+                    <li>You must be a south African citizen or a permanent resident.</li>
+                    <li>You must be the parent, primary caregiver or foster parent of the child.</li>
+                    <li>Both you and the child must live in south Africa.</li>
+                    <li>The child must be younger than 18 years old, have a severe disability and be in need of
+                      full-time care.
+                    </li>
+                  </ul>
+
+                  <hr>
+                  <p><strong>Social Grants Helpline - </strong><a href="tel:0800601011"><strong>0800 601
+                    011</strong></a></p>
+
+                  <hr>
+                  <p><strong>Cash Payment Services - </strong><a href="tel:0800600160"><strong>0800 600 160</strong></a>
+                  </p>
+
+                  <hr>
+                  <p><strong>Anti-Fraud - </strong><a href="tel:0800701701"><strong>0800 701 701</strong></a></p>
+
+                  <hr>
+                  <p><strong>South African Social Security Agency (SASSA)</strong></p>
+
+                  <p><a href="tel:0800601011"><strong>0800 601 011</strong></a><strong> (to find where your nearest
+                    SASSA office is) or </strong><a href="http://www.sassa.gov.za"><strong>www.sassa.gov.za</strong></a>
+                  </p>
+
+                  <hr>
+                </div>
+                <br _ngcontent-gol-c13=""></div>
+              <div class="ng-star-inserted">
+                <div class="subsection-header">Education</div>
+                <div _ngcontent-gol-c13="">
+                  <div>
+                    <table cellpadding="1" cellspacing="1">
+                      <thead>
+                      <tr>
+                        <th scope="col"><strong>"Education is the most powerful weapon which you can use to change the
+                          world." - NELSON MANDELA</strong></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+
+                    <p>&nbsp;</p>
+                  </div>
+
+                  <div>
+                    <p>In South Africa, the right to education is defined in section 29 of the Bill of Rights. According
+                      to the South African school Act of 1996, schooling is compulsory for all south Africans from the
+                      age of seven (Grade 1) to the age of 15, or the completion of Grade 9.</p>
+
+                    <p>South African schools begin with Grade R and end with Grade 12 or matric. Grades 1 to 9 are
+                      compulsory and classified as General education and training. Grades 10, 11 and 12 are considered
+                      to be further education and training.</p>
+
+                    <p>A child must obtain Grade 12 certificate (National Senior Certificate) that meets certain
+                      requirements to go on to university or college. Different tertiary institutions have different
+                      rating systems for acceptance into the courses they offer.</p>
+                  </div>
+
+                  <div>
+                    <p><img alt="Education-Children" src="assets/img/family/Education-Children.png"></p>
+
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+                <br _ngcontent-gol-c13="">
+              </div>
+              <div class="subsection-header">Enrolling your child at school</div>
+              <table cellpadding="1" cellspacing="1">
+                <thead>
+                <tr>
+                  <th scope="col"><strong>The South African Schools Act, No 84 of 1996 outlaws corporal punishment.
+                    Any teacher administering physical punishment like slapping, hitting, kicking, shaking or
+                    pinching a child can be prosecuted and may even face jail.</strong></th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+
+              <p>&nbsp;</p>
+
+              <p>If your child is between the ages of seven and 15, you need to ensure that he/she is registered to
+                go to school and attends school regularly. You can register your child at a government school close
+                to your home or workplace. If nearby schools are full, get in touch with the department of Basic
+                education for assistance with finding a place for your child.</p>
+
+              <p>If your child is due to start school in the next year, you need to register between July and
+                October of the previous school year (check registration deadlines with the school).</p>
+
+              <ul>
+                <li>There are no ‘entry tests’ (written or otherwise) for admission to a government school.</li>
+                <li>Your child can’t be turned away from a government school because you can’t afford to pay the
+                  fees.
+                </li>
+                <li>If your child is refused admission to a government school, the school must give you a written
+                  explanation why your child wasn’t granted entry. You can appeal the refusal by writing to the mec
+                  for education in your province.
+                </li>
+                <li>If you’re applying to a private school, check that it’s registered with the Provincial education
+                  department.
+                </li>
+                <li>The age of a child entering Grade 1 is five turning six by 30 June in the year of admission.
+                </li>
+                <li>For Grade 0, the age is four turning five by 30 June in the year of admission.</li>
+              </ul>
+
+              <p><strong>What documents do I need to enroll my child?</strong></p>
+
+              <p>For government schools, you need:</p>
+
+              <ul>
+                <li>The school’s application form(s) to fill out.</li>
+                <li>Your child’s birth certificate.</li>
+                <li>Your child’s vaccination or ‘Road to health’ card.</li>
+                <li>Your ID and proof of residence (eg an electricity or phone bill that has your name and physical
+                  address on it).
+                </li>
+                <li>A transfer card or school report form previous school (if relevant). • &nbsp; if you’re not
+                  south African, your work permit, study permit or permanent residence permit.
+                </li>
+              </ul>
+
+              <hr>
+              <p><strong>Department of Basic Education</strong></p>
+
+              <p><a href="tel:0800202933"><strong>0800 202 933</strong></a><strong> or </strong><a
+                href="http://www.education.gov.za"><strong>www.education.gov.za</strong></a><strong> (for more info,
+                and for contacts for education district offices in your province)</strong></p>
+
+              <hr>
+              <p><strong>Disabled Children‘s action Group (DICAG</strong></p>
+
+              <p><a href="tel:0217975977"><strong>021 797 5977</strong></a><strong> or </strong><a
+                href="http://www.dicag.co.za"><strong>www.dicag.co.za</strong></a></p>
+
+              <hr>
+              <br _ngcontent-gol-c13="">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">Bullying</div>
+          <div>
+            <p>Bullying among school-aged children is unwanted, aggressive behaviour that is usually repeated over time.
+              Bullying includes making threats, making fun of, spreading rumours, attacking someone physically or
+              verbally, and excluding someone from a group on purpose.</p>
+
+            <p>Repeated bullying can cause severe emotional harm, and affect your child’s self-esteem and mental
+              health.</p>
+
+            <p>There are many roles children play in bullying. Some bully others, some are bullied, and some witness
+              bullying. When children are involved in bullying, they often play more than one role.</p>
+
+            <p><strong>Signs and symptoms that your child is being bullied</strong></p>
+
+            <ul>
+              <li>Not wanting to go to school.</li>
+              <li>Afraid of taking the same school transport as others.</li>
+              <li>Unexplained loss of belongings (clothing, books or lunchboxes).</li>
+              <li>Unexplained injuries.</li>
+              <li>Sudden drop in school marks.</li>
+              <li>Loss of interest in or avoiding extramural activities.</li>
+              <li>Frequent headaches or stomach aches (real or faked).</li>
+              <li>Difficulty sleeping; nightmares.</li>
+              <li>Fear of being left alone.</li>
+              <li>Appearing sad or anxious.</li>
+              <li>Self-destructive behaviour, e.g. self-harming, running away from home, talking about suicide.</li>
+            </ul>
+
+            <p>Some children will tell their parents when they’re being bullied. If your child confides in you, you must
+              get help for them, whether this is from the school, or a counsellor or therapist.</p>
+
+            <p>Children often find it hard to voice their feelings, however. If you’re concerned that they’re involved
+              in bullying, and especially that they’re being bullied, you need to ask some questions. Watch your child’s
+              reaction when they answer. Their body language (or silence) can give you good clues. Ask leading
+              questions, for example:</p>
+
+            <ul>
+              <li>‘I&nbsp;can’t find your school jersey. has someone taken it?’</li>
+              <li>‘How did this tear in your shirt happen? did someone do this to you?’</li>
+              <li>‘Why are you in such a hurry to eat when you get home? did you eat your lunch at school?’</li>
+            </ul>
+
+            <p><img alt="Children-Bullying" src="assets/img/family/Children-Bullying.png"></p>
+
+            <p><strong>What to do if your child is being bullied</strong></p>
+
+            <ul>
+              <li>Find out what happened, who was involved, and when and where it happened, and keep a record of this
+                information.
+              </li>
+              <li>Encourage your child to express his/her thoughts and feelings about what happened. Let your child know
+                that it is normal to feel hurt, fear and anger.
+              </li>
+              <li>Teach your child to be assertive (stand up for himself/herself) without being aggressive. Retaliation
+                is against school rules and often makes bullying worse.
+              </li>
+              <li>Assure the child/children that you will handle the situation.</li>
+              <li>Speak confidentially to an educator at their school – the head of the school is the best choice.</li>
+              <li>Find out if the child needs to avoid certain areas on school property at certain times; suggest that
+                the school increase supervision in high-risk areas or monitor the child’s interactions with other
+                learners more closely.
+              </li>
+              <li>Encourage your child to talk to an adult (such as a supportive teacher) every day to give an update on
+                the mistreatment.
+              </li>
+              <li>Monitor your child’s whereabouts and friendships.</li>
+              <li>Watch for signs of depression and anxiety in your child, and do not hesitate to seek professional
+                counselling.
+              </li>
+            </ul>
+
+            <p><strong>CYBER-BULLYING</strong></p>
+
+            <p>Cyber-bullying is when a child of any age is tormented, threatened, harassed, made fun of, humiliated,
+              embarrassed or otherwise targeted by another child using the internet and/or any other digital technology
+              such as a smartphone. Cyber-bullying often happens on social-media sites like Facebook.</p>
+
+            <p>You can handle cyber-bullying by:</p>
+
+            <ul>
+              <li>Teaching your child not to share personal or embarrassing information online or on social media. this
+                includes making sure that passwords are protected.
+              </li>
+              <li>Keeping track of how much time your child spends online and who he/she is interacting with. Ask
+                him/her who each person is and how your child knows him/her.
+              </li>
+              <li>Asking your child if he/she has ever experienced cyberbullying or seen it happen to someone.</li>
+              <li>Discussing with your child what to do if he/she is bullied by someone online. if your child is being
+                bullied, tell him/her not to respond but rather show the threatening message to an adult.
+              </li>
+              <li>Make sure your child knows that bullyng others is wrong and unacceptable.<br>
+                &nbsp;
+              </li>
+            </ul>
+
+            <hr>
+            <p><strong>ChildLine</strong></p>
+
+            <p><a href="tel:0800055555"><strong>0800 055 555</strong></a><strong> or&nbsp;</strong><a
+              href="http://www.childline.org.za"><strong>www.childline.org.za</strong></a></p>
+
+            <hr>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">Child abuse</div>
+          <div>
+            <div>
+              <div>
+                <p>The abuse of children is a major problem in south Africa and around the world. When a parent,
+                  caregiver or guardian causes harm, injury or death to a child (whether on purpose or by failing to
+                  act), that is considered child abuse.</p>
+
+                <p>There are many forms of child abuse, including physical abuse and maltreatment, verbal abuse, sexual
+                  abuse or indecent assault, exploitation and child labour, emotional neglect, medical neglect and
+                  educational neglect.</p>
+
+                <p><strong>Signs that child abuse may be taking place</strong></p>
+
+                <ul>
+                  <li>Refusal to go home or to the home of a relative or friend for no apparent reason.</li>
+                  <li>Bed wetting.</li>
+                  <li>Withdrawal from peer-group activities.</li>
+                  <li>Deterioration in school work.</li>
+                  <li>Drastic changes in personality (e.g. used to be even-tempered and is suddenly extremely
+                    aggressive).
+                  </li>
+                  <li>Excessive crying or irritability.</li>
+                  <li>Increased disobedience.</li>
+                  <li>Malnutrition or eating disorders.</li>
+                  <li>Unexplained burns, fractures or dislocations and bruises, swelling, lacerations, redness or
+                    bleeding.
+                  </li>
+                  <li>Many fractures at different stages of healing.</li>
+                  <li>Bald patches or bruises on the head.</li>
+                  <li>Bruising around the mouth.</li>
+                  <li>Difficulty walking or sitting.</li>
+                </ul>
+              </div>
+            </div>
+            <div _ngcontent-gol-c15="" class="subsection-header">Child sexual abuse</div>
+            <div _ngcontent-gol-c15=""><p>When any adult engages in sexual activity with a child, that is considered
+              child sexual abuse. it is a crime in south Africa to engage in sexual activity with a child, male or
+              female.</p>
+
+              <p>You can’t know if a person is a sexual abuser by the way they look. sexual abusers of children are not
+                unknown strangers lurking in the dark. Very often they are people you know and trust, like a family
+                member, friend, neighbour, teacher, priest or coach.</p>
+
+              <p>Sexual abuse is not easy to identify and may continue for years without being reported. sexual abuse
+                happens across south Africa every day, regardless of race, background, education or religion.</p>
+
+              <p>Teach your child to tell you if someone touches them inappropriately, and keep your eyes open for the
+                signs and symptoms of possible abuse.</p>
+
+              <table cellpadding="1" cellspacing="1">
+                <tbody>
+                <tr>
+                  <td><strong><em>There are many laws and Acts in south Africa that protect children&nbsp;</em></strong><strong><em>and
+                    their rights. According to south African criminal law&nbsp;</em></strong><strong><em>(sexual
+                    offences and Related Matters, 2007), sexual offense&nbsp;</em></strong><strong><em>against children
+                    is a criminal offense</em></strong>.
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+              <p>&nbsp;</p>
+
+              <p>Child sexual abuse includes:</p>
+
+              <ul>
+                <li>Touching a child‘s genitals (penis, vagina, testicles or anus).</li>
+                <li>Making a child touch somebody else’s genitals.</li>
+                <li>Inserting any body part (penis, fi ngers or tongue) inside a child’s vagina or anus for sexual
+                  pleasure.
+                </li>
+                <li>Exposing adult genitals to a child for sexual reasons.</li>
+                <li>Taking a picture of a child in sexual poses.</li>
+                <li>Making a child watch adult sexual activity.</li>
+                <li>Showing pornography to a child.</li>
+              </ul>
+
+              <p>Warning signs and symptoms of possible sexual abuse of a child:</p>
+
+              <ul>
+                <li>Fear of certain places or people.</li>
+                <li>Not wanting to be left alone with an adult for unknown reasons.</li>
+                <li>Refusing to undress.</li>
+                <li>Refusing to bath.</li>
+                <li>Developing a special relationship with an older person.</li>
+                <li>Becoming secretive.</li>
+                <li>Suddenly showing extreme fear or having nightmares without any explanation.</li>
+                <li>Inappropriate play with toys, such as replication of explicit sexual acts.</li>
+                <li>Sexually explicit drawings.</li>
+                <li>Sexual knowledge beyond what the child should know for their age.</li>
+                <li>Unexplained bruises, bleeding, itching or pain in the genital area or mouth.</li>
+                <li>Torn, stained or bloody underclothes.</li>
+                <li>Blood in urine or stools.</li>
+                <li>Repeated genital infections.</li>
+                <li>Any signs of an sti (see page 74).</li>
+              </ul>
+
+              <p>&nbsp;</p>
+
+              <table cellpadding="1" cellspacing="1">
+                <tbody>
+                <tr>
+                  <td>
+                    <p><strong>he legal age of consent is 16, but exceptions apply,&nbsp;including having sex with
+                      someone who has&nbsp; mental disabilities.</strong></p>
+
+                    <ul>
+                      <li><strong>Sex must be consensual between both partners.</strong></li>
+                      <li><strong>Be mindful of the legal age (18 years in South Africa), and where parents hold legal
+                        authority</strong></li>
+                    </ul>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+              <p>&nbsp;</p>
+
+              <p><strong>What to do if you suspect sexual abuse</strong></p>
+
+              <ul>
+              </ul>
+
+              <ul>
+                <li>Report it to the police, a doctor or a trusted teacher or community leader.</li>
+                <li>The South African Police Service, and in particular the Family Violence, Child Protection and Sexual
+                  Offences Units, is responsible for the investigation of these crimes.
+                </li>
+                <li>Ensure your child gets counselling and therapy if necessary.</li>
+              </ul>
+
+              <p>You will need to give a statement, and the child will be interviewed by a trained police member. A
+                medical examination will be done on the child, and any injuries photographed. Statements from witnesses
+                and other evidence (such as fingerprints) will be gathered.</p>
+
+              <hr>
+              <p><strong>Teddy Bear Clinic <a href="tel:0114844554">011 484 4554</a> <a
+                href="unsafe:htpp://www.ttbc.org.za">www.ttbc.org.za</a></strong></p>
+
+              <hr>
+              <p><strong>ChildLine <a href="tel:0800055555">0800 055 555</a> <a href="http://www.childline.org.za">www.childline.org.za</a></strong>
+              </p>
+
+              <hr>
+              <p><a href="http://www.childline.org.za">&nbsp;</a></p>
+            </div>
+            <br _ngcontent-gol-c15="">
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">ELDERLY FAMILY MEMBERS</div>
+          <div>
+            <p>The elderly have a great deal to offer their families and communities. Some grandparents spend time
+              taking
+              care of children while parents are working or unavailable. The older generation also has important advice
+              and
+              wisdom to share with younger family members.</p>
+
+            <p>But as people get older, they may need help with daily activities; they may need additional healthcare,
+              and
+              as they become frail, they may become vulnerable to abuse.</p>
+
+            <p>To qualify for a Grant for Older Persons you must:</p>
+
+            <ul>
+              <li>Be a south African citizen, permanent resident or refugee.</li>
+              <li>Be living in south Africa.</li>
+              <li>Be 60 years or older.</li>
+              <li>Not be receiving another grant for yourself.</li>
+              <li>Not be being cared for by a state institution.</li>
+            </ul>
+
+            <p>You and/or your spouse may be required to complete a means test (to assess your financial need).</p>
+
+            <hr>
+            <p><strong>Social Grants Helpline - </strong><a href="tel:0800601011"><strong>0800 601 011</strong></a></p>
+
+            <hr>
+            <p><strong>South African Social Security Agency (SASSA)</strong></p>
+
+            <p><a href="tel:0800601011"><strong>0800 601 011</strong></a><strong> (to find where your nearest SASSA
+              office
+              is) or&nbsp;</strong><a href="http://www.sassa.org.za"><strong>www.sassa.org.za</strong></a></p>
+            <div _ngcontent-gol-c16="" class="subsection-header">Housing for the elderly</div>
+            <div _ngcontent-gol-c16=""><p>&nbsp;</p>
+
+              <p>If you are in need of constant care and would like to go to an old-age home, you can contact your local
+                Social Development office. In order to be admitted, you have to meet certain requirements:</p>
+
+              <ul>
+                <li>You are frail and in need of 24-hour care in an old-age home.</li>
+                <li>&nbsp;You receive a grant for older persons (see page 123).</li>
+                <li>&nbsp;You are a woman over the age of 60 or a man over the age of 65.</li>
+              </ul>
+
+              <hr>
+              <p><strong>Department of Social Development</strong></p>
+
+              <p><strong><a href="tel:0123127794">012 312 7794</a>/<a href="tel:0123127500">7500</a> <a
+                href="http://www.dsd.gov.za">www.dsd.gov.za</a></strong></p>
+
+              <hr>
+              <p><strong>South African Social Security Agency (SASSA)</strong></p>
+
+              <p><strong><a href="tel:0800601011">0800 601 011</a><a href="http://www.sassa.gov.za">
+                www.sassa.gov.za</a></strong></p>
+
+              <hr>
+              <p><strong>South Africa Older Persons Forum</strong></p>
+
+              <p><strong><a href="tel:0214225286">021 422 5286</a> <a
+                href="http://www.saopf.org.za">www.saopf.org.za</a></strong></p>
+
+              <hr>
+              <p><strong>Age in Action</strong></p>
+
+              <p><strong><a href="tel:0113318509">011 331 8509</a>/<a href="tel:0800333231">0800 333 231</a> <a
+                href="http://www.age-in-action.co.za">www.age-in-action.co.za</a></strong></p>
+
+              <hr>
+              <p><strong>Abbeyfield South Africa</strong></p>
+
+              <p><strong><a href="tel:0216716535">021 671 6535</a> <a href="http://www.abbeyfield.co.za">www.abbeyfield.co.za</a></strong>
+              </p>
+
+              <hr>
+            </div>
+            <br _ngcontent-gol-c16=""></div>
+          <div>
+            <div class="subsection-header">Abuse of elders</div>
+            <table cellpadding="1" cellspacing="1">
+              <thead>
+              <tr>
+                <th scope="col">If you see any signs of abuse in someone you know, report it immediately. You can call a
+                  helpline anonymously if you don’t want to be identified.
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+
+            <p>Many senior citizens are abused every day in their homes, communities or nursing homes. Most often the
+              abuser is closely related to the victim, such as a family member, or someone who is trusted by the rest of
+              the family.</p>
+
+            <p>Elderly people can suffer physical and sexual abuse, as well as psychological, emotional and verbal
+              abuse.
+              Lack of proper care and neglect are also forms of abuse, and are in fact the most common forms of elder
+              abuse in South Africa.</p>
+
+            <p>Image Here</p>
+
+            <p>Signs that an elder may be being abused:</p>
+
+            <ul>
+              <li>Unexplained injuries such as bruises or welts, including around the breasts or genitals.</li>
+              <li>Signs of being tied up, such as rope marks on wrists.</li>
+              <li>The caregiver’s refusal to allow you to see the elder alone.</li>
+              <li>Unexplained STIs (see page 74) or genital infections.</li>
+              <li>Unexplained vaginal or anal bleeding.</li>
+              <li>Torn, stained or bloody underclothing.</li>
+              <li>Unusual weight loss, malnutrition or dehydration.</li>
+              <li>Untreated physical problems, such as bed sores.</li>
+              <li>Unsanitary living conditions: dirt, bugs, soiled bedding and clothes.</li>
+            </ul>
+
+            <p>Abuse of the elderly is a crime. If you’re being abused, speak to a trusted family member and report it
+              to
+              the nearest police station.</p>
+
+            <hr>
+            <p><strong>SAPS/Emergency Services <a href="tel:10111">10111</a></strong></p>
+
+            <hr>
+            <p><strong>Halt Elder Abuse Hotline (HEAL) <a href="tel:0800003081">0800 00 30 81</a></strong></p>
+
+            <hr>
+            <p><strong>South African Gerontological Society <a href="tel:0114837497">011 483 7497</a></strong></p>
+
+            <hr>
+            <p>&nbsp;</p>
+
+            <p><strong>DEPARTMENT OF SOCIAL DEVELOPMENT&nbsp;&nbsp;OFFICES</strong></p>
+
+            <hr>
+            <p><strong>EASTERN CAPE</strong></p>
+
+            <p><strong>Dukumbana Building, 1st Floor, Independent Avenue, Bisho, 5605</strong></p>
+
+            <p><strong><a href="tel:0436055004">043 605 5004</a></strong></p>
+
+            <hr>
+            <p><strong>FREE STAT E</strong></p>
+
+            <p><strong>Old Mutual Building, 3rd Floor, Maitland Street, Bloemfontein, 9300</strong></p>
+
+            <p><strong><a href="tel:0514000307">051 4000 307</a>/<a href="tel:0514000304">304</a></strong></p>
+
+            <hr>
+            <p><strong>GAUTENG</strong></p>
+
+            <p><strong>Thusanong Building, 11th Floor, 69 Commissioner Street, Johannesburg, 2000</strong></p>
+
+            <p><strong><a href="tel:0113557687">011 355 7687</a></strong></p>
+
+            <hr>
+            <p><strong>KWAZULU-NATAL</strong></p>
+
+            <p><strong>208 Hoosen Hassagee Street, Ground Floor, Pietermaritzburg, 3200</strong></p>
+
+            <p><strong><a href="tel:0332645402">033 264 5402</a></strong></p>
+
+            <hr>
+            <p><strong>LIMPOPO 21 Biccard Street, Polokwane <a href="tel:0152304300">015 230 4300</a></strong></p>
+
+            <hr>
+            <p><strong>MPUMALANGA</strong></p>
+
+            <p><strong>7 Government Boulevard, Building 3, Riverside Park, Extension 2, Nelspruit, 1200</strong></p>
+
+            <p><strong><a href="tel:0137663097">013 766 3097</a></strong></p>
+
+            <hr>
+            <p><strong>NORTHERN CAPE</strong></p>
+
+            <p><strong>Mimosa Complex, Barkly Road, Homestead, Kimberley, 8300</strong></p>
+
+            <p><strong><a href="tel:0538749100">053 874 9100</a></strong></p>
+
+            <hr>
+            <p><strong>NORTH WEST</strong></p>
+
+            <p><strong>Provident House Building, 4th Floor, University Drive, Mmabatho, 2735</strong></p>
+
+            <p><strong><a href="tel:0183881668">018 388 1668</a></strong></p>
+
+            <hr>
+            <p><strong>WESTERN CAPE</strong></p>
+
+            <p><strong>Union House, 7th Floor, 14 Queen Victoria Street, Cape Town, 8000</strong></p>
+
+            <p><strong><a href="tel:0214833858">021 483 3858</a></strong></p>
+
+            <hr>
+            <p>&nbsp;</p>
+            <br>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">
+    <a href="#plbbook/higher-education-training" class="bottomnav-links cc-bottom w-inline-block">
       <div class="previous-next">Next Chapter</div>
-      <div class="bottomnav-chapter">Chapter 4: Higher Education & Training</div>
+      <div class="bottomnav-chapter">4: Higher Education & Training</div>
     </a>
   </div>
 </div>
