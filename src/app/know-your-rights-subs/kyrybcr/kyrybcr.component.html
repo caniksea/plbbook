@@ -40,15 +40,40 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 7 - Know your Rights</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
-          <br>
+      <div>
+        <div class="section-header">YOUR BASIC CONSTITUTIONAL RIGHTS</div>
+        <div>
+          <div>
+            <div>
+              <p>The highest law of South Africa is the Constitution, and this includes the Bill of Rights. The South
+                Africa Constitution gives a full range of rights and protection for all citizens.</p>
+            </div>
+
+            <div>
+              <p>The Constitution states that South Africa belongs to everyone who lives in it, and that everyone is
+                entitled to human dignity, equality and freedom. This means that our rights as women are protected by
+                it.</p>
+            </div>
+
+            <div>
+              <p>Section 9 of the Constitution says:</p>
+
+              <ul>
+                <li>Everyone is equal before the law and has the right to equal protection and benefit of the law.</li>
+                <li>Equality includes the full and equal enjoyment of all rights and freedoms.</li>
+                <li>The Constitution promotes the achievement of equality, legislative and other measures designed to
+                  protect or advance people disadvantaged by unfair discrimination may be taken.
+                </li>
+                <li>The State may not unfairly discriminate against anyone for any reason, including race, gender, sex,
+                  pregnancy, marital status, ethnic or social origin, colour, sexual orientation, age, disability,
+                  religion, conscience, belief, culture, language and birth.
+                </li>
+                <li>No person may unfairly discriminate against anyone else.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -57,5 +82,5 @@
     <!--      <div class="previous-next">Next Chapter</div>-->
     <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
     <!--    </a>-->
-    <!--  </div>-->
   </div>
+</div>

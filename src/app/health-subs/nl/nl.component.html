@@ -40,22 +40,155 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 2 - Health</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
-          <br>
+      <div>
+        <div class="section-header">Nutrition and lifestyle</div>
+        <div>
+          <!--START--->
+          <div class="subsection-header">Diet and nutrition</div>
+          <div>
+            <p>Healthy eating, including lots of fresh fruit and vegetables, and home-cooked meals rather than fast food,
+              is important for your health. By making healthier choices about what you eat, you can prevent or reverse
+              many health problems associated with poor diet, such as obesity, anaemia, high blood pressure, heart
+              disease, diabetes and high cholesterol.</p>
+          </div>
+
+          <div>
+            <p>Good foods include:</p>
+
+            <ul>
+              <li><strong>Whole grains</strong> such as oatmeal and wholewheat bread.</li>
+              <li><strong>Fruit and vegetables</strong> (try to eat three to five portions every day).</li>
+              <li><strong>Protein</strong> from fish, chicken and meats, some nuts and seeds.</li>
+              <li><strong>Dairy products</strong> such as milk and cheese.</li>
+            </ul>
+          </div>
+
+          <div>
+            <p><img alt="Good-Food-Fruit-Eggs" src="assets/img/health/Good-Food-Fruit-Eggs.png"></p>
+          </div>
+
+          <div>
+            <p>Foods that you shouldn't eat a lot of include:</p>
+
+            <ul>
+              <li><strong>Fats and oils.</strong></li>
+              <li><strong>Processed foods</strong> including fast food (takeaways).</li>
+              <li><strong>Very refined foods</strong> like white bread.</li>
+              <li><strong>Baked goods</strong> like cookies, cakes and pies.</li>
+            </ul>
+          </div>
+
+          <div>
+            <p><img alt="Bad-Food-Burger-Chips-Coke" src="assets/img/health/Bad-Food-Burger-Chips-Coke.png"></p>
+
+            <table align="center">
+              <thead>
+              <tr>
+                <th scope="col">WHAT IS BODY IMAGE?</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <p>Human bodies naturally come in all shapes and sizes, big, thin, tall or short. We’re all different as
+                    individuals and should be able to appreciate who we are.</p>
+
+                  <p>Many women today, especially young girls, feel pressured to look like the near-perfect pictures of
+                    models in magazines. These pictures are incorrect because they are often airbrushed, changed to give a
+                    false image and an unreal picture of women. Most men and women have flaws</p>
+
+                  <p>It is self-affirming to be a woman who is physically active, eats healthily and is strong and proud
+                    of her body.</p>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="ng-star-inserted">
+            <div class="subsection-header">Eating disorders</div>
+            <div><p>Having an eating disorder (eating too little or too much) causes emotional and physical unhappiness
+              and can be extremely harmful to the body, and in some cases even deadly.</p>
+
+              <p><strong>Anorexia</strong></p>
+
+              <p>This is a life-threatening condition involving self-starvation. It can be caused by a false perception of
+                being overweight.</p>
+
+              <p>Warning signs and symptoms of anorexia include:</p>
+
+              <ul>
+                <li>Losing a lot of weight.</li>
+                <li>Being too concerned with body weight.</li>
+                <li>Being obsessed with ‘being thin’.</li>
+                <li>Exercising much more than is normal.</li>
+                <li>Brittle hair and nails.</li>
+                <li>Absence of menstruation (no periods).</li>
+              </ul>
+
+              <p><strong>Bulimia</strong></p>
+
+              <p>Bulimia is a condition that results from compulsive overeating followed by forced vomiting or taking
+                laxatives in order to avoid the food being absorbed by the body.</p>
+
+              <p>Warning signs and symptoms of bulimia include:</p>
+
+              <ul>
+                <li>Eating very large amounts of food in a short period of time. .</li>
+                <li>Going to the bathroom very often, and signs of vomiting.</li>
+                <li>Discoloured teeth (because of the vomiting).</li>
+                <li>Using laxatives when they’re not necessary.</li>
+              </ul>
+
+              <hr>
+              <p><strong>Eating Disorders South Africa (EDSA)</strong></p>
+
+              <p><a href="tel:0129931060"><strong>012 993 1060</strong></a><strong> or </strong><a
+                href="http://www.edsa.co.za"><strong>www.edsa.co.za</strong></a></p>
+
+              <hr>
+            </div>
+            <br></div>
+
+          <div class="ng-star-inserted">
+            <div class="subsection-header">Lifestyle choices</div>
+            <div>
+              <p>Making good lifestyle choices will help you to be healthy:</p>
+
+              <ul>
+                <li>If you’re overweight or obese, speak to your doctor about a diet to help you lose weight.</li>
+                <li>Quit smoking, or do not start.</li>
+                <li>Don’t drink too much alcohol (for women, not more than two glasses of wine daily).</li>
+                <li>Get some exercise every day, even if it’s only a half-hour’s brisk walk.</li>
+                <li>Follow your doctor’s advice.</li>
+                <li>Take any chronic medication regularly, as prescribed by your doctor.</li>
+                <li>Don’t self-medicate (don’t take medication without advice from a health professional)</li>
+              </ul>
+
+              <table align="center" border="0">
+                <tbody>
+                <tr>
+                  <td><strong>According to a 2014 study released by the World Health Organization, South Africa has one of
+                    the highest rates for lifestyle risk factors of obesity (45%) and low physical activity (59%) in the
+                    world.</strong></td>
+                </tr>
+                </tbody>
+              </table>
+
+              <p>&nbsp;</p>
+            </div>
+            <br _ngcontent-nyc-c10=""></div>
         </div>
       </div>
+      <!--END-->
     </div>
-
-    <!--    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">-->
-    <!--      <div class="previous-next">Next Chapter</div>-->
-    <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
-    <!--    </a>-->
-    <!--  </div>-->
   </div>
+
+  <!--    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">-->
+  <!--      <div class="previous-next">Next Chapter</div>-->
+  <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
+  <!--    </a>-->
+  <!--  </div>-->
+</div>

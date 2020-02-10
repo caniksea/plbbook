@@ -40,15 +40,84 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 5 - Women in the Workplace</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
-          <br>
+      <div>
+        <div class="section-header">Finding a job</div>
+        <div>
+          <p>Looking for a job can be exciting – but also stressful. It can take a while to find employment that suits
+            your financial needs, your skills and your geographical area, so you need to accept from the beginning that
+            you’re going to have to invest time and energy in the process.</p>
+
+          <p>First steps to finding a job:</p>
+
+          <ul>
+            <li>Identify what you are good at.</li>
+            <li>Prepare a CV (curriculum vitae).</li>
+            <li>Read the jobs section of daily and community newspapers.</li>
+            <li>Visit employment agencies or place your CV on a job website.</li>
+            <li>Ask your friends and family to keep their ears and eyes open for possible employment opportunities.</li>
+            <li>Approach the HR department of companies you would like to work for.</li>
+            <li>Be open-minded – explore all options.</li>
+            <li>Consider internships or volunteering opportunities in your field of interest so you can gain valuable
+              experience.
+            </li>
+            <li>Don’t give up!</li>
+          </ul>
+
+          <table cellpadding="1" cellspacing="1" style="width:500px">
+            <thead>
+            <tr>
+              <th scope="col">Know your rights and benefits</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Take the time to read your organisation’s code of conduct, as well as your employment contract. These
+                outline your rights at work, and should be in line with South Africa’s labour laws. You should also know
+                if you qualify for any benefits, such as medical aid, pension, childcare, education or training.
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <p>&nbsp;</p>
+
+          <table cellpadding="1" cellspacing="1" style="width:500px">
+            <tbody>
+            <tr>
+              <td>
+                <p>Beware of scams</p>
+
+                <p>Some job offers sound like easy money but turn out to be a trick to get money out of you. If it seems
+                  ‘too good to be true’, it probably is! Don’t fall for ‘job offers’ that ask you to pay any money
+                  upfront.</p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <p>&nbsp;</p>
+
+          <p><strong>National Qualification Framework (NQF) and Career Development Services Helpline (for info on career,
+            qualifications and educational providers)</strong><br>
+            <a href="tel:0860111673"><strong>0860 11 16 73</strong></a></p>
+
+          <hr>
+          <p><strong>Department of Labour (labour centres)</strong><br>
+            <a href="tel:0860105350"><strong>0860 10 53 50</strong></a><strong> </strong><a
+              href="http://www.labour.gov.za/DOL/contacts">www.labour.gov.za/DOL/contacts</a></p>
+
+          <hr>
+          <p><strong>GoStudy </strong><a href="tel:0215553928"><strong>021 555 3928</strong></a> <a
+            href="http://www.sa.gostudy.info/">www.sa.gostudy.info/</a></p>
+
+          <hr>
+          <p><strong>National Youth Development Agency </strong><a href="tel:0800525252"><strong>0800 52 5252</strong></a>
+            <a href="http://www.nyda.gov.za">www.nyda.gov.za</a></p>
+
+          <hr>
+          <p>&nbsp;</p>
         </div>
       </div>
     </div>
@@ -57,5 +126,5 @@
     <!--      <div class="previous-next">Next Chapter</div>-->
     <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
     <!--    </a>-->
-    <!--  </div>-->
   </div>
+</div>

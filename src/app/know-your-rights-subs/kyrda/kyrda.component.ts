@@ -25,12 +25,12 @@ export class KyrdaComponent implements OnInit {
               private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    this.dataTransferService.bookChapters.subscribe(chapters => {
-      if (chapters) {
-        this.chapter = chapters.find(c => c.chapterNumber === this.CHAPTER_NUMBER);
-        if (this.chapter) { this.getChapterSections(); }
-      }
-    });
+    // this.dataTransferService.bookChapters.subscribe(chapters => {
+    //   if (chapters) {
+    //     this.chapter = chapters.find(c => c.chapterNumber === this.CHAPTER_NUMBER);
+    //     if (this.chapter) { this.getChapterSections(); }
+    //   }
+    // });
   }
 
   showMenu() {

@@ -56,6 +56,7 @@
     <h3>Chapters</h3>
     <div class="w-dyn-list">
       <div class="w-clearfix w-dyn-items">
+        <!-- Chapter 1-->
         <div class="sidechapter-wrap w-dyn-item">
           <a data-ix="side-chapter-link" href="#plbbook/emergencies" (click)="closeMenu()"
              class="sidechapter-link w-inline-block">
@@ -65,23 +66,329 @@
               <div class="sidechapter-text">1</div>
             </div>
           </a>
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Emergencies
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>
+                <a href="#plbbook/emergencies/What_to_do_in_an_emergency">What to do in an emergency</a>
+              </p>
+              <p>
+                <a href="#plbbook/emergencies/How_to_do_CPR">How to do CPR</a>
+              </p>
+              <p>
+                <a href="#plbbook/emergencies/Genderbased_violence">Gender-based violence</a>
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+          </div>
+        <!--Chapter 2-->
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/health" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div><img class="sidethumb" src="assets/img/{{getChapterImage(2)}}"></div>
+            <div>
+              <div class="sidechapter-text">Chapter</div>
+              <div class="sidechapter-text">2</div>
+            </div>
+          </a>
 
           <mat-accordion>
             <mat-expansion-panel>
               <mat-expansion-panel-header>
                 <mat-panel-title>
-                  Emergency
+                  Health
                 </mat-panel-title>
                 <mat-panel-description>
                 </mat-panel-description>
               </mat-expansion-panel-header>
-<!--              <p *ngFor="let section of getChapterSections(chapter)">-->
-<!--                <a href="#{{getSectionLink(chapter, section)}}" (click)="closeMenu()">{{section.sectionTitle}}</a>-->
-<!--              </p>-->
+              <p>
+                <a href="#plbbook/health/Health_assessments">Health assessments</a>
+              </p>
+              <p>
+                <a href="#plbbook/health/Nutrition_and_lifestyle">Nutrition and lifestyle</a>
+              </p>
+              <p>
+                <a href="#plbbook/health/Chronic_diseases">Chronic diseases</a>
+              </p>
+              <p>
+                <a href="#plbbook/health/Lung_diseases">Lung diseases</a>
+              </p>
+              <p>
+                <a href="#plbbook/health/Cancer">Cancer</a>
+              </p>
+              <p>
+                <a href="#plbbook/health/Anaemia">Anaemia</a>
+              </p>
+              <p>
+                <a href="#plbbook/health/Reproductive_health">Reproductive health</a>
+              </p>
+              <p>
+                <a href="#plbbook/health/Mental_health">Mental health</a>
+              </p>
             </mat-expansion-panel>
           </mat-accordion>
-          </div>
+        </div>
 
+        <!--Chapter 3-->
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/family" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div><img class="sidethumb" src="assets/img/{{getChapterImage(3)}}"></div>
+            <div>
+              <div class="sidechapter-text">Chapter</div>
+              <div class="sidechapter-text">3</div>
+            </div>
+          </a>
+
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Family
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>
+                <a href="#plbbook/family/Parenting">Parenting</a>
+              </p>
+              <p>
+                <a href="#plbbook/family/Vaccination">Vaccination</a>
+              </p>
+              <p>
+                <a href="#plbbook/family/Child_support">Child support</a>
+              </p>
+              <p>
+                <a href="#plbbook/family/Bullying">Bullying</a>
+              </p>
+              <p>
+                <a href="#plbbook/family/Child_abuse">Child abuse</a>
+              </p>
+              <p>
+                <a href="#plbbook/family/Elderly_family_members">Elderly family members</a>
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+
+        <!--Chapter 4-->
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#/plbbook/higher-education-training" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div><img class="sidethumb" src="assets/img/{{getChapterImage(4)}}"></div>
+            <div>
+              <div class="sidechapter-text">Chapter</div>
+              <div class="sidechapter-text">4</div>
+            </div>
+          </a>
+
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Higher Education & Training
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>
+                <a href="#plbbook/higher-education-training/Technical_Vocational_Education_and_Training_TVET">Technical Vocational Education and Training TVET</a>
+              </p>
+              <p>
+                <a href="#plbbook/higher-education-training/Universities">Universities</a>
+              </p>
+              <p>
+                <a href="#plbbook/higher-education-training/Bursaries_and_scholarships">Bursaries and scholarships</a>
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+
+        <!--Chapter 5-->
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/women-in-the-workplace" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div><img class="sidethumb" src="assets/img/{{getChapterImage(5)}}"></div>
+            <div>
+              <div class="sidechapter-text">Chapter</div>
+              <div class="sidechapter-text">5</div>
+            </div>
+          </a>
+
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Women in the Workplace
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>
+                <a href="#plbbook/women-in-the-workplace/Finding_a_job">Finding a job</a>
+              </p>
+              <p>
+                <a href="#plbbook/women-in-the-workplace/Drawing_up_a_CV">Drawing up a CV</a>
+              </p>
+              <p>
+                <a href="#plbbook/women-in-the-workplace/Job_interviews">Job interviews</a>
+              </p>
+              <p>
+                <a href="#plbbook/women-in-the-workplace/Legal_rights">Legal rights</a>
+              </p>
+              <p>
+                <a href="#plbbook/women-in-the-workplace/Starting_your_own_business">Starting your own business</a>
+              </p>
+              <p>
+                <a href="#plbbook/women-in-the-workplace/Business_funding_and_support">Business funding and support</a>
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+
+        <!--Chapter 6-->
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/finance-banking" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div><img class="sidethumb" src="assets/img/{{getChapterImage(6)}}"></div>
+            <div>
+              <div class="sidechapter-text">Chapter</div>
+              <div class="sidechapter-text">6</div>
+            </div>
+          </a>
+
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Finance & Banking
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>
+                <a href="#plbbook/finance-banking/Financial_planning">Financial planning</a>
+              </p>
+              <p>
+                <a href="#plbbook/finance-banking/Banking">Banking</a>
+              </p>
+              <p>
+                <a href="#plbbook/finance-banking/Savings">Savings</a>
+              </p>
+              <p>
+                <a href="#plbbook/finance-banking/Debts">Debts</a>
+              </p>
+              <p>
+                <a href="#plbbook/finance-banking/Loans">Loans</a>
+              </p>
+              <p>
+                <a href="#plbbook/finance-banking/Insurance">Insurance</a>
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+
+        <!--Chapter 7-->
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/know-your-rights" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div><img class="sidethumb" src="assets/img/{{getChapterImage(7)}}"></div>
+            <div>
+              <div class="sidechapter-text">Chapter</div>
+              <div class="sidechapter-text">7</div>
+            </div>
+          </a>
+
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Know your Rights
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>
+                <a href="#plbbook/know-your-rights/Your_basic_constitutional_rights_">Your basic constitutional rights</a>
+              </p>
+              <p>
+                <a href="#plbbook/know-your-rights/Detention_and_arrest_">Detention and arrest</a>
+              </p>
+              <p>
+                <a href="#plbbook/know-your-rights/Legal_centres_and_clinics">Legal centres and clinics</a>
+              </p>
+              <p>
+                <a href="#plbbook/know-your-rights/Consumer_rights_and_protection">Consumer rights and protection</a>
+              </p>
+              <p>
+                <a href="#plbbook/know-your-rights/Housing_and_land_rights_">Housing and land rights</a>
+              </p>
+              <p>
+                <a href="#plbbook/know-your-rights/Marriage">Marriage</a>
+              </p>
+              <p>
+                <a href="#plbbook/know-your-rights/Drawing_up_a_Will_">Drawing up a Will</a>
+              </p>
+              <p>
+                <a href="#plbbook/know-your-rights/Legal_documents_">Legal documents</a>
+              </p>
+              <p>
+                <a href="#plbbook/know-your-rights/Getting_a_drivers_licence_">Getting a drivers licence</a>
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+
+        <!--Chapter 8-->
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/useful-contacts" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div><img class="sidethumb" src="assets/img/{{getChapterImage(8)}}"></div>
+            <div>
+              <div class="sidechapter-text">Chapter</div>
+              <div class="sidechapter-text">8</div>
+            </div>
+          </a>
+
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Useful Contacts
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>
+                <a href="#plbbook/useful-contacts/Masters_of_the_High_Court">Masters of the High Court</a>
+              </p>
+              <p>
+                <a href="#plbbook/useful-contacts/Thusong_Service_Centres">Thusong Service Centres</a>
+              </p>
+              <p>
+                <a href="#plbbook/useful-contacts/Thuthuzela_Care_Centres">Thuthuzela Care Centres</a>
+              </p>
+              <p>
+                <a href="#plbbook/useful-contacts/Government_Department_Head_Offices">Government Department Head Offices</a>
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+        <br>
+        <div class="sidechapter-wrap w-dyn-item">
+          <a data-ix="side-chapter-link" href="#plbbook/references" (click)="closeMenu()"
+             class="sidechapter-link w-inline-block">
+            <div>
+              <div class="sidechapter-text-before-book">References</div>
+            </div>
+          </a>
+        </div>
         <div class="sidechapter-wrap w-dyn-item">
           <a data-ix="side-chapter-link" href="#plbbook/references" (click)="closeMenu()"
              class="sidechapter-link w-inline-block">

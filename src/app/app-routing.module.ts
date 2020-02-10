@@ -72,17 +72,24 @@ const wiw = rootPath + 'women-in-the-workplace';
 const fb = rootPath + 'finance-banking';
 const kyr = rootPath + 'know-your-rights';
 const uc = rootPath + 'useful-contacts';
+const copyright = rootPath + 'copyright';
+const htu = rootPath + 'how-to-use';
+const acknowledgements = rootPath + 'acknowledgements';
+const foreword = rootPath + 'foreword';
+const preface = rootPath + 'preface';
+const references = rootPath + 'references';
+const backcover = rootPath + 'back-cover';
 
 const routes: Routes = [
   {
     path: 'plbbook',
     component: PlbbookComponent
   },
-  {path: 'plbbook/copyright', component: CopyrightComponent},
-  {path: 'plbbook/how-to-use', component: HowToUseComponent},
-  {path: 'plbbook/acknowledgements', component: AcknowledgementsComponent},
-  {path: 'plbbook/foreword', component: ForewordComponent},
-  {path: 'plbbook/preface', component: PrefaceComponent},
+  {path: copyright, component: CopyrightComponent},
+  {path: htu, component: HowToUseComponent},
+  {path: acknowledgements, component: AcknowledgementsComponent},
+  {path: foreword, component: ForewordComponent},
+  {path: preface, component: PrefaceComponent},
   {path: emergency, component: EmergenciesComponent},
   {path: emergency + '/How_to_do_CPR', component: CprComponent},
   {path: emergency + '/What_to_do_in_an_emergency', component: WtdComponent},
@@ -136,8 +143,8 @@ const routes: Routes = [
   {path: uc + '/Thusong_Service_Centres', component: UctscComponent},
   {path: uc + '/Thuthuzela_Care_Centres', component: UctccComponent},
   {path: uc + '/Government_Department_Head_Offices', component: UcgdhoComponent},
-  {path: 'plbbook/references', component: ReferencesComponent},
-  {path: 'plbbook/back-cover', component: BackCoverComponent},
+  {path: references, component: ReferencesComponent},
+  {path: backcover, component: BackCoverComponent},
   {path: '', redirectTo: 'plbbook', pathMatch: 'full'},
   {path: '**', redirectTo: 'plbbook'},
 ];

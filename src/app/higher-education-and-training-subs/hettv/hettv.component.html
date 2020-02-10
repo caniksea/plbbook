@@ -40,15 +40,105 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 4 - Higher Education & Training</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
-          <br>
+      <div>
+        <div class="section-header">TECHNICAL VOCATIONAL EDUCATION AND TRAINING (TVET)</div>
+        <div>
+          <table cellpadding="1" cellspacing="1">
+            <thead>
+            <tr>
+              <th scope="col">There are over 50 registered and accredited TVET Colleges in South Africa, with over 264
+                campuses in both rural and urban areas. Private colleges also exist, although some operate illegally.
+                Phone the DHET Helpline (0800 87 2222) to verify a college.
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+          <p>TVET Colleges offer vocational, occupational and artisan education and training. This means that studies
+            prepare students for the world of work (usually for a specific occupation), giving people essential skills for
+            the workplace.</p>
+
+          <p>Even if you only completed Grade 9, you can apply to a TVET College. This option is ideal for responsible
+            older adolescents and adults who are serious about getting skills to find employment.</p>
+
+          <p>TVET Colleges offer certificate and diploma qualifications, and a wide range of courses are offered.
+            Categories of courses include:</p>
+
+          <ul>
+            <li>Agriculture.</li>
+            <li>Arts and culture.</li>
+            <li>Business.</li>
+            <li>Commerce and management.</li>
+            <li>Education.</li>
+            <li>Training and development.</li>
+            <li>Engineering.</li>
+            <li>Manufacturing and technology.</li>
+            <li>Services.</li>
+            <li>Building contruction and security.</li>
+          </ul>
+
+          <table cellpadding="1" cellspacing="1">
+            <thead>
+            <tr>
+              <th scope="col">Community Education and Training Colleges</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <p>Colleges have been established to cater for disadvantaged groups. These colleges focus on youth and
+                  adults who, for various reasons, did not complete their schooling or never attended school and wish to
+                  raise the base for further learning, improve their skills for employability, and/or progress to
+                  opportunities in TVET colleges and university education. There is a least one community college in each
+                  province.</p>
+
+                <p>Qualifications or part-qualifications are registered on Levels 1 to 4 of the National Qualifications
+                  Framework, and include:</p>
+
+                <ul>
+                  <li>General Education and Training Certificate for Adults.</li>
+                  <li>Senior Certificate.</li>
+                  <li>National Senior Certificate for Adults (still to be implemented).</li>
+                </ul>
+
+                <p>Skills development courses include:</p>
+
+                <ul>
+                  <li>Sewing.</li>
+                  <li>Plumbing.</li>
+                  <li>Mechanics.</li>
+                  <li>Welding.</li>
+                  <li>Gardening.</li>
+                  <li>Travel and tourism.</li>
+                </ul>
+
+                <p><strong>Entry requirement</strong><br>
+                  There is no entry requirement, except that learners should be 15 years old and above. Applicants will be
+                  assessed and placed in appropriate levels that meet their needs. For more information contact the
+                  Department of Higher Education:</p>
+
+                <hr>
+                <p><strong>Department of Higher Education</strong></p>
+
+                <hr>
+                <p><strong>Call Centre </strong><a href="tel:0800872222"><strong>0800 872 222</strong></a><strong>
+                  or </strong><a href="http://www.dhet.gov.za/"><strong>www.dhet.gov.za</strong></a></p>
+
+                <hr>
+                <p><strong>Gauteng </strong><a href="tel:0114749041"><strong>011 474 9041</strong></a></p>
+
+                <hr>
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <p>&nbsp;</p>
         </div>
       </div>
     </div>
@@ -57,5 +147,5 @@
     <!--      <div class="previous-next">Next Chapter</div>-->
     <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
     <!--    </a>-->
-    <!--  </div>-->
   </div>
+</div>

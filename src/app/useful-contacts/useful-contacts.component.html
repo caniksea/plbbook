@@ -28,38 +28,1189 @@
   </div>
   <div class="rightside">
     <div class="rightnavigation center w-clearfix">
-      <a *ngIf="previousChapter" href="#{{previousChapter?.chapterLink}}" class="bottomnav-links w-inline-block previous-link"
+      <a href="#plbbook/know-your-rights" class="bottomnav-links w-inline-block previous-link"
          (click)="closeMenu()">
         <div class="previous-next"><img class="previous-arrow" src="assets/img/left_arrow.png">Previous Chapter</div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER - 1}}: {{previousChapter?.chapterTitle}}</div>
+        <div class="bottomnav-chapter">7: Know your Rights</div>
       </a>
-      <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-center w-inline-block w-condition-invisible"
+      <a href="#plbbook/references" class="bottomnav-links cc-center w-inline-block"
          (click)="closeMenu()">
-        <div class="previous-next">Next Chapter<img class="next-arrow" src="assets/img/right_arrow.png"></div>
-        <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+        <div class="previous-next">Next<img class="next-arrow" src="assets/img/right_arrow.png"></div>
+        <div class="bottomnav-chapter">References</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CURRENT_CHAPTER}} {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 8 - Useful Contacts</div>
       </div>
-      <div class="lede w-richtext" [innerHTML]="chapter?.story"></div>
-      <div class="chaptercontent w-richtext" *ngIf="extendedSections">
-        <div *ngFor="let section of extendedSections">
-          <div class="section-header" [innerHTML]="section?.sectionTitle"></div>
-          <div [innerHTML]="section?.story"></div>
-          <div *ngIf="section.subsections">
-            <div *ngFor="let subsection of section.subsections">
-              <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-              <div [innerHTML]="subsection.story"></div>
-              <br>
+      <div class="lede w-richtext">
+        <p><em><strong>The following pages provide contact numbers and addresses for the following:</strong></em></p>
+        <p>The Masters of the High Courts<br>
+          The Thusong Service Centres<br>
+          The Thuthuzela Care Centres<br>
+          Government Department Head Offices</p>
+      </div>
+      <div class="chaptercontent w-richtext">
+
+        <div>
+          <div class="section-header">MASTERS OF THE HIGH COURT</div>
+          <div>
+            <div _ngcontent-imd-c17=""><p>The Master of the High Court serves the public regarding deceased estates,
+              liquidations (insolvent estates), registration of trusts, tutors and curators, as well as administration of
+              the Guardian’s Fund (protecting the funds of minors and mentally challenged people).</p>
+
+              <hr>
+              <p><strong>Bloemfontein</strong></p>
+
+              <p><a href="tel:0514115500"><strong>051 411 5500</strong></a></p>
+
+              <p><strong>Southern Life Building, cnr Charlotte Maxeke (Maitland) and Aliwal streets, Bloemfontein
+                9301.</strong></p>
+
+              <hr>
+              <p><strong>Cape Town</strong></p>
+
+              <p><a href="tel:0214108300"><strong>021 410 8300</strong></a></p>
+
+              <p><strong>High Court, Parade Street, Cape Town 8001.</strong></p>
+
+              <hr>
+              <p><strong>Durban</strong></p>
+
+              <p><a href="tel:0313060123"><strong>031 306 0123</strong></a></p>
+
+              <p><strong>2 Devonshire Place, 2nd Floor, Durban 4001.</strong></p>
+
+              <hr>
+              <p><strong>Grahamstown</strong></p>
+
+              <p><a href="tel:0466034000"><strong>046 603 4000</strong></a></p>
+
+              <p><strong>5 Bathurst Street, Grahamstown 6139.</strong></p>
+
+              <hr>
+              <p><strong>Johannesburg</strong></p>
+
+              <p><a href="tel:0114298000"><strong>011 429 8000</strong></a><br>
+                <a href="tel:0114298001"><strong>011 429 8001</strong></a></p>
+
+              <p><strong>Hollard Building, 66 Marshall Street (cnr Sauer and Marshall sts), Johannesburg 2000.</strong></p>
+
+              <hr>
+              <p><strong>Kimberley</strong></p>
+
+              <p><a href="tel:0538311942"><strong>053 831 1942</strong></a></p>
+
+              <p><strong>Civic Centre, Sol Plaatjie Drive, Kimberley 8300.</strong></p>
+
+              <hr>
+              <p><strong>Mahikeng</strong></p>
+
+              <p><a href="tel:0183818585"><strong>018 381 8585</strong></a></p>
+
+              <p><strong>Justice Chambers, 44 Shippard Street, Mahikeng 2745.</strong></p>
+
+              <hr>
+              <p><strong>Mthatha</strong></p>
+
+              <p><a href="tel:0475312120"><strong>047 531 2120</strong></a></p>
+
+              <p><strong>Holy Cross Building, 7 Craister Street, Mthatha,5099.</strong></p>
+
+              <hr>
+              <p><strong>Nelspruit</strong></p>
+
+              <p><a href="tel:0137522755"><strong>013 752 2755</strong></a></p>
+
+              <p><strong>3 Marloth and Russell Street, Nelspruit 1200.</strong></p>
+
+              <hr>
+              <p><strong>Pietermaritzburg</strong></p>
+
+              <p><a href="tel:0332647000"><strong>033 264 7000</strong></a></p>
+
+              <p><strong>Colonial Building, 241 Church Street, Pietermaritzburg 3201.</strong></p>
+
+              <hr>
+              <p><strong>Polokwane</strong></p>
+
+              <p><a href="tel:0152306000"><strong>015 230 6000</strong></a></p>
+
+              <p><strong>Polokwane High Court Building, 4th Floor, Block B, cnr Bodenstein and Biccard streets, Polokwane
+                0700 .</strong></p>
+
+              <hr>
+              <p><strong>Port Elizabeth</strong></p>
+
+              <p><a href="tel:0414035100"><strong>041 403 5100</strong></a></p>
+
+              <p><strong>523 Govan Mbeki Avenue (cnr Crawford and Govan Mbeki Avenue), North End, Port Elizabeth
+                6001.</strong></p>
+
+              <hr>
+              <p><strong>Pretoria</strong></p>
+
+              <p><a href="tel:0123397700"><strong>012 339 7700</strong></a><br>
+                <a href="tel:0123397808"><strong>012 339 7808</strong></a></p>
+
+              <p><strong><strong>SALU Building, 316 Thabo Sehume Street, Pretoria.</strong></strong></p>
+
+              <hr>
+              <p><strong>Thohoyando</strong></p>
+
+              <p><a href="tel:0159621032"><strong>015 962 1032</strong></a></p>
+
+              <p><strong>Venda Government Building Complex, Thohoyando 0950.</strong></p>
+
+              <hr>
+              <p>&nbsp;</p>
             </div>
           </div>
-          <br>
         </div>
+
+        <div>
+          <div class="section-header">THUSONG SERVICE CENTRES</div>
+          <div>
+            <div _ngcontent-imd-c18="">
+              <div>
+                <div>
+                  <p>The <a href="http://www.thusong.gov.za/" target="_blank">Thusong Service Centres</a> are one-stop
+                    centres where you can get access to government services and information, and at the same time give
+                    feedback on government services.</p>
+                </div>
+
+                <div>
+                  <p>The Thusong Service Centres can help you with government services, pension assistance, unemployment and
+                    ID documents, amongst others.</p>
+                </div>
+
+                <div>
+                  <p>Contact your Government Communication and Information System provincial office (below) to get the
+                    number and directions to the centre closest to you.</p>
+                </div>
+
+                <div>
+                  <hr>
+                  <div>
+                    <p><strong>Eastern Cape:&nbsp;&nbsp;<a href="tel:0437222602">043 722 2602</a></strong></p>
+                  </div>
+
+                  <hr>
+                  <div>
+                    <p><strong>Free State:&nbsp;&nbsp;<a href="tel:0514484504">051 448 4504</a></strong></p>
+                  </div>
+
+                  <hr>
+                  <div>
+                    <p><strong>Gauteng:&nbsp;&nbsp;<a href="tel:0118343560">011 834 3560</a></strong></p>
+                  </div>
+
+                  <hr>
+                  <div>
+                    <p><strong>KwaZulu-Natal:&nbsp;&nbsp;<a href="tel:0313016787">031 301 6787</a></strong></p>
+                  </div>
+
+                  <hr>
+                  <div>
+                    <p><strong>Limpopo:&nbsp;&nbsp;<a href="tel:0152914689">015 291 4689</a></strong></p>
+                  </div>
+
+                  <hr>
+                  <div>
+                    <p><strong>Mpumalanga:&nbsp;&nbsp;<a href="tel:0137532397">013 753 2397</a></strong></p>
+                  </div>
+
+                  <hr>
+                  <div>
+                    <p><strong>North West:&nbsp;&nbsp;<a href="tel:0183817071">018 381 7071</a></strong></p>
+                  </div>
+
+                  <hr>
+                  <div>
+                    <p><strong>Northern Cape:&nbsp;&nbsp;<a href="tel:0538321378">053 832 1378/9</a></strong></p>
+                  </div>
+
+                  <hr>
+                  <div>
+                    <p><strong>Western Cape:&nbsp;&nbsp;<a href="tel:0216970145">021 697 0145</a></strong></p>
+                  </div>
+
+                  <hr>
+                </div>
+              </div>
+
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">Thuthuzela Care Centre</div>
+          <div>
+            <div _ngcontent-imd-c19="">
+              <div>
+                <div>
+                  <p>The Thuthuzela Care Centres are one-stop care centres that are located in public hospitals, and provide
+                    emergency medical care, counselling and court preparation in a survivor-friendly manner.</p>
+                </div>
+
+                <div>
+                  <p>If you have been raped, it is likely that you will be taken to a Thuthuzela Care Centre. If no one
+                    mentions it inside of the hospital, you should request to be directed to one.</p>
+                </div>
+
+                <div>
+                  <p>The Thuthuzela Care Centres are staffed with medical professionals and social workers, and police are
+                    on call 24 hours a day to assist you.</p>
+                </div>
+
+                <div>
+                  <div>
+                    <hr>
+                    <p>EASTERN CAPE</p>
+                  </div>
+
+                  <div>
+                    <p>TCC Libode Umtata – St Barnabas Hospital:&nbsp;&nbsp;<a href="tel:0475686274">047 568 6274</a></p>
+                  </div>
+
+                  <div>
+                    <p>TCC Mdanstane East London – Celinia Makiwane Hospital:&nbsp;&nbsp;<a href="tel:0437612023">043 761
+                      2023</a></p>
+                  </div>
+
+                  <hr>
+                </div>
+
+                <div>
+                  <div>
+                    <p>FREE STATE</p>
+                  </div>
+
+                  <div>
+                    <p>TCC Tshepong – National District Hospital: &nbsp;&nbsp;<a href="tel:0514485028">051 448 5028</a></p>
+
+                    <hr>
+                  </div>
+                </div>
+
+                <div>
+                  <p>GAUTENG</p>
+                </div>
+
+                <div>
+                  <p>TCC Mamelodi Mamelodi Hospital:&nbsp;&nbsp;<a href="tel:0128012717">012 801 2717</a></p>
+                </div>
+
+                <div>
+                  <p>TCC Natalspruit Natalspruit Hospital:&nbsp;&nbsp; <a href="tel:0119091002">011 909 1002</a></p>
+                </div>
+
+                <div>
+                  <p>TCC Soweto – Chris Hani Baragwanath Hospital:&nbsp;&nbsp; <a href="tel:0119331229">011 933 1229</a>/<a
+                    href="tel:0119333346">3346</a></p>
+                </div>
+
+                <div>
+                  <p>TCC Masakhane Tembisa Hospital:&nbsp;&nbsp; <a href="tel:0119232106">011 923 2106</a></p>
+
+                  <hr>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p>KWAZULU-NATAL</p>
+                </div>
+
+                <div>
+                  <p>TCC Umlazi – Prince Mshiyeni Hospital:&nbsp;&nbsp; <a href="tel:0319078496">031 907 8496</a></p>
+                </div>
+
+                <div>
+                  <p>TCC Phoenix Crisis Centre – Mahatma Ghandi Hospital:&nbsp;&nbsp; <a href="tel:0315022338">031 502
+                    2338</a></p>
+                </div>
+
+                <hr>
+              </div>
+
+              <div>
+                <div>
+                  <p>LIMPOPO</p>
+                </div>
+
+                <div>
+                  <p>TCC Mankweng: &nbsp;&nbsp; <a href="tel:0152861261">015 286 1261</a></p>
+                </div>
+
+                <div>
+                  <p>TCC Tshilidzini:&nbsp;&nbsp; <a href="tel:0159641072">015 964 1072</a></p>
+                </div>
+
+                <hr>
+              </div>
+
+              <div>
+                <div>
+                  <p>MPUMALANGA</p>
+                </div>
+
+                <div>
+                  <p>TCC Kanyemazana – Themba Hospital:&nbsp;&nbsp; <a href="tel:0137969412">013 796 9412</a></p>
+
+                  <hr>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p>NORTHERN CAPE</p>
+                </div>
+
+                <div>
+                  <p>TCC Galeshewe – Kimberley Hospital:&nbsp;&nbsp; <a href="tel:05383089002">053 830 8900</a></p>
+                </div>
+
+                <div>
+                  <p>TCC Kakamas – Kakamas Hospital:&nbsp;&nbsp; <a href="tel:0544310057">054 431 0057</a></p>
+
+                  <hr>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p>NORTH WEST</p>
+                </div>
+
+                <div>
+                  <p>TCC Makifeng Makifeng Hospital:&nbsp;&nbsp; <a href="tel:0183837000">018 383 7000</a></p>
+
+                  <hr>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p>WESTERN CAPE</p>
+                </div>
+
+                <div>
+                  <p>TCC Mannenberg – GF Jooste Hospital:&nbsp;&nbsp; <a href="tel:0216916194">021 691 6194</a></p>
+                </div>
+
+                <hr>
+              </div>
+
+              <div>&nbsp;</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header">Government Department Head Offices</div>
+          <div>
+            <div _ngcontent-imd-c20="">
+              <div>
+                <div>
+                  <hr>
+                  <p><strong>Agriculture, Forestry and Fisheries</strong></p>
+                </div>
+
+                <div>
+                  <p><a href="tel:0123196000"><strong>012 319 6000</strong></a><br>
+                    E.g. If you have questions on food security and agricultural implements, female entrepreneur awards</p>
+
+                  <hr>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p><strong>Arts and Culture</strong></p>
+                </div>
+
+                <div>
+                  <p><a href="tel:0124413000"><strong>012 441 3000</strong></a><br>
+                    E.g. If you want to learn and get involved in upcoming arts &amp; culture events, projects and campaigns
+                  </p>
+
+                  <hr>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p><strong>Basic Education</strong></p>
+                </div>
+
+                <div>
+                  <p><a href="tel:0800202933"><strong>0800 202 933</strong></a><strong>/<a href="tel:0123573000">012 357
+                    3000</a></strong><br>
+                    E.g. If you have questions about matric results, curriculae, or information on how to become a teacher;
+                    school governing bodies, school nutrition programmes</p>
+
+                  <hr>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p><strong>Civilian Secretariat of Police</strong></p>
+                </div>
+
+                <div>
+                  <p><a href="tel:0123932500"><strong>012 393 2500</strong></a><strong>/<a href="tel:0123932502">2</a>/<a
+                    href="tel:0123932503">3</a></strong><br>
+                    E.g. If you need more information about the police service</p>
+
+                  <hr>
+                </div>
+
+                <div>
+                  <div>
+                    <p><strong>Communications</strong></p>
+                  </div>
+
+                  <div>
+                    <p><a href="tel:0124730000"><strong>012 473 0000</strong></a><br>
+                      E.g. Information on digital television</p>
+
+                    <hr>
+                  </div>
+
+                  <div>
+                    <div>
+                      <p><strong>Co-operative Governance</strong></p>
+                    </div>
+
+                    <div>
+                      <p><a href="tel:0123340600"><strong>012 334 0600</strong></a><br>
+                        E.g. Information on local government issues, community works programmes</p>
+
+                      <hr>
+                    </div>
+
+                    <div>
+                      <div>
+                        <p><strong>Correctional Services</strong></p>
+                      </div>
+
+                      <div>
+                        <p><a href="tel:0123072999"><strong>012 307 2999</strong></a><strong>/<a href="tel:0123072998">8</a></strong><br>
+                          E.g. If you need information about correctional centres in your province, offenders’ visitation
+                          process, as well as other offenders’ related queries</p>
+
+                        <hr>
+                      </div>
+
+                      <div>
+                        <div>
+                          <p><strong>Defence</strong></p>
+                        </div>
+
+                        <div>
+                          <p><a href="tel:0123556200"><strong>012 355 6200</strong></a><br>
+                            E.g. If you have questions about people doing military service, navy, army or employed in the
+                            Defence Force</p>
+
+                          <hr>
+                        </div>
+
+                        <div>
+                          <div>
+                            <p><strong>Economic Empowerment (Development)</strong></p>
+                          </div>
+
+                          <div>
+                            <p><a href="tel:0123941006"><strong>012 394 1006</strong></a><strong>/<a href="tel:0123943747">3747</a></strong><br>
+                              E.g. If you have questions about economic policies, objectives, plans, as well as green
+                              economy, growth path and youth accord</p>
+
+                            <hr>
+                          </div>
+
+                          <div>
+                            <div>
+                              <p><strong>Energy</strong></p>
+                            </div>
+
+                            <div>
+                              <p><a href="tel:0124068000"><strong>012 406 8000</strong></a><br>
+                                E.g. If you have questions on access to energy, energy efficiency and solar energy
+                                programmes for rural non– grid areas, solar power and water heating</p>
+
+                              <hr>
+                            </div>
+
+                            <div>
+                              <div>
+                                <p><strong>Environmental Affairs </strong></p>
+                              </div>
+
+                              <div>
+                                <p><a href="tel:0123999000"><strong>012 399 9000</strong></a><br>
+                                  E.g. If you have questions about climate change and green economy issues, working for
+                                  water, fire, forests etc.</p>
+
+                                <hr>
+                              </div>
+
+                              <div>
+                                <div>
+                                  <p><strong>Government Communication and Information System </strong></p>
+                                </div>
+
+                                <div>
+                                  <p><a href="tel:0124730000"><strong>012 473 0000</strong></a><br>
+                                    E.g. If you need any information about government policies, plans and programmes,
+                                    Vuk’uzenzela newspaper</p>
+
+                                  <hr>
+                                </div>
+
+                                <div>
+                                  <div>
+                                    <p><strong>Government Printing Works </strong></p>
+                                  </div>
+
+                                  <div>
+                                    <p><a href="tel:0127486001"><strong>012 748 6001</strong></a><strong>/<a
+                                      href="tel:0127486002">2</a></strong><br>
+                                      E.g. Printing of the Government Gazette, legislation, etc.</p>
+
+                                    <hr>
+                                  </div>
+
+                                  <div>
+                                    <div>
+                                      <p><strong>Health</strong></p>
+                                    </div>
+
+                                    <div>
+                                      <p><a href="tel:0123958000"><strong>012 395 8000</strong></a><strong>/<a
+                                        href="tel:0123959200">9200</a></strong><br>
+                                        E.g. If you have any health-related questions and to find out which services may be
+                                        available in your area.</p>
+
+                                      <hr>
+                                    </div>
+
+                                    <div>
+                                      <div>
+                                        <p><strong>Higher Education and Training</strong></p>
+                                      </div>
+
+                                      <div>
+                                        <p><strong><a href="tel:0123125911">012 312 5911 </a> Career Helpline <a
+                                          href="tel:0123125911">086 999 0123 </a> </strong><br>
+                                          E.g. If you have questions about universities, TVET Colleges, literacy, numeracy,
+                                          ABET, skills development and training, information on SETAs</p>
+
+                                        <hr>
+                                      </div>
+
+                                      <div>
+                                        <div>
+                                          <p><strong>Home Affairs</strong></p>
+                                        </div>
+
+                                        <div>
+                                          <p><a href="tel:0800601190"><strong>012 406 2500</strong></a><strong>/<a
+                                            href="tel:0800601190">0800 60 11 90</a></strong><br>
+                                            E.g. If you need to get a marriage or death certificate or identity document, or
+                                            to register a birth, passports etc.</p>
+
+                                          <hr>
+                                          <p><strong>Human Settlements (housing)</strong></p>
+                                        </div>
+
+                                        <div>
+                                          <div>
+                                            <p><a href="tel:0124211474"><strong>012 421 1474</strong></a><br>
+                                              E.g. If you have questions about housing subsidies for families, rural housing
+                                              and emergency housing</p>
+
+                                            <hr>
+                                          </div>
+
+                                          <div>
+                                            <div>
+                                              <p><strong>Independent Police Investigative Directorate</strong></p>
+                                            </div>
+
+                                            <div>
+                                              <p><a href="tel:0123990000"><strong>012 399 0000</strong></a><br>
+                                                E.g. If you want to lodge a complaint against the police service in cases
+                                                such as rape by a police officer, death in police custody, complaint of
+                                                torture or assault by a police officer, as well as certain cases of
+                                                corruption</p>
+
+                                              <hr>
+                                            </div>
+
+                                            <div>
+                                              <div>
+                                                <p><strong>International Relations and Cooperation</strong></p>
+                                              </div>
+
+                                              <div>
+                                                <p><a href="tel:0123511000"><strong>012 351 1000</strong></a><strong>/<a
+                                                  href="tel:01235110594">0594</a></strong><br>
+                                                  E.g. Coordination of the international participation of women’s
+                                                  programmes, embassies</p>
+
+                                                <hr>
+                                              </div>
+
+                                              <div>
+                                                <div>
+                                                  <p><strong>Justice and Constitutional Development</strong></p>
+                                                </div>
+
+                                                <div>
+                                                  <p><a href="tel:0123151111"><strong>012 315 1111</strong></a><strong>/<a
+                                                    href="tel:0123151730">1730</a></strong><br>
+                                                    E.g. If you have questions about anything justice related such as
+                                                    courts, wills, estates and trusts</p>
+
+                                                  <hr>
+                                                </div>
+
+                                                <div>
+                                                  <div>
+                                                    <p><strong>Labour </strong></p>
+                                                  </div>
+
+                                                  <div>
+                                                    <p><a href="tel:0123094000"><strong>012 309 4000</strong></a><br>
+                                                      E.g. If you have questions about employment, Unemployment Insurance
+                                                      Fund (UIF), maternity, adoption and dependent’s benefits, as well as
+                                                      protection for domestic workers and sexual harassment; also assistance
+                                                      with employment counselling, career choices, and CV preparation,
+                                                      injury on duty</p>
+
+                                                    <hr>
+                                                  </div>
+
+                                                  <div>
+                                                    <div>
+                                                      <p><strong>Mineral Resources</strong></p>
+                                                    </div>
+
+                                                    <div>
+                                                      <p><a href="tel:0124443220"><strong>012 444 3220</strong></a><strong>/<a
+                                                        href="tel:0124443000">3000</a></strong><br>
+                                                        E.g. If you want to find out more about the mining industry and
+                                                        opportunities to get involved</p>
+
+                                                      <hr>
+                                                    </div>
+
+                                                    <div>
+                                                      <div>
+                                                        <p><strong>Military Veterans</strong></p>
+                                                      </div>
+
+                                                      <div>
+                                                        <p><a href="tel:0127659300"><strong>012 765
+                                                          9300</strong></a><strong>/<a href="tel:0802323244">080 232
+                                                          3244</a></strong><br>
+                                                          E.g. Information on benefits for military veterans</p>
+
+                                                        <hr>
+                                                      </div>
+
+                                                      <div>
+                                                        <div>
+                                                          <p><strong>National Treasury</strong></p>
+                                                        </div>
+
+                                                        <div>
+                                                          <p><a href="tel:0123155111"><strong>012 315 5111</strong></a><br>
+                                                            E.g. If you want to learn about the national and provincial
+                                                            budgets, tenders etc.</p>
+
+                                                          <hr>
+                                                        </div>
+
+                                                        <div>
+                                                          <div>
+                                                            <p><strong>Performance Monitoring and Evaluation</strong></p>
+                                                          </div>
+
+                                                          <div>
+                                                            <p><a href="tel:0123005200"><strong>012 300
+                                                              5200</strong></a><strong>/<a href="tel:0123120000">012 312
+                                                              0000</a></strong><br>
+                                                              E.g. If you want to know about government priorities and
+                                                              progresses</p>
+
+                                                            <hr>
+                                                          </div>
+
+                                                          <div>
+                                                            <div>
+                                                              <p><strong>National School of Government (previously
+                                                                PALAMA)</strong></p>
+                                                            </div>
+
+                                                            <div>
+                                                              <p><a href="tel:0124416777"><strong>012 441
+                                                                6777</strong></a><strong>/<a href="tel:0124416000">6000</a></strong><br>
+                                                                E.g. If you are a public servant and need courses and
+                                                                training that will enhance your competencies in human
+                                                                resources, monitoring and evaluation, supply chain and
+                                                                finance management function</p>
+
+                                                              <hr>
+                                                            </div>
+
+                                                            <div>
+                                                              <div>
+                                                                <p><strong>Public Enterprises</strong></p>
+                                                              </div>
+
+                                                              <div>
+                                                                <p><a href="tel:0124311000"><strong>012 431
+                                                                  1000</strong></a><br>
+                                                                  E.g. If you want to learn more about state-owned
+                                                                  enterprises</p>
+
+                                                                <hr>
+                                                              </div>
+
+                                                              <div>
+                                                                <div>
+                                                                  <p><strong>Public Service &amp; Administration</strong>
+                                                                  </p>
+                                                                </div>
+
+                                                                <div>
+                                                                  <p><a href="tel:012402 3800"><strong>012 402 3800</strong></a><br>
+                                                                    E.g. If you have questions about civil service and the
+                                                                    running of government</p>
+
+                                                                  <hr>
+                                                                </div>
+
+                                                                <div>
+                                                                  <div>
+                                                                    <p><strong>Public Service Commission</strong></p>
+                                                                  </div>
+
+                                                                  <div>
+                                                                    <p><a href="tel:0123521000"><strong>012 352
+                                                                      1000</strong></a><br>
+                                                                      E.g. If you want to report fraudulent activities
+                                                                      within the public service and report corrupt
+                                                                      government officials Anti-corruption hotline <a
+                                                                        href="tel:0800701701"><strong>0800 701 701</strong></a>
+                                                                    </p>
+
+                                                                    <hr>
+                                                                  </div>
+
+                                                                  <div>
+                                                                    <div>
+                                                                      <p><strong>Public Works</strong></p>
+                                                                    </div>
+
+                                                                    <div>
+                                                                      <p><a href="tel:0124061000"><strong>012 406
+                                                                        1000</strong></a><br>
+                                                                        E.g. If you have questions about procurement
+                                                                        processes for government agencies</p>
+
+                                                                      <hr>
+                                                                    </div>
+
+                                                                    <div>
+                                                                      <div>
+                                                                        <p><strong>Rural Development and Land
+                                                                          Reform </strong></p>
+                                                                      </div>
+
+                                                                      <div>
+                                                                        <p><a href="tel:0123128911"><strong>012 312
+                                                                          8911</strong></a><br>
+                                                                          E.g. Provides programmes for land restitution,
+                                                                          land distribution and land ownership by women</p>
+
+                                                                        <hr>
+                                                                      </div>
+
+                                                                      <div>
+                                                                        <div>
+                                                                          <p><strong>Science and Technology </strong></p>
+                                                                        </div>
+
+                                                                        <div>
+                                                                          <p><a href="tel:0128436300"><strong>012 843
+                                                                            6300</strong></a><strong>/<a
+                                                                            href="tel:0128436303">3</a></strong><br>
+                                                                            E.g. If you want to know about the National
+                                                                            Youth Service programme for those who hold a
+                                                                            national diploma or a degree in science,
+                                                                            technology, engineering or mathematics</p>
+
+                                                                          <hr>
+                                                                        </div>
+
+                                                                        <div>
+                                                                          <div>
+                                                                            <p><strong>Small Business Development </strong>
+                                                                            </p>
+                                                                          </div>
+
+                                                                          <div>
+                                                                            <p><a href="tel:0861843384"><strong>086 184
+                                                                              3384</strong></a><strong> (option
+                                                                              2)</strong><br>
+                                                                              E.g. If you need information on support of the
+                                                                              development and growth of small business and
+                                                                              cooperatives</p>
+
+                                                                            <hr>
+                                                                          </div>
+
+                                                                          <div>
+                                                                            <div>
+                                                                              <p><strong><strong>Social
+                                                                                Development </strong></strong></p>
+                                                                            </div>
+
+                                                                            <div>
+                                                                              <p><a href="tel:0123127500"><strong>012 312
+                                                                                7500</strong></a><br>
+                                                                                E.g. If you need info and help for grants,
+                                                                                pension, disabilities services, shelters,
+                                                                                counselling for abuse and HIV/Aids, as well
+                                                                                as services and funding for Non-Profit
+                                                                                Organisations</p>
+
+                                                                              <hr>
+                                                                            </div>
+
+                                                                            <div>
+                                                                              <div>
+                                                                                <p><strong><strong>South African Social
+                                                                                  Security Agency (SASSA) </strong></strong>
+                                                                                </p>
+                                                                              </div>
+
+                                                                              <div>
+                                                                                <p><a href="tel:0800601011"><strong>0800 601
+                                                                                  011</strong></a><br>
+                                                                                  E.g. If you have any questions about
+                                                                                  social grants</p>
+
+                                                                                <hr>
+                                                                              </div>
+
+                                                                              <div>
+                                                                                <div>
+                                                                                  <p><strong><strong>South African Police
+                                                                                    Service </strong></strong></p>
+                                                                                </div>
+
+                                                                                <div>
+                                                                                  <p><a href="tel:00123931000"><strong>0012
+                                                                                    393 1000 </strong></a><br>
+                                                                                    E.g. If you need to report crimes,
+                                                                                    abuse, missing persons and need to find
+                                                                                    out about victim support services in
+                                                                                    your area</p>
+
+                                                                                  <hr>
+                                                                                </div>
+
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <p>
+                                                                                      <strong><strong><strong><strong><strong><strong><strong><strong><strong>South
+                                                                                        African Revenue
+                                                                                        Service </strong></strong></strong></strong></strong></strong></strong></strong></strong>
+                                                                                    </p>
+                                                                                  </div>
+
+                                                                                  <div>
+                                                                                    <p><a href="tel:012 422 4000 "><strong>012
+                                                                                      422 4000 </strong></a><br>
+                                                                                      E.g. If you need information about
+                                                                                      taxes, such as how to register as a
+                                                                                      tax payer, file a tax return and how
+                                                                                      to make a payment to SARS</p>
+
+                                                                                    <hr>
+                                                                                  </div>
+
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <p>
+                                                                                        <strong><strong><strong><strong><strong><strong><strong><strong>Sport
+                                                                                          and Recreation South
+                                                                                          Africa </strong></strong></strong></strong></strong></strong></strong></strong>
+                                                                                      </p>
+                                                                                    </div>
+
+                                                                                    <div>
+                                                                                      <p><a href="tel:0123045000"><strong>012
+                                                                                        304 5000 </strong></a><br>
+                                                                                        E.g. If you want to learn about club
+                                                                                        developments, schools sports and
+                                                                                        communities sports</p>
+
+                                                                                      <hr>
+                                                                                    </div>
+
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <p>
+                                                                                          <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Statistics
+                                                                                            South Africa </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+                                                                                        </p>
+                                                                                      </div>
+
+                                                                                      <div>
+                                                                                        <p><a href="tel:0123108911"><strong>012
+                                                                                          310 8911 </strong></a><br>
+                                                                                          E.g. If you need information about
+                                                                                          census results and other vital</p>
+
+                                                                                        <hr>
+                                                                                      </div>
+
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <p>
+                                                                                            <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Telecommunications
+                                                                                              and Postal Services </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+                                                                                          </p>
+                                                                                        </div>
+
+                                                                                        <div>
+                                                                                          <p><a
+                                                                                            href="tel:0124278000"><strong>012
+                                                                                            427 8000 </strong>&gt;</a><br>
+                                                                                            E.g. For information on Telkom,
+                                                                                            Post Office, child online
+                                                                                            protection guidelines, etc.</p>
+
+                                                                                          <hr>
+                                                                                        </div>
+
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <p>
+                                                                                              <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>The
+                                                                                                Presidency </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+                                                                                            </p>
+                                                                                          </div>
+
+                                                                                          <div>
+                                                                                            <p><a
+                                                                                              href="tel:0123005200"><strong>012
+                                                                                              300 5200 </strong></a><br>
+                                                                                              E.g. If you have any
+                                                                                              complaints about government
+                                                                                              services or need to be
+                                                                                              referred to other government
+                                                                                              institutions, get in touch
+                                                                                              with the presidential hotline
+                                                                                              Presidential hotline <a
+                                                                                                href="tel:17737"><strong>17737 </strong></a>
+                                                                                              (1 PRES)</p>
+
+                                                                                            <hr>
+                                                                                          </div>
+
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <p><strong>Tourism </strong>
+                                                                                              </p>
+                                                                                            </div>
+
+                                                                                            <div><a
+                                                                                              href="tel:0124446000"><strong>012
+                                                                                              444 6000 </strong></a><br>
+                                                                                              E.g. If you want to learn more
+                                                                                              about the tourism industry
+                                                                                              <hr>
+                                                                                            </div>
+
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Trade
+                                                                                                  and
+                                                                                                  Industry </strong></strong></strong></strong></strong>
+                                                                                                </strong> </strong></strong>
+                                                                                                </strong></strong> </strong>
+                                                                                                </strong>
+
+                                                                                                <div><a
+                                                                                                  href="tel:0123949500"><strong>012
+                                                                                                  394 9500 </strong></a><br>
+                                                                                                  E.g. If you want to learn
+                                                                                                  about entrepreneurship,
+                                                                                                  businesses and economic
+                                                                                                  empowerment programmes
+                                                                                                  <hr>
+                                                                                                </div>
+
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <p><strong>Traditional
+                                                                                                      Affairs </strong></p>
+                                                                                                  </div>
+
+                                                                                                  <div>
+                                                                                                    <p><a
+                                                                                                      href="tel:0123365824"><strong><strong>012
+                                                                                                      336
+                                                                                                      5824</strong></strong></a><strong><strong>/<a
+                                                                                                      href="tel:0123365825">5 </a></strong><a
+                                                                                                      href="tel:0123365825"> </a></strong><br>
+                                                                                                      E.g. If you need more
+                                                                                                      information about
+                                                                                                      traditional affairs,
+                                                                                                      such as traditional
+                                                                                                      courts, indigenous
+                                                                                                      laws and governance
+                                                                                                    </p>
+
+                                                                                                    <hr>
+                                                                                                  </div>
+
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <p>
+                                                                                                        <strong><strong><strong><strong><strong><strong><strong><strong>Transport </strong></strong></strong></strong></strong></strong></strong></strong>
+                                                                                                      </p>
+                                                                                                    </div>
+
+                                                                                                    <div><a
+                                                                                                      href="tel:0123093000"><strong>012
+                                                                                                      309 3000 </strong></a><br>
+                                                                                                      E.g. If you need
+                                                                                                      information about the
+                                                                                                      transportation system
+                                                                                                      as well as road-safety
+                                                                                                      campaigns
+                                                                                                      <hr>
+                                                                                                    </div>
+
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <p>
+                                                                                                          <strong><strong><strong><strong><strong><strong><strong>Water
+                                                                                                            and
+                                                                                                            sanitation </strong>
+                                                                                                          </strong></strong></strong></strong></strong></strong>
+                                                                                                        </p>
+
+                                                                                                        <div>
+                                                                                                          <p><a
+                                                                                                            href="tel:0123367500"><strong>012
+                                                                                                            336
+                                                                                                            7500</strong></a><strong>/<a
+                                                                                                            href="tel:0800200200">0800
+                                                                                                            20 02
+                                                                                                            00 </a></strong><br>
+                                                                                                            E.g. If you have
+                                                                                                            any questions
+                                                                                                            about water
+                                                                                                            licences, water
+                                                                                                            quality and
+                                                                                                            other
+                                                                                                            water-related
+                                                                                                            enquiries</p>
+
+                                                                                                          <hr>
+                                                                                                        </div>
+
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p>
+                                                                                                              <strong><strong><strong><strong><strong><strong><strong>Women </strong></strong></strong></strong></strong></strong></strong>
+                                                                                                            </p>
+                                                                                                          </div>
+
+                                                                                                          <div>
+                                                                                                            <p><a
+                                                                                                              href="tel:0123590071"><strong>012
+                                                                                                              359
+                                                                                                              0071</strong></a><strong>/<a
+                                                                                                              href="tel:0123590013">13</a></strong><br>
+                                                                                                              E.g. If you
+                                                                                                              have any
+                                                                                                              concerns and
+                                                                                                              need access to
+                                                                                                              women
+                                                                                                              empowerment‘s
+                                                                                                              resources</p>
+
+                                                                                                            <hr>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div><strong>&nbsp;</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-
+    <a href="#plbbook/references" class="bottomnav-links cc-bottom w-inline-block">
+      <div class="previous-next">Next</div>
+      <div class="bottomnav-chapter">References</div>
+    </a>
   </div>
 </div>

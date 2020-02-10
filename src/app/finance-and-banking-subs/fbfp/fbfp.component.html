@@ -40,15 +40,166 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 6 - Finance & Banking</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
-          <br>
+      <div>
+        <div class="section-header">FINANCIAL PLANNING</div>
+        <div>
+          <p>Financial planning helps you to use your money wisely. One of the key factors in financial planning and
+            management is saving money each month. This gives you a safety net for when you need it most, and can help you
+            during emergencies.</p>
+          <div _ngcontent-gol-c25="" class="subsection-header">Budgeting</div>
+          <div _ngcontent-gol-c25="">
+            <div>
+              <p>Budgeting means keeping an accurate track of your income (money coming in) and expenses (money going
+                out), so that you can see clearly where your money is going. Keeping a monthly budget makes you face
+                reality. It helps you to manage your money wisely.</p>
+            </div>
+
+            <div>
+              <p>Sticking to a monthly budget needs discipline and commitment, but it will help you stay out of debt by
+                making sure you keep control of your expenses. When you can easily see what your necessary and unnecessary
+                expenses are, it’s easier to decide what to cut back on.</p>
+
+              <ul>
+                <li><strong>Income:</strong> Your income is what you earn every month. It could be from wages or a salary,
+                  or casual payment for odd jobs, or earnings from sales.
+                </li>
+                <li><strong>Expenses:</strong>Expenses are what you spend money on every month. They can be ‘fixed’
+                  expenses (the ones you can’t change, like rent, electricity, water, food, transport, school fees, and
+                  monthly savings) or ‘variable’ expenses (things you can cut back on, like clothing and entertainment).
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p>At the end of the month, subtract your expenses from your income. Ideally, you should have some money
+                left over. These are your savings. You should try to avoid debt by never having higher expenses than your
+                income.</p>
+            </div>
+
+            <div>
+              <p><strong>A simple family budget</strong></p>
+
+              <table cellpadding="1" cellspacing="1">
+                <tbody>
+                <tr>
+                  <th>INCOME</th>
+                  <th>AMOUNT</th>
+                  <th>TOTAL</th>
+                </tr>
+                <tr>
+                  <td>Salary or wages</td>
+                  <td>R3 000</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Other earnings</td>
+                  <td>R500</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Maintenance</td>
+                  <td>R500</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Grant</td>
+                  <td>-</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><strong>Total income</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>R4 000</strong></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th><strong>EXPENSES</strong></th>
+                  <th><strong>AMOUNT</strong></th>
+                  <th><strong>TOTAL</strong></th>
+                </tr>
+                <tr>
+                  <td>Rent</td>
+                  <td>R800</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>School fees</td>
+                  <td>R400</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Electricity</td>
+                  <td>R200</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Medical</td>
+                  <td>R100</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Groceries</td>
+                  <td>R1 000</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Toiletries</td>
+                  <td>R50</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Transport</td>
+                  <td>R1 000</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Debt payment</td>
+                  <td>R100</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Clothes</td>
+                  <td>R150</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Airtime</td>
+                  <td>R100</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Savings</td>
+                  <td>R100</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><strong>Total expenses</strong></td>
+                  <td>&nbsp;</td>
+                  <td><strong>R4 000</strong></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <th><strong>NETT (income less expenses)</strong></th>
+                  <th>&nbsp;</th>
+                  <th><strong>R–</strong></th>
+                </tr>
+                </tbody>
+              </table>
+
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <br _ngcontent-gol-c25="">
         </div>
       </div>
     </div>
@@ -57,5 +208,5 @@
     <!--      <div class="previous-next">Next Chapter</div>-->
     <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
     <!--    </a>-->
-    <!--  </div>-->
   </div>
+</div>

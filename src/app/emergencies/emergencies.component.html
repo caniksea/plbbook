@@ -34,13 +34,13 @@
       </a>
       <a href="#plbbook/health" class="bottomnav-links cc-center w-inline-block" (click)="closeMenu()">
         <div class="previous-next">Next Chapter<img class="next-arrow" src="assets/img/right_arrow.png"></div>
-        <div class="bottomnav-chapter">Chapter 2: Health</div>
+        <div class="bottomnav-chapter">2: Health</div>
       </a>
     </div>
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter 1: Emergency</div>
+        <div class="chapterpage-header chaptertext">Chapter 1 - Emergencies</div>
       </div>
       <div class="lede w-richtext">
         <p>
@@ -89,45 +89,68 @@
         <br />
 
         <div>
-          <div id="cpr" class="section-header">How to do CPR</div>
+          <div class="section-header">HOW TO DO CPR</div>
           <div>
-            <p>Cardio Pulmonary Resuscitation (CPR) is performed to keep a person alive by breathing into their
-              lungs and massaging their heart. It is lifesaving.</p>
+            <p>Cardio Pulmonary Resuscitation (CPR) is performed to keep a person alive by breathing into their lungs and
+              massaging their heart. It is lifesaving.</p>
+
             <p><strong>ABC</strong><br>
               Before performing CPR, you must check that the conditions are correct. You can do the ABC check:</p>
+
             <p><strong>A – Airway</strong></p>
+
             <ul>
               <li>Clear the mouth of any particles or obstructions.</li>
             </ul>
+
             <p><strong>B – Breathing</strong></p>
+
             <ul>
               <li>Listen for breathing</li>
               <li>Look for chest movement</li>
             </ul>
+
             <p><strong>C – Circulation</strong></p>
+
             <ul>
               <li>Feel pulse</li>
             </ul>
+
             <p><strong>If the person is not breathing, perform CPR:</strong></p>
+
             <ul>
-              <li>Place your hands, one on top of the other, in the middle of the person’s chest. Push down about
-                5 cm, quite hard and fast. do this 30 times.</li>
-              <li>Tilt the person’s head back, lift their chin and pinch their nose shut. cover their mouth with
-                yours and blow until you see their chest rise. Blow twice, for one second each time.</li>
+              <li>Place your hands, one on top of the other, in the middle of the person’s chest. Push down about 5 cm,
+                quite hard and fast. do this 30 times.
+              </li>
+              <li>Tilt the person’s head back, lift their chin and pinch their nose shut. cover their mouth with yours and
+                blow until you see their chest rise. Blow twice, for one second each time.
+              </li>
               <li>Carry on with 30 chest pumps and two breaths until help arrives.</li>
             </ul>
+
             <p><strong>EMERGENCY NUMBERS</strong></p>
+
             <hr>
             <p><strong>Police - </strong><a href="tel:10111"><strong>10111</strong></a></p>
+
             <hr>
             <p><strong>Ambulance - </strong><a href="tel:10177"><strong>10177</strong></a></p>
+
             <hr>
-            <p><strong>Any emergency from a cellphone (all networks) - </strong><a href="tel:112"><strong>112</strong></a></p>
+            <p><strong>Any emergency from a cellphone (all networks) - </strong><a href="tel:112"><strong>112</strong></a>
+            </p>
+
             <hr>
-            <p><strong>Resuscitation Council of South Africa - </strong>
-              <a href="tel:0114783989"><strong>011 478 3989</strong></a><strong> or </strong>
-              <a href="http://www.resus.co.za"><strong>www.resus.co.za</strong></a></p>
+            <p><strong>Resuscitation Council of South Africa - </strong><a href="tel:0114783989"><strong>011 478
+              3989</strong></a><strong> or </strong><a href="http://www.resus.co.za"><strong>www.resus.co.za</strong></a>
+            </p>
+
             <hr>
+            <div class="video-container">
+              <iframe width="600" height="480" src="https://www.youtube.com/embed/XydT8uC0XiQ" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
           </div>
         </div>
         <br />
@@ -318,9 +341,9 @@
 
     </div>
 
-    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">
+    <a href="#plbbook/health" class="bottomnav-links cc-bottom w-inline-block">
       <div class="previous-next">Next Chapter</div>
-      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>
+      <div class="bottomnav-chapter">2: Health</div>
     </a>
   </div>
 </div>

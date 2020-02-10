@@ -40,15 +40,169 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 8 - Useful contacts</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
-          <br>
+      <div>
+        <div class="section-header">Thuthuzela Care Centre</div>
+        <div>
+          <div _ngcontent-imd-c19="">
+            <div>
+              <div>
+                <p>The Thuthuzela Care Centres are one-stop care centres that are located in public hospitals, and provide
+                  emergency medical care, counselling and court preparation in a survivor-friendly manner.</p>
+              </div>
+
+              <div>
+                <p>If you have been raped, it is likely that you will be taken to a Thuthuzela Care Centre. If no one
+                  mentions it inside of the hospital, you should request to be directed to one.</p>
+              </div>
+
+              <div>
+                <p>The Thuthuzela Care Centres are staffed with medical professionals and social workers, and police are
+                  on call 24 hours a day to assist you.</p>
+              </div>
+
+              <div>
+                <div>
+                  <hr>
+                  <p>EASTERN CAPE</p>
+                </div>
+
+                <div>
+                  <p>TCC Libode Umtata – St Barnabas Hospital:&nbsp;&nbsp;<a href="tel:0475686274">047 568 6274</a></p>
+                </div>
+
+                <div>
+                  <p>TCC Mdanstane East London – Celinia Makiwane Hospital:&nbsp;&nbsp;<a href="tel:0437612023">043 761
+                    2023</a></p>
+                </div>
+
+                <hr>
+              </div>
+
+              <div>
+                <div>
+                  <p>FREE STATE</p>
+                </div>
+
+                <div>
+                  <p>TCC Tshepong – National District Hospital: &nbsp;&nbsp;<a href="tel:0514485028">051 448 5028</a></p>
+
+                  <hr>
+                </div>
+              </div>
+
+              <div>
+                <p>GAUTENG</p>
+              </div>
+
+              <div>
+                <p>TCC Mamelodi Mamelodi Hospital:&nbsp;&nbsp;<a href="tel:0128012717">012 801 2717</a></p>
+              </div>
+
+              <div>
+                <p>TCC Natalspruit Natalspruit Hospital:&nbsp;&nbsp; <a href="tel:0119091002">011 909 1002</a></p>
+              </div>
+
+              <div>
+                <p>TCC Soweto – Chris Hani Baragwanath Hospital:&nbsp;&nbsp; <a href="tel:0119331229">011 933 1229</a>/<a
+                  href="tel:0119333346">3346</a></p>
+              </div>
+
+              <div>
+                <p>TCC Masakhane Tembisa Hospital:&nbsp;&nbsp; <a href="tel:0119232106">011 923 2106</a></p>
+
+                <hr>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <p>KWAZULU-NATAL</p>
+              </div>
+
+              <div>
+                <p>TCC Umlazi – Prince Mshiyeni Hospital:&nbsp;&nbsp; <a href="tel:0319078496">031 907 8496</a></p>
+              </div>
+
+              <div>
+                <p>TCC Phoenix Crisis Centre – Mahatma Ghandi Hospital:&nbsp;&nbsp; <a href="tel:0315022338">031 502
+                  2338</a></p>
+              </div>
+
+              <hr>
+            </div>
+
+            <div>
+              <div>
+                <p>LIMPOPO</p>
+              </div>
+
+              <div>
+                <p>TCC Mankweng: &nbsp;&nbsp; <a href="tel:0152861261">015 286 1261</a></p>
+              </div>
+
+              <div>
+                <p>TCC Tshilidzini:&nbsp;&nbsp; <a href="tel:0159641072">015 964 1072</a></p>
+              </div>
+
+              <hr>
+            </div>
+
+            <div>
+              <div>
+                <p>MPUMALANGA</p>
+              </div>
+
+              <div>
+                <p>TCC Kanyemazana – Themba Hospital:&nbsp;&nbsp; <a href="tel:0137969412">013 796 9412</a></p>
+
+                <hr>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <p>NORTHERN CAPE</p>
+              </div>
+
+              <div>
+                <p>TCC Galeshewe – Kimberley Hospital:&nbsp;&nbsp; <a href="tel:05383089002">053 830 8900</a></p>
+              </div>
+
+              <div>
+                <p>TCC Kakamas – Kakamas Hospital:&nbsp;&nbsp; <a href="tel:0544310057">054 431 0057</a></p>
+
+                <hr>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <p>NORTH WEST</p>
+              </div>
+
+              <div>
+                <p>TCC Makifeng Makifeng Hospital:&nbsp;&nbsp; <a href="tel:0183837000">018 383 7000</a></p>
+
+                <hr>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <p>WESTERN CAPE</p>
+              </div>
+
+              <div>
+                <p>TCC Mannenberg – GF Jooste Hospital:&nbsp;&nbsp; <a href="tel:0216916194">021 691 6194</a></p>
+              </div>
+
+              <hr>
+            </div>
+
+            <div>&nbsp;</div>
+          </div>
         </div>
       </div>
     </div>
@@ -57,5 +211,5 @@
     <!--      <div class="previous-next">Next Chapter</div>-->
     <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
     <!--    </a>-->
-    <!--  </div>-->
   </div>
+</div>

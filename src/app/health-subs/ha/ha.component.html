@@ -40,22 +40,350 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 2 - Health</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
-          <br>
+      <div>
+        <div class="section-header">HEALTH ASSESSMENTS</div>
+        <div>
+          <!--start-->
+          <div>
+            <p>Women need to have regular health check-ups to help them stay healthy. A health assessment will alert you
+              to any health risks, and your doctor will then help you to manage these. You should try to have a medical
+              check-up once every year.</p>
+
+            <p>Diseases such as heart disease, high blood pressure, diabetes and some cancers can be picked up in their
+              early stages when treatment is often more effective and can lead to a cure. If you have risk factors, such
+              as a family history of a disease, it may be more likely that you will develop that disease.</p>
+
+            <p>At your check-up, talk to your doctor about your medical history, your family’s history of disease, and
+              your lifestyle choices such as diet, exercise and if you smoke or drink alcohol.</p>
+
+            <p><img alt="Smiling Nurse" src="assets/img/health/Nurse-Health.png"></p>
+          </div>
+          <div class="ng-star-inserted"><!---->
+            <div class="ng-star-inserted">
+              <div _ngcontent-nyc-c9="" class="subsection-header">When to have check-ups for common ailments</div>
+              <div _ngcontent-nyc-c9="">
+                <div>
+                  <p>Certain conditions – such as high or low blood pressure, high cholesterol, and cervical or breast
+                    cancer – are very common. Getting checked early can help you to treat diseases early and stay
+                    healthy.</p>
+                </div>
+
+                <div>
+                  <div>
+                    <hr>
+                    <p><strong>RECOMMENDED TEST:</strong> Blood pressure test</p>
+                  </div>
+
+                  <div>
+                    <p><strong>WHO NEEDS TO GO?</strong> Every woman from age 20.</p>
+                  </div>
+
+                  <div>
+                    <p><strong>HOW OFTEN DO YOU NEED TO GO?</strong> Once a year unless advised more often.</p>
+
+                    <hr>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <p><strong>RECOMMENDED TEST:</strong> Diabetes screening</p>
+                  </div>
+
+                  <div>
+                    <p><strong>WHO NEEDS TO GO?</strong> Those with symptoms or family history of diabetes.</p>
+                  </div>
+
+                  <div>
+                    <p><strong>HOW OFTEN DO YOU NEED TO GO?</strong> Once a year unless advised by your doctor.</p>
+
+                    <hr>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <p><strong>RECOMMENDED TEST:</strong> STI (sexually transmitted infections) and HIV/Aids tests</p>
+                  </div>
+
+                  <div>
+                    <p><strong>WHO NEEDS TO GO?</strong> Every sexually active woman.</p>
+                  </div>
+
+                  <div>
+                    <p><strong>HOW OFTEN DO YOU NEED TO GO?</strong> If exposure is suspected; otherwise, once a year
+                      (during pregnancy too).</p>
+
+                    <hr>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <p><strong>RECOMMENDED TEST:</strong> Cholesterol screening</p>
+                  </div>
+
+                  <div>
+                    <p><strong>WHO NEEDS TO GO?</strong> Everyone from the age of 20.</p>
+                  </div>
+
+                  <div>
+                    <p><strong>HOW OFTEN DO YOU NEED TO GO?</strong> Every five years or as recommended by your doctor.
+                    </p>
+
+                    <hr>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <p><strong>RECOMMENDED TEST:</strong> Haemoglobin test (for anaemia)</p>
+                  </div>
+
+                  <div>
+                    <p><strong>WHO NEEDS TO GO?</strong> Everyone from the age of 20.</p>
+                  </div>
+
+                  <div>
+                    <p><strong>HOW OFTEN DO YOU NEED TO GO?</strong> As recommended by your doctor, especially when
+                      pregnant.</p>
+
+                    <hr>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <p><strong>RECOMMENDED TEST:</strong> Pap smear test</p>
+                  </div>
+
+                  <div>
+                    <p><strong>WHO NEEDS TO GO?</strong> Every sexually active woman or from the age of 20.</p>
+                  </div>
+
+                  <div>
+                    <p><strong>HOW OFTEN DO YOU NEED TO GO?</strong> At least every three years (1-3 years).</p>
+
+                    <hr>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <p><strong>RECOMMENDED TEST:</strong> Breast examination</p>
+                  </div>
+
+                  <div>
+                    <p><strong>WHO NEEDS TO GO?</strong> Every woman or from the age of 20.</p>
+                  </div>
+
+                  <div>
+                    <p><strong>HOW OFTEN DO YOU NEED TO GO?</strong> Self-examination once a month, one week before your
+                      period; clinical examination by a doctor once a year. .</p>
+
+                    <hr>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <p><strong>RECOMMENDED TEST:</strong> Mammogram</p>
+                  </div>
+
+                  <div>
+                    <p><strong>WHO NEEDS TO GO?</strong> Every sexually active woman or from the age of 40.</p>
+                  </div>
+
+                  <div>
+                    <p><strong>HOW OFTEN DO YOU NEED TO GO?</strong> Once a year.</p>
+
+                    <hr>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <p><strong>RECOMMENDED TEST:</strong> Bone density test</p>
+                  </div>
+
+                  <div>
+                    <p><strong>WHO NEEDS TO GO?</strong> Every sexually active woman or from the age of 50.</p>
+                  </div>
+
+                  <div>
+                    <p><strong>HOW OFTEN DO YOU NEED TO GO?</strong> As recommended by your doctor.</p>
+
+                    <hr>
+                  </div>
+                </div>
+              </div>
+              <br _ngcontent-nyc-c9=""></div>
+            <div _ngcontent-nyc-c9="" class="ng-star-inserted">
+              <div _ngcontent-nyc-c9="" class="subsection-header">Visiting the doctor</div>
+              <div _ngcontent-nyc-c9="">
+                <div>
+                  <p>Before you go to the doctor, make sure you have everything you need, including medical aid or
+                    insurance
+                    and past medical records. You should also make a list of questions you may want to ask the doctor.</p>
+                </div>
+
+                <div>
+                  <p>Keep your medical records updated with the following information:</p>
+
+                  <ul>
+                    <li>Menstrual history.</li>
+                    <li>Pregnancy history.</li>
+                    <li>Family medical history.</li>
+                    <li>Your own medical history (including any surgeries).</li>
+                    <li>Medications/supplements you may be taking: take these with you, in their correct containers. this
+                      helps the doctor know what medicine to prescribe to avoid a clash with what you are already taking.
+                    </li>
+                    <li>The results of clinical tests such as blood pressure, cholesterol, glucose, iron levels, Pap
+                      smear,
+                      or breast examination.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p><img alt="Stethoscope-Health" src="assets/img/health/Stethoscope-Health.png"></p>
+                </div>
+
+                <div>
+                  <p>When you visit the doctor, it’s very important that you answer all the questions honestly. don’t
+                    leave
+                    out anything, even if it makes you feel embarrassed.</p>
+
+                  <p>If you feel unsafe or uncomfortable, you can ask for someone else to be with you (a friend or a
+                    nurse)
+                    when the doctor examines you.</p>
+                </div>
+
+                <div>
+                  <p>Tell the doctor:</p>
+
+                  <ul>
+                    <li>About your symptoms.</li>
+                    <li>When did it start?</li>
+                    <li>Has it happened before?</li>
+                    <li>Has anyone else in your family had a similar problem?</li>
+                    <li>Are you currently taking any medication?</li>
+                    <li>Have you had any medical problems before?</li>
+                    <li>Have you had surgery before?</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p>Ask the doctor:</p>
+
+                  <ul>
+                    <li>To explain to you what is wrong.</li>
+                    <li>To explain about your medication: When must you take it? How must you take it? Are there any side
+                      effects? Will it affect your other mediaction (e.g. contraceptive pills)?
+                    </li>
+                    <li>If you need to come back for a follow-up.</li>
+                    <li>Any other questions you might have.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p>After the visit:</p>
+
+                  <ul>
+                    <li>Follow the doctor's instructions.</li>
+                    <li>Report any side effects</li>
+                    <li>Go back to the doctor if you're not feeling better within two or four days.</li>
+                  </ul>
+                </div>
+              </div>
+              <br _ngcontent-nyc-c9=""></div>
+            <div _ngcontent-nyc-c9="" class="ng-star-inserted">
+              <div _ngcontent-nyc-c9="" class="subsection-header">Your rights as a patient</div>
+              <div _ngcontent-nyc-c9=""><p>According to the National Patients’ Rights Charter of South Africa, every
+                patient
+                has the right to:</p>
+
+                <ul>
+                  <li>A healthy and safe environment.</li>
+                  <li>Access to healthcare.</li>
+                  <li>Choose their healthcare provider.</li>
+                  <li>Treatment by a named healthcare provider.</li>
+                  <li>Confidentiality and privacy.</li>
+                  <li>Be informed about their condition and treatment, so they can give informed consent.</li>
+                  <li>Take part in their healthcare decision-making.</li>
+                  <li>Referral for a second opinion.</li>
+                  <li>Continuity of care.</li>
+                  <li>Refuse treatment.</li>
+                  <li>Complain about poor quality of healthcare.</li>
+                  <li>Access to social security, including occupational health schemes, medical schemes, private
+                    insurance,
+                    road accident funds and social grants
+                  </li>
+                </ul>
+
+                <table cellpadding="1" cellspacing="1">
+                  <thead>
+                  <tr>
+                    <th scope="col">According to the National Health Act, No 61 of 2003, no hospital can turn you away if
+                      you have a medical emergency.
+                    </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+
+                <p>&nbsp;</p>
+
+                <p>Have your rights been infringed? If so, you can complain at any of these provincial Thusong Service
+                  Centres, depending on which province you live in:</p>
+
+                <hr>
+                <p><strong>Eastern Cape - </strong><a href="tel:0437222602"><strong>043 722 2602</strong></a></p>
+
+                <hr>
+                <p><strong>Free State - </strong><a href="tel:0514484504"><strong>051 448 4504</strong></a></p>
+
+                <hr>
+                <p><strong>Gauteng - </strong><a href="tel:0118343560"><strong>011 834 3560</strong></a></p>
+
+                <hr>
+                <p><strong>KwaZulu-Natal - </strong><a href="tel:0313016787"><strong>031 301 6787</strong></a></p>
+
+                <hr>
+                <p><strong>Limpopo - </strong><a href="tel:0152914689"><strong>015 291 4689</strong></a></p>
+
+                <hr>
+                <p><strong>Mpumalanga - </strong><a href="tel:0317532397"><strong>031 753 2397</strong></a></p>
+
+                <hr>
+                <p><strong>North West - </strong><a href="tel:0183817071"><strong>018 381 7071</strong></a></p>
+
+                <hr>
+                <p><strong>Northern Cape - </strong><a href="tel:0538321378"><strong>053 832 1378</strong></a><strong>/<a
+                  href="tel:0538321379">9</a></strong></p>
+
+                <hr>
+                <p><strong>Western Cape - </strong><a href="tel:0216790145"><strong>021 679 0145</strong></a></p>
+
+                <hr>
+                <p><a href="http://www.thusong.gov.za"><strong>www.thusong.gov.za</strong></a></p>
+
+                <hr>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!--end-->
     </div>
-
-    <!--    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">-->
-    <!--      <div class="previous-next">Next Chapter</div>-->
-    <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
-    <!--    </a>-->
-    <!--  </div>-->
   </div>
+
+  <!--    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">-->
+  <!--      <div class="previous-next">Next Chapter</div>-->
+  <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
+  <!--    </a>-->
+  <!--  </div>-->
+</div>

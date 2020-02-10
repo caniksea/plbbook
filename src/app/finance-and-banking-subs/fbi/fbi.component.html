@@ -40,15 +40,84 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 6 - Finance & Banking</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
-          <br>
+      <div>
+        <div class="section-header">Insurance</div>
+        <div>
+          <div _ngcontent-imd-c7="">
+            <div>
+              <div>
+                <p>Insurance is an an arrangement that protects you financially from future losses from, for example,
+                  theft, damage, illness or death.</p>
+
+                <p>There are different types of insurance. The most common are:</p>
+
+                <ul>
+                  <li>Medical insurance: Medical insurance covers unforeseen health-related events, such as accidental
+                    injuries and disabilities.
+                  </li>
+                  <li>Car insurance: If you own a car, it is important to take out car insurance as it safeguards you
+                    against unforeseen vehicle loss/damage (e.g. theft, hijacking, road accidents). Third-party insurance
+                    covers damage you do to the vehicle of a third party (e.g. if you crash into another car).
+                  </li>
+                  <li>Home insurance: Homeowner’s insurance (also known as building insurance) protects you financially
+                    from loss or damage (e.g. through fire or natural disasters) to the structure of your home. You can
+                    also take out household insurance (also known as home contents insurance), which covers the items in
+                    your home against theft, accidents, fire and natural disasters.
+                  </li>
+                  <li>Life insurance: Life insurance (or life cover) gives you peace of mind, knowing that your family’s
+                    expenses will be paid if you die and your own debts will be paid. Life insurance also often includes
+                    disability insurance, which means you are covered if you can’t work due to an illness or injury.
+                  </li>
+                  <li>Funeral insurance: Funeral cover takes care of the expenses of a funeral for you or your family.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div _ngcontent-imd-c7="" class="subsection-header">Choosing the right insurance company</div>
+          <div _ngcontent-imd-c7="">
+            <div>
+              <p>There are many insurance companies in South Africa so finding the right one for your needs can be
+                confusing.</p>
+
+              <ul>
+                <li>Do your research and get at least four quotes to compare prices and policies. Remember that you can
+                  choose different insurance companies for different types of insurance.
+                </li>
+                <li>Find out what the insurer’s reputation is like. Do they give good service? How long do they take to
+                  settle claims?
+                </li>
+                <li>Make sure you know about any hidden costs (e.g. excess).</li>
+                <li>Make sure you understand the policy you’re being offered. Discuss the details with the inurance
+                  company or your insurance broker.
+                </li>
+                <li>The insurance company you pick must be a registered Financial Services Provider. You can verify this
+                  with the Financial Services Board.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <table>
+                <thead>
+                <tr>
+                  <th scope="col">What is an excess ?</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>An excess is the part of the insurance claim that is paid by you. When you submit a successful claim
+                    to the insurance company, they will pay out a certain amount, according to your policy, but you will
+                    still be expected to pay a fee for making the claim.
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br _ngcontent-imd-c7="">
         </div>
       </div>
     </div>
@@ -57,5 +126,5 @@
     <!--      <div class="previous-next">Next Chapter</div>-->
     <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
     <!--    </a>-->
-    <!--  </div>-->
   </div>
+</div>

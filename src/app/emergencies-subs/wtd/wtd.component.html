@@ -40,17 +40,38 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 1 - Emergencies</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
-          <br>
-        </div>
+      <div class="section-header">WHAT TO DO IN AN EMERGENCY</div>
+      <div>
+        <ul>
+          <li>Stay calm.</li>
+          <li>Quickly assess the situation – do you need the police or an ambulance?</li>
+          <li>Phone the emergency number and tell them:
+            <ul>
+              <li>Where you are.</li>
+              <li>What has happened.</li>
+              <li>Why you need emergency help.</li>
+            </ul>
+          </li>
+          <li>Follow the instructions given by the emergency officer.&nbsp;</li>
+          <li>They may ask you to do CPR (see opposite)</li>
+        </ul>
+        <table>
+          <thead>
+          <tr>
+            <th scope="col"><a href="#plbbook/emergencies/How_to_do_CPR">Learn how to perform CPR - you could save a life!</a></th>
+          </tr>
+          </thead>
+        </table>
       </div>
+<!--      <div *ngIf="extendedSection?.subsections">-->
+<!--        <div *ngFor="let subsection of extendedSection.subsections">-->
+<!--          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>-->
+<!--          <div [innerHTML]="subsection.story"></div>-->
+<!--          <br>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
 
     <!--    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">-->

@@ -1,11 +1,11 @@
 <app-menu></app-menu>
 <div class="fullscreen">
-  <div style="background-image:url()" class="leftside">
+  <div class="leftside" style="background-image:url()">
     <div class="titlewrapper">
       <div class="leftnavigation">
         <div>
-          <a href="http://motsepefoundation.org/" target="_blank" class="logoblock w-inline-block">
-            <img src="assets/img/Motsepe-Foundation.png" alt="" class="logo"/></a>
+          <a class="logoblock w-inline-block" href="http://motsepefoundation.org/" target="_blank">
+            <img alt="" class="logo" src="assets/img/Motsepe-Foundation.png"/></a>
           <!--<a href="/" class="sitetitle">Ebooks</a>-->
         </div>
       </div>
@@ -14,7 +14,7 @@
           <div
             class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
           <div class="buttoncol w-col w-col-4 w-col-stack">
-            <a href="#" (click)="showMenu()" data-ix="view-chapters" class="allchapters">View Chapters</a>
+            <a (click)="showMenu()" class="allchapters" data-ix="view-chapters" href="#">View Chapters</a>
           </div>
           <div
             class="buttoncol w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-col w-col-4 w-col-stack"></div>
@@ -40,22 +40,156 @@
     <div class="maincontent-wrap">
       <div class="chapterpage-head">
         <a class="chapterpage-header" href="#/plbbook">The Precious Little Black Book</a>
-        <div class="chapterpage-header chaptertext">Chapter {{CHAPTER_NUMBER}} - {{chapter?.chapterTitle}}</div>
+        <div class="chapterpage-header chaptertext">Chapter 7 - Know your Rights</div>
       </div>
-      <div class="section-header" [innerHTML]="extendedSection?.sectionTitle"></div>
-      <div [innerHTML]="processDisplay(extendedSection?.story)"></div>
-      <div *ngIf="extendedSection?.subsections">
-        <div *ngFor="let subsection of extendedSection?.subsections">
-          <div class="subsection-header" [innerHTML]="subsection.subsectionTitle"></div>
-          <div [innerHTML]="subsection.story"></div>
+      <div>
+        <div class="section-header">DRAWING UP A WILL</div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <p>A Will is a written document that records what should happen to your property and belongings when you
+                  die, provides for your minor children, and lets your family know how you would like to be buried. If you
+                  do not leave a Will, the law will decide how your property will be divided and this may take a long
+                  time.</p>
+              </div>
+
+              <div>
+                <p>Anyone who is 16 years or older, and is of sound and sober mind, can have a Will drawn up.</p>
+              </div>
+
+              <div>
+                <p>If you are married, and regardless of the type of marriage you are in, you can write a Will – you don’t
+                  need your husband’s permission.</p>
+              </div>
+            </div>
+          </div>
+          <div class="subsection-header">Requirements for a valid Will</div>
+          <div>
+            <div>
+              <ul>
+                <li>The Will must include your full names and ID number</li>
+                <li>It must state the full names and ID number of the person you want to manage your estate (the executor –
+                  this person must be 18 years or older).
+                </li>
+                <li>It must list the full names and ID number(s) of people you want to receive your property when you die
+                  (the beneficiaries).
+                </li>
+                <li>If you’re the only surviving parent to your children, and they are younger than 18, the Will must
+                  contain the name and ID number of the person you want to look after your minor children.
+                </li>
+                <li>You must sign every page and put the date and your signature at the end. You must sign in front of two
+                  witnesses (who must be 14 years or older and cannot be beneficiaries).
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <div class="subsection-header"> Inheritance</div>
+          <div>
+            <div>
+              <div>
+                <table cellpadding="1" cellspacing="1">
+                  <thead>
+                  <tr>
+                    <th scope="col">PROPERTY RIGHTS All South Africans, regardless of gender, have the same rights to
+                      inherit property. Women and girls cannot be discriminated against because of their gender.
+                    </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+
+                <p>Inheritance is the money, property, debts, titles, rights and obligations that is passed on to someone
+                  else when a person dies.</p>
+              </div>
+
+              <div>
+                <p>Widows’ inheritance rights<br>
+                  In a civil marriage, if a husband dies without a Will, his property is divided up equally between his wife
+                  and children. In other types of marriages, different rules apply.</p>
+              </div>
+
+              <div>
+                <p>Inheritance rights for a woman in a customary marriage:<br>
+                  Three Acts apply to inheritance rights for women in customary marriages:</p>
+
+                <ul>
+                  <li>The Intestate Succession Act, No 81 of 1987, recognises customary polygamous marriages, and protects
+                    the rights of those in such marriages.
+                  </li>
+                  <li>The Reform of Customary Law of Succession and Regulation of Related Matters Act, No 11 of 2009, states
+                    that if you are in a polygamous marriage, you may inherit the equivalent of a child’s share of the
+                    husband’s estate. However, if the estate does not have sufficient money, then the estate gets divided
+                    equally between you and other surviving spouses.
+                  </li>
+                  <li>The Maintenance of Surviving Spouses Act, No 27 of 1990, allows you to file a claim for maintenance
+                    against the deceased estate if you have not been provided with anything, or not been provided with
+                    enough, in your deceased partner’s Will.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p>Inheritance rights for a woman in a religious marriage:<br>
+                  Even though religious marriages (e.g. Hindu and Muslim) are not yet legally recognised, when it comes to
+                  inheritance, you are protected and you can claim maintenance if your spouse dies without a Will.</p>
+              </div>
+
+              <div>
+                <p>Inheritance rights for a woman in a domestic partnership:<br>
+                  No matter how long you have been in a domestic relationship, there is no law yet that recognises this form
+                  of marriage. You and your partner must get a Will drawn up as soon as possible. For more information,
+                  contact a legal aid clinic.</p>
+
+                <table cellpadding="1" cellspacing="1">
+                  <thead>
+                  <tr>
+                    <th scope="col">ESTATES If a person dies leaving a Will, the deceased estate is referred to as a
+                      ‘testate estate’. If a person dies without leaving a Will, the deceased estate is referred to as an
+                      ‘intestate estate’. ‘Estate’ refers to all the assets and liabilities a deceased person leaves behind
+                      at his or her death.
+                    </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+
+                <p>&nbsp;</p>
+              </div>
+
+              <div>
+                <p><strong>Reporting a death for inheritance purposes</strong><br>
+                  Report the death to the Master’s Office close to a High Court (see page 206) nearest to where the deceased
+                  lived (not where he/she died). If there isn’t a Master’s Office close to you, contact your nearest
+                  Magistrates’ Court.</p>
+              </div>
+
+              <div>&nbsp;</div>
+
+              <p>You must report the death within 14 days. When reporting the death, take with you certified copies of the
+                following documents:</p>
+
+              <ul>
+                <li>The Will (if there is one).</li>
+                <li>The death certificate.</li>
+                <li>Your ID.</li>
+                <li>The ID of the deceased.</li>
+                <li>The ID of the person nominated as executor (if applicable).</li>
+              </ul>
+            </div>
+          </div>
           <br>
         </div>
       </div>
     </div>
 
+
     <!--    <a *ngIf="nextChapter" href="#{{nextChapter?.chapterLink}}" class="bottomnav-links cc-bottom w-inline-block">-->
     <!--      <div class="previous-next">Next Chapter</div>-->
     <!--      <div class="bottomnav-chapter">{{ CURRENT_CHAPTER + 1}}: {{nextChapter?.chapterTitle}}</div>-->
     <!--    </a>-->
-    <!--  </div>-->
   </div>
+</div>
