@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "plbbook"
+  "defaultProject": "plbbook",
+  "cli": {
+    "analytics": "21e600c7-d1b1-4fb4-8034-361cb79a785b"
+  }
 }
